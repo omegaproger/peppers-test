@@ -1,0 +1,21 @@
+@keyframes hi {
+	0%{}
+	100%{}
+}
+@keyframes introBounce {
+	0%{margin-top: 0;}
+	100%{margin-top: 10px;}
+}
+
+@keyframes infoLite {
+	0%{opacity: 0;}
+	50%{opacity: 1;}
+	100%{opacity:0;}
+}
+@keyframes firework {
+	0%{opacity: 0;transform:scale(0) rotate(100deg);}
+	25%{opacity: 1;transform:scale(1) rotate(50deg);}
+	50%{opacity: 1;transform:scale(1) rotate(0deg);}
+	75%{opacity: 1;transform:scale(1) rotate(50deg);}
+	100%{opacity:0;transform:scale(0) rotate(100deg);}
+}
