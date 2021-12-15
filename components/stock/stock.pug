@@ -1,0 +1,37 @@
+mixin stock__info-more(content,params)
+	a&attributes(attributes)&attributes(content.attr).stock__info-more!=content.text
+
+mixin stock__bg(content,params)
+	.stock__bg
+		+picture(content)
+
+mixin stock__icon(content,params)
+	.stock__icon
+		+picture(content)
+
+- var stockContent = {title:"Акция \n&quot;Год без забот&quot;",text:"среди всех билетов тиражей \n &#8470;&nbsp;1370, 1371, 1372 разыгрывается дополнительный приз&nbsp;&mdash; миллион рублей.",more:{	text:"Подробнее об&nbsp;акции", attr:{href:"#"}}, bg:{img:{src:'images/stock/bg.svg'}, list:[{srcset:'images/stock/bg-m.svg',media:"(max-width: 1023px)"}]}, icon:{img:{src:'images/stock/icon.svg'}}, list:[{img:"icon-1",title:"В&nbsp;январе разыгрываются:",note:"50&nbsp;загородных домов \nв 4&nbsp;тиражах, \n денежные призы"},{img:"icon-2",title:"В&nbsp;трех тиражах &#8470;&nbsp;1370, &#8470;&nbsp;1371, &#8470;&nbsp;1372",note:"останется 3&nbsp;бочонка&nbsp;&mdash; \n выигрывает каждый \n 3-й билет"}]}
+
+mixin stock__item(content, params)
+	li.stock__item
+		strong.stock__item-title!=content.title
+		.stock__item-info
+			.stock__item-icon
+				img(src="images/stock/"+ content.img + ".svg")
+			span.stock__item-text!=content.note	
+
+mixin stock(content, params)
+	section.stock#stock
+		+stock__bg(stockContent.bg)
+		.stock__content
+			.stock__row
+				+stock__icon(stockContent.icon)
+				.stock__info
+					h2.stock__info-title!= stockContent.title
+					span.stock__info-text!= stockContent.text
+					+stock__info-more(stockContent.more)
+					
+			ul.stock__list
+				each item in stockContent.list
+					+stock__item(item)
+ 
+			block

@@ -1,0 +1,11 @@
+.social-network {
+	a {
+		@include desk-value(margin-right, 20px);
+		@include mobile-value(margin-right, 20px);
+		// margin-right: 15px;
+	}
+
+	&__icon {
+		@include value(width, 26px, 26px);
+	}
+}

@@ -1,0 +1,10 @@
+mixin network(content,params)
+	a(href="#").social-network__item
+		img.social-network__icon(src="images/social-network/"+ content.img + ".svg")
+
+- var socialNetwork = [{img:"vk"},{img:"fb"},{img:"ok"},{img:"tw"},{img:"inst"},{img:"yt"}];
+
+mixin social-network(content,params)
+	.social-network&attributes(attributes) 
+		each icon in socialNetwork
+			+network(icon)

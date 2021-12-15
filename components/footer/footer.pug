@@ -1,0 +1,23 @@
+mixin footer__parents-item(content, param)
+	.footer__partners-item&attributes(content.attr)&attributes(attributes)
+		.footer__item-logo
+			+picture(content)
+		.footer__item-info
+			p.footer__item-text!= content.text				
+			if content.note
+				.footer__item-note!=content.note
+ 
+- var footerContent = {text:"&laquo;ВГЛ 4&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;3), розыгрыши проходят еженедельно. Срок проведения лотерей ― до&nbsp;31.12.2029.\n Фраза &laquo;Джекпот 500&nbsp;миллионов&raquo; указывает на&nbsp;минимальный гарантированный размер средств призового фонда, разыгрываемого в&nbsp;категории &laquo;Джекпот&raquo; в&nbsp;тиражах 1370 (розыгрыш 09.01.2021), 1371( розыгрыш 16.01.2021), 1372 (розыгрыш 23.01.2021). 50&nbsp;загородных домов разыгрываются в&nbsp;январе 2021 года в&nbsp;тиражах 1370 (дата розыгрыша 09.01.2021), 1371 (дата розыгрыша 16.01.2021), 1372 (дата розыгрыша 23.01.2021), 1373 (дата розыгрыша 30.01.2021). Информация об&nbsp;организаторе лотереи, правилах её&nbsp;проведения, призовом фонде, количестве призов или выигрышей, сроках, месте и&nbsp;порядке их&nbsp;получения&nbsp;&mdash; на&nbsp;stoloto.&nbsp;ru. Выигрыши носят вероятностный характер. Лотерея не&nbsp;является способом заработка и&nbsp;источником дохода.\n Фраза &laquo;Выигрывает каждый третий билет&raquo; означает, что вероятность совпадения в&nbsp;игре 30&nbsp;чисел билета до&nbsp;87-го хода включительно (при общем количестве чисел в&nbsp;билете, равном&nbsp;30, и&nbsp;общем количестве бочонков в&nbsp;мешке, равном&nbsp;90) равна 1&nbsp;к 3,4.\n Акция &laquo;Год без забот&raquo; проводится с&nbsp;01.01.2021 по&nbsp;20.03.2021 (с&nbsp;учетом сроков распространения билетов и&nbsp;выдачи призов). Информацию об&nbsp;организаторе акции, о&nbsp;правилах ее&nbsp;проведения, количестве призов или выигрышей, о&nbsp;сроках, месте и&nbsp;порядке их&nbsp;получения можно узнать&nbsp;&mdash; на&nbsp;www. stoloto.&nbsp;ru \n АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;, ОГРН 1127746385095, адрес: 109316, Москва, Волгоградский пр-т, д.&nbsp;43, корп.&nbsp;3, этаж&nbsp;10, пом. XXV, ком. 13Б. Реклама.&nbsp;18",parens:[{attr:{class:"footer__parents-item_1"},img:{src:'images/footer/icon-1.png'}, list:[{srcset:'images/footer/icon-1m.webp x1,images/footer/icon-1m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/footer/icon-1m.png 1x, images/footer/icon-1m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/footer/icon-1.webp', type:"image/webp"}],text:"Организаторами лотерей являются Министерство спорта&nbsp;РФ и \n Министерство финансов&nbsp;РФ."},{attr:{class:"footer__parents-item_2"},img:{src:'images/footer/icon-2.png'}, list:[{srcset:'images/footer/icon-2m.webp x1,images/footer/icon-2m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/footer/icon-2m.png 1x, images/footer/icon-2m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/footer/icon-2.webp', type:"image/webp"}],text:"&laquo;Столото&raquo; (АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;) состоит во&nbsp;Всемирной и&nbsp;Европейской лотерейных ассоциациях (The World Lottery Association и&nbsp;The European Lotteries Association). Это гарантирует соблюдение прав участников, случайность определения победителей, своевременную выплату выигрышей, конфиденциальность личных данных.",note:"<p>WLA&nbsp;&mdash; международное объединение компаний-операторов государственных лотерей.</p> <p>ELA&nbsp;&mdash; объединение лотерейных \n компаний из&nbsp;Европы и&nbsp;соседних \n регионов.</p>"}],logo:{src:"images/footer/stoloto.svg"},attr:{href:"https://www.stoloto.ru/"}};
+
+
+mixin footer(content, params)
+	footer.footer&attributes(attributes)
+		.footer__content
+			.footer__info
+				a&attributes(footerContent.attr)&attributes(attributes)
+					img.footer__logo&attributes(footerContent.logo)&attributes(attributes)
+				p.footer__info-text!= footerContent.text
+				+social-network
+			.footer__partners
+				each text in footerContent.parens
+					+footer__parents-item(text)

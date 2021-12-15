@@ -1,0 +1,14 @@
+mixin buy__list-item(content, params)
+	li.buy__list-item
+		img.buy__item-icon
+		h3.buy__item-title=content	
+
+- var title = ["безопасная регистрация","безопасность данных","Государственные лотереи","Ваш билет никогда  не потеряется"];
+
+mixin buy(content, params)
+	section.buy
+		.buy__content
+			ul.buy__list
+				each text in title
+					+buy__list-item(text)
+			//button	

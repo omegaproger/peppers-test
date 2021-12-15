@@ -1,0 +1,24 @@
+include ../intro/intro
+include ../info/info
+include ../stock/stock
+include ../gui/gui
+include ../results/results
+include ../rules/rules
+include ../buy/buy
+include ../footer/footer
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="some tsx")
+		meta(content='true' name='HandheldFriendly')
+		meta(content='width' name='MobileOptimized')
+		meta(content='yes' name='apple-mobile-web-app-capable')
+		link(rel="stylesheet" href="styles/main.css" type="text/css")
+		link(rel="stylesheet" href="fonts/fonts.css" type="text/css")
+		title!="test"
+	body 
+		.custom-page
+			block content

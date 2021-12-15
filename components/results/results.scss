@@ -1,0 +1,186 @@
+.results {
+    margin: auto;
+    background: linear-gradient(0deg, #404040, #404040),
+        linear-gradient(87.51deg, #BB5FC4 1.71%, #EF4949 49.84%, #F26B41 97.22%);
+    font-family: $BASE-FONT;
+
+    @mixin mod($name) {
+        .results_#{$name} & {
+            @content;
+        }
+    }
+
+    @mixin item-mod($name) {
+        .results__list-item_#{$name} & {
+            @content;
+        }
+    }
+
+    &__content {
+        margin: auto;
+        @include value(max-width, 820px, 375px);
+        padding: 0;
+        @include value(padding-top, 61px, 26px);
+        @include value(padding-bottom, 61px, 41px);
+        @include mobile-value(padding-left, 25px);
+        @include mobile-value(padding-right, 15px);
+        color: #ffffff;
+    }
+
+    &__title {
+        @include mobile-value(margin, 0px);
+        font-weight: 600;
+        @include value(font-size, 38px, 28px);
+        line-height: 1.2;
+        margin-top: 0;
+        color: #FFC93D;
+
+        @include MOBILE {
+            color: #FFFFFF;
+            white-space: pre-line;
+            font-weight: 500;
+        }
+    }
+
+    &__body {
+        display: flex;
+        position: relative;
+        @include value(margin-bottom, 31px, 0px);
+
+        @include MOBILE {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        @include value(max-width, 400px, 400px);
+
+        @include MOBILE {
+            order: 2;
+        }
+    }
+
+    &__info-list {
+        padding: 0;
+        @include mobile-value(margin, 0px);
+        list-style-type: none;
+    }
+
+    &__list-item {
+        margin: 0;
+        @include value(margin-top, 30px, 22px);
+        @include value(margin-bottom, 30px, 0px);
+
+        &_1 {
+            @include mobile-value(margin-top, 25px);
+        }
+
+        &_2 {
+            @include mobile-value(margin-top, 18px);
+        }
+
+        &_3 {
+            @include mobile-value(margin-top, 15px);
+        }
+
+        &_4 {
+            @include mobile-value(margin-bottom, 0px);
+            @include mobile-value(margin-top, 17px);
+
+            strong {
+                @include mobile-value(letter-spacing, 1px);
+            }
+        }
+    }
+
+    &__item-title {
+        font-weight: bold;
+        display: block;
+        margin: 0;
+        white-space: pre-wrap;
+        @include value(font-size, 30px, 30px);
+        @include value(line-height, 37px, 37px);
+
+        @include MOBILE {
+            letter-spacing: 0px;
+            font-weight: 600;
+        }
+
+    }
+
+    &__item-note {
+        font-weight: normal;
+        @include value(font-size, 18px, 16px);
+        line-height: 1.35;
+    }
+
+    &__info-title {
+        display: block;
+        @include mobile-value(width, 345px);
+        @include mobile-value(height, 20px);
+        margin: 0;
+        @include value(margin-top, 62px, 0px);
+        @include value(margin-bottom, 62px, 35px);
+        font-weight: bold;
+        @include value(font-size, 30px, 16px);
+        @include value(line-height, 37px, 37px);
+
+        @include MOBILE {
+            font-weight: 500;
+            letter-spacing: 1px;
+
+        }
+
+
+    }
+
+    &__button {
+        @include value(width, 350px, 325px);
+        margin: 0;
+        background: linear-gradient(90deg, #6FF331 0%, #D8F331 100%);
+
+        @include MOBILE {
+            letter-spacing: 1px;
+        }
+    }
+
+    &__image-map {
+        @include mobile-value(height, 240px);
+
+        img {
+            position: absolute;
+            @include value(left, 310px, -30px);
+            @include value(bottom, 130px, -5px);
+            @include value(width, 700px, 385px);
+
+            @include MOBILE {
+                position: relative;
+                order: 1;
+            }
+        }
+
+    }
+
+    &__firework {
+        // @include value(height, 130px, 130px);
+        // @include value(width, 130px, 130px);
+        position: relative;
+
+        &_1 {
+                
+                @include value(left, 10px, 30px);
+                @include value(top, 100px, -170px);
+                @include value(height, 130px, 60px);
+                animation: firework  2s infinite linear;
+        }
+
+        &_2 {
+            
+                @include value(left, 20px, 50px);
+                @include value(top, -30px, -220px);
+                @include value(height, 100px, 40px);
+                animation: firework  1.5s infinite linear;
+        }
+    }
+
+}

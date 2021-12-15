@@ -1,0 +1,24 @@
+- var infoContent = {title:"Играйте в&nbsp;настоящее &laquo;Русское лото&raquo; каждую неделю!",note:{text:"Трансляцию розыгрышей смотрите по&nbsp;воскресеньям в&nbsp;8:20&nbsp;на НТВ <br>",span:"Время в&nbsp;вашем регионе может отличаться от&nbsp;указанного. Следите за&nbsp;ТВ-программой.",img:{src:"images/info/ntv.svg"}},item:[{attr:{class:"info__item_1"},img:"icon-1",text:"Главная и&nbsp;самая любимая телелотерея страны. Розыгрыши по&nbsp;выходным, которых с&nbsp;нетерпением ждут всей семьей"},{attr:{class:"info__item_2"},img:"icon-2",text:"Разыгрываем: дома, автомобили, путешествия и&nbsp;рекордные денежные призы"},{attr:{class:"info__item_3"},img:"icon-3",text:"Уже разыграно более 23&nbsp;миллиардов рублей.\n По&nbsp;статистике, 81% участников государственных лотерей выигрывает"}]};
+
+
+mixin info__item(content, params)
+  li.info__item&attributes(content.attr)&attributes(attributes)
+    .info__item-icon
+      img(src="images/info/" + content.img + ".svg")
+    p.info__item-text!=content.text
+
+mixin info__note(content, params)
+  .info__note&attributes(attributes)
+    img.info__note-image&attributes(content.img)&attributes(attributes)
+    p.info__note-text!= content.text
+      span!= content.span   
+
+mixin info(content, params)
+  section.info#info&attributes(attributes)
+    .info__content
+      h2.info__title!=infoContent.title
+      ul.info__list
+        each text in infoContent.item
+          +info__item(text)
+      +info__note(infoContent.note)
+      +button({tag:"a", text:"Участвовать", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).info__button

@@ -1,0 +1,32 @@
+
+mixin results__info-list(content, params)
+	li.results__list-item&attributes(content.attr)&attributes(attributes)
+		strong.results__item-title!=content.title
+		span.results__item-note!=content.note
+
+mixin results__image-map(content,params)
+	.results__image-map
+		+picture(content)
+	.results__firework
+		each item in content.fireworks
+			img&attributes(item.img)&attributes(attributes).results__firework
+
+
+- var resultsContent = {title:"Итоги 2020 года \n в&nbsp;&laquo;Русском лото&raquo;",infoTitle:"Присоединяйтесь к&nbsp;победителям!",info:[{attr:{class:"results__list-item_1"},title:"9&nbsp;286&nbsp;991&nbsp;717&nbsp;₽",note:"выиграли в&nbsp;лотерее"},{attr:{class:"results__list-item_2"},title:"362",note:"новых миллионера появилось"},{attr:{class:"results__list-item_3"},title:"188 169 688",note:"билетов продали"},{attr:{class:"results__list-item_4"},title:"1&nbsp;000&nbsp;000&nbsp;000&nbsp;₽",note:"крупнейший выигрыш в&nbsp;&quot;Русском лото&quot;​"}],map:{img:{src:'images/results/map.png'}, list:[{srcset:'images/results/map-m.webp x1,images/results/map-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/results/map-m.png 1x, images/results/map-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/results/map.webp', type:"image/webp"}],fireworks:[{img:{src:"images/results/firework.svg", class:"results__firework_1"}},{img:{src:"images/results/firework-s.svg",class:"results__firework_2"}}]}};
+
+
+mixin results(content, params)
+	section.results
+		.results__content
+			h2.results__title!= resultsContent.title
+			.results__body
+				.results__info
+					ul.results__info-list
+						each item in resultsContent.info
+							+results__info-list(item)
+					strong.results__info-title!=resultsContent.infoTitle
+					+button({tag:"a", text:"Как принять участие?", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).results__button  
+				+results__image-map(resultsContent.map)
+			
+
+				
