@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="some tsx">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+    <title>test</title>
+  </head>
+  <body> 
+    <div class="custom-page">
+      <section class="intro">
+        <div class="intro__bg">
+          <div class="intro__back">
+            <picture>
+              <source srcset="images/intro/bg-m.webp x1,images/intro/bg-m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+              <source srcset="images/intro/bg-m.png 1x, images/intro/bg-m@2x.png 2x" media="(max-width: 1023px)"/>
+              <source srcset="images/intro/bg.webp" type="image/webp"/><img src="images/intro/bg.png"/>
+            </picture>
+          </div>
+          <div class="intro__image-man">
+            <picture>
+              <source srcset="images/intro/parechenkov-m.webp x1,images/intro/parechenkov-m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+              <source srcset="images/intro/parechenkov-m.png 1x, images/intro/parechenkov-m@2x.png 2x" media="(max-width: 1023px)"/>
+              <source srcset="images/intro/parechenkov.webp" type="image/webp"/><img src="images/intro/parechenkov.png"/>
+            </picture>
+          </div>
+          <div class="intro__image-table">
+            <picture>
+              <source srcset="images/intro/table-m.webp x1,images/intro/table-m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+              <source srcset="images/intro/table-m.png 1x, images/intro/table-m@2x.png 2x" media="(max-width: 1023px)"/>
+              <source srcset="images/intro/table.webp" type="image/webp"/><img src="images/intro/table.png"/>
+            </picture>
+          </div>
+        </div>
+        <div class="intro__content">
+          <header class="intro__header"><a class="intro__logo" href="https://www.stoloto.ru/ruslotto/game/?int=right"><img src="images/intro/logo.svg"/></a>
+            <nav class="menu intro__menu"><a class="intro__menu-item" href="#info">как участвовать</a><a class="intro__menu-item" href="#stock">о лотерее</a><a class="intro__menu-item" href="#rules">правила</a>
+            </nav>
+          </header>
+          <div class="intro__body">
+            <!-- ul.pagination-->
+            <div class="intro__info">
+              <h3 class="intro__info-title">Джекпот <br><span>от&nbsp;500&nbsp;000&nbsp;000&nbsp;₽</span></h3><strong class="intro__info-subtitle">50&nbsp;загородных домов</strong>
+              <div class="intro__info-note"><span>Выигрывает каждый третий билет</span></div>
+              <a class="button intro__info-button" href="https://www.stoloto.ru/ruslotto/game/?int=right" target="_blank">
+                <div class="button__text">Участвовать</div>
+              </a>
+            </div>
+          </div>
+          <div class="intro__transition"> <a class="intro__transition" href="#stock">
+              <div class="intro__btn-transition">Попробуйте <br> новые тиражи <br>&laquo;Русского лото&raquo;!<img src="images/intro/arrow.svg"/></div></a></div>
+        </div>
+      </section>
+      <section class="stock" id="stock">
+        <div class="stock__bg">
+          <picture>
+            <source srcset="images/stock/bg-m.svg" media="(max-width: 1023px)"/><img src="images/stock/bg.svg"/>
+          </picture>
+        </div>
+        <div class="stock__content">
+          <div class="stock__row">
+            <div class="stock__icon"><img src="images/stock/icon.svg"/>
+            </div>
+            <div class="stock__info">
+              <h2 class="stock__info-title">Акция 
+&quot;Год без забот&quot;</h2><span class="stock__info-text">среди всех билетов тиражей 
+ &#8470;&nbsp;1370, 1371, 1372 разыгрывается дополнительный приз&nbsp;&mdash; миллион рублей.</span><a class="stock__info-more" href="#">Подробнее об&nbsp;акции</a>
+            </div>
+          </div>
+          <ul class="stock__list">
+            <li class="stock__item"><strong class="stock__item-title">В&nbsp;январе разыгрываются:</strong>
+              <div class="stock__item-info">
+                <div class="stock__item-icon"><img src="images/stock/icon-1.svg"/></div><span class="stock__item-text">50&nbsp;загородных домов 
+в 4&nbsp;тиражах, 
+ денежные призы</span>
+              </div>
+            </li>
+            <li class="stock__item"><strong class="stock__item-title">В&nbsp;трех тиражах &#8470;&nbsp;1370, &#8470;&nbsp;1371, &#8470;&nbsp;1372</strong>
+              <div class="stock__item-info">
+                <div class="stock__item-icon"><img src="images/stock/icon-2.svg"/></div><span class="stock__item-text">останется 3&nbsp;бочонка&nbsp;&mdash; 
+ выигрывает каждый 
+ 3-й билет</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="info" id="info">
+        <div class="info__content">
+          <h2 class="info__title">Играйте в&nbsp;настоящее &laquo;Русское лото&raquo; каждую неделю!</h2>
+          <ul class="info__list">
+            <li class="info__item info__item_1">
+              <div class="info__item-icon"><img src="images/info/icon-1.svg"/></div>
+              <p class="info__item-text">Главная и&nbsp;самая любимая телелотерея страны. Розыгрыши по&nbsp;выходным, которых с&nbsp;нетерпением ждут всей семьей</p>
+            </li>
+            <li class="info__item info__item_2">
+              <div class="info__item-icon"><img src="images/info/icon-2.svg"/></div>
+              <p class="info__item-text">Разыгрываем: дома, автомобили, путешествия и&nbsp;рекордные денежные призы</p>
+            </li>
+            <li class="info__item info__item_3">
+              <div class="info__item-icon"><img src="images/info/icon-3.svg"/></div>
+              <p class="info__item-text">Уже разыграно более 23&nbsp;миллиардов рублей.
+ По&nbsp;статистике, 81% участников государственных лотерей выигрывает</p>
+            </li>
+          </ul>
+          <div class="info__note"><img class="info__note-image" src="images/info/ntv.svg"/>
+            <p class="info__note-text">Трансляцию розыгрышей смотрите по&nbsp;воскресеньям в&nbsp;8:20&nbsp;на НТВ <br><span>Время в&nbsp;вашем регионе может отличаться от&nbsp;указанного. Следите за&nbsp;ТВ-программой.</span></p>
+          </div>
+          <a class="button info__button" href="https://www.stoloto.ru/ruslotto/game/?int=right" target="_blank">
+            <div class="button__text">Участвовать</div>
+          </a>
+        </div>
+      </section>
+      <section class="results">
+        <div class="results__content">
+          <h2 class="results__title">Итоги 2020 года 
+ в&nbsp;&laquo;Русском лото&raquo;</h2>
+          <div class="results__body">
+            <div class="results__info">
+              <ul class="results__info-list">
+                <li class="results__list-item results__list-item_1"><strong class="results__item-title">9&nbsp;286&nbsp;991&nbsp;717&nbsp;₽</strong><span class="results__item-note">выиграли в&nbsp;лотерее</span></li>
+                <li class="results__list-item results__list-item_2"><strong class="results__item-title">362</strong><span class="results__item-note">новых миллионера появилось</span></li>
+                <li class="results__list-item results__list-item_3"><strong class="results__item-title">188 169 688</strong><span class="results__item-note">билетов продали</span></li>
+                <li class="results__list-item results__list-item_4"><strong class="results__item-title">1&nbsp;000&nbsp;000&nbsp;000&nbsp;₽</strong><span class="results__item-note">крупнейший выигрыш в&nbsp;&quot;Русском лото&quot;​</span></li>
+              </ul><strong class="results__info-title">Присоединяйтесь к&nbsp;победителям!</strong>
+              <a class="button results__button" href="https://www.stoloto.ru/ruslotto/game/?int=right" target="_blank">
+                <div class="button__text">Как принять участие?</div>
+              </a>
+            </div>
+            <div class="results__image-map">
+              <picture>
+                <source srcset="images/results/map-m.webp x1,images/results/map-m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+                <source srcset="images/results/map-m.png 1x, images/results/map-m@2x.png 2x" media="(max-width: 1023px)"/>
+                <source srcset="images/results/map.webp" type="image/webp"/><img src="images/results/map.png"/>
+              </picture>
+            </div>
+            <div class="results__firework"><img class="results__firework results__firework_1" src="images/results/firework.svg"/><img class="results__firework results__firework_2" src="images/results/firework-s.svg"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rules" id="rules">
+        <div class="rules__content">
+          <h2 class="rules__title">Правила 
+&quot;Русского лото&quot;</h2>
+          <ul class="rules__list">
+            <li class="rules__list-item rules__list-item_1">
+              <div class="rules__item-image"><img src="images/rules/card-1.svg"/>
+              </div>
+              <h3 class="rules__item-title">Первый тур</h3>
+              <p class="rules__item-text">Выигрывают билеты, в&nbsp;которых совпали 5&nbsp;чисел в&nbsp;любой горизонтальной строке.</p>
+            </li>
+            <li class="rules__list-item rules__list-item_2">
+              <div class="rules__item-image">
+                <picture>
+                  <source srcset="images/rules/card-2m.svg" media="(max-width: 1023px)"/><img src="images/rules/card-2.svg"/>
+                </picture>
+              </div>
+              <h3 class="rules__item-title">Второй тур</h3>
+              <p class="rules__item-text">Выигрывают билеты, в&nbsp;которых совпали 15&nbsp;чисел в&nbsp;верхнем или нижнем поле. Если 15&nbsp;чисел совпали на&nbsp;15-м ходу, выигрывают джекпот.</p>
+            </li>
+            <li class="rules__list-item rules__list-item_3">
+              <div class="rules__item-image"><img src="images/rules/card-3.svg"/>
+              </div>
+              <h3 class="rules__item-title">Третий и&nbsp;последующие туры</h3>
+              <p class="rules__item-text">Выигрывают билеты, в&nbsp;которых совпали все 30&nbsp;чисел.</p>
+            </li>
+          </ul>
+          <a class="button rules__button" href="https://www.stoloto.ru/ruslotto/game/?int=right" target="_blank">
+            <div class="button__text">Участвовать</div>
+          </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__info"><a href="https://www.stoloto.ru/"><img class="footer__logo" src="images/footer/stoloto.svg"/></a>
+            <p class="footer__info-text">&laquo;ВГЛ 4&nbsp;Спорт&raquo; (алгоритм определения выигрышей &#8470;&nbsp;3), розыгрыши проходят еженедельно. Срок проведения лотерей ― до&nbsp;31.12.2029.
+ Фраза &laquo;Джекпот 500&nbsp;миллионов&raquo; указывает на&nbsp;минимальный гарантированный размер средств призового фонда, разыгрываемого в&nbsp;категории &laquo;Джекпот&raquo; в&nbsp;тиражах 1370 (розыгрыш 09.01.2021), 1371( розыгрыш 16.01.2021), 1372 (розыгрыш 23.01.2021). 50&nbsp;загородных домов разыгрываются в&nbsp;январе 2021 года в&nbsp;тиражах 1370 (дата розыгрыша 09.01.2021), 1371 (дата розыгрыша 16.01.2021), 1372 (дата розыгрыша 23.01.2021), 1373 (дата розыгрыша 30.01.2021). Информация об&nbsp;организаторе лотереи, правилах её&nbsp;проведения, призовом фонде, количестве призов или выигрышей, сроках, месте и&nbsp;порядке их&nbsp;получения&nbsp;&mdash; на&nbsp;stoloto.&nbsp;ru. Выигрыши носят вероятностный характер. Лотерея не&nbsp;является способом заработка и&nbsp;источником дохода.
+ Фраза &laquo;Выигрывает каждый третий билет&raquo; означает, что вероятность совпадения в&nbsp;игре 30&nbsp;чисел билета до&nbsp;87-го хода включительно (при общем количестве чисел в&nbsp;билете, равном&nbsp;30, и&nbsp;общем количестве бочонков в&nbsp;мешке, равном&nbsp;90) равна 1&nbsp;к 3,4.
+ Акция &laquo;Год без забот&raquo; проводится с&nbsp;01.01.2021 по&nbsp;20.03.2021 (с&nbsp;учетом сроков распространения билетов и&nbsp;выдачи призов). Информацию об&nbsp;организаторе акции, о&nbsp;правилах ее&nbsp;проведения, количестве призов или выигрышей, о&nbsp;сроках, месте и&nbsp;порядке их&nbsp;получения можно узнать&nbsp;&mdash; на&nbsp;www. stoloto.&nbsp;ru 
+ АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;, ОГРН 1127746385095, адрес: 109316, Москва, Волгоградский пр-т, д.&nbsp;43, корп.&nbsp;3, этаж&nbsp;10, пом. XXV, ком. 13Б. Реклама.&nbsp;18</p>
+            <div class="social-network"> <a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/vk.svg"/></a><a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/fb.svg"/></a><a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/ok.svg"/></a><a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/tw.svg"/></a><a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/inst.svg"/></a><a class="social-network__item" href="#"><img class="social-network__icon" src="images/social-network/yt.svg"/></a>
+            </div>
+          </div>
+          <div class="footer__partners">
+            <div class="footer__partners-item footer__parents-item_1">
+              <div class="footer__item-logo">
+                <picture>
+                  <source srcset="images/footer/icon-1m.webp x1,images/footer/icon-1m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+                  <source srcset="images/footer/icon-1m.png 1x, images/footer/icon-1m@2x.png 2x" media="(max-width: 1023px)"/>
+                  <source srcset="images/footer/icon-1.webp" type="image/webp"/><img src="images/footer/icon-1.png"/>
+                </picture>
+              </div>
+              <div class="footer__item-info">
+                <p class="footer__item-text">Организаторами лотерей являются Министерство спорта&nbsp;РФ и 
+ Министерство финансов&nbsp;РФ.</p>
+              </div>
+            </div>
+            <div class="footer__partners-item footer__parents-item_2">
+              <div class="footer__item-logo">
+                <picture>
+                  <source srcset="images/footer/icon-2m.webp x1,images/footer/icon-2m@2x.webp 2x" media="(max-width: 1023px)" type="image/webp"/>
+                  <source srcset="images/footer/icon-2m.png 1x, images/footer/icon-2m@2x.png 2x" media="(max-width: 1023px)"/>
+                  <source srcset="images/footer/icon-2.webp" type="image/webp"/><img src="images/footer/icon-2.png"/>
+                </picture>
+              </div>
+              <div class="footer__item-info">
+                <p class="footer__item-text">&laquo;Столото&raquo; (АО&nbsp;&laquo;ТК&nbsp;&laquo;Центр&raquo;) состоит во&nbsp;Всемирной и&nbsp;Европейской лотерейных ассоциациях (The World Lottery Association и&nbsp;The European Lotteries Association). Это гарантирует соблюдение прав участников, случайность определения победителей, своевременную выплату выигрышей, конфиденциальность личных данных.</p>
+                <div class="footer__item-note"><p>WLA&nbsp;&mdash; международное объединение компаний-операторов государственных лотерей.</p> <p>ELA&nbsp;&mdash; объединение лотерейных 
+ компаний из&nbsp;Европы и&nbsp;соседних 
+ регионов.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
