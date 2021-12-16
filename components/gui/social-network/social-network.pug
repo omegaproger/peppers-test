@@ -3,7 +3,7 @@ mixin social-network__item(content,params)
 		.social-network__icon
 			img(src="images/social-network/"+ content.img + ".svg")
 
-- var socialNetwork = [{attr:{href:"#"},img:"vk"},{attr:{href:"#"},img:"fb"},{attr:{href:"#"},img:"ok"},{attr:{href:"#"},img:"tw"},{attr:{href:"#"},img:"inst"},{attr:{href:"#"},img:"yt"}];
+- var socialNetwork = [{attr:{href:"#", target:"_blank"},img:"vk"},{attr:{href:"#", target:"_blank"},img:"fb"},{attr:{href:"#", target:"_blank"},img:"ok"},{attr:{href:"#",target:"_blank"},img:"tw"},{attr:{href:"#",target:"_blank"},img:"inst"},{attr:{href:"#",target:"_blank"},img:"yt"}];
 
 mixin social-network(content,params)
 	.social-network&attributes(attributes) 
