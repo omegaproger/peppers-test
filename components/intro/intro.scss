@@ -289,6 +289,7 @@
         img {
             height: 100%;
             width: 100%;
+            position: absolute;
         }
 
         &_1 {
@@ -296,11 +297,59 @@
             @include value(height, 260px, 260px);
             @include value(left, 800px, 20px);
             @include value(top, 90px, 110px);
-            animation: smoke  2.5s infinite ease-in-out;
+            
+            picture {
+                img{
+                   animation: smoke  5s infinite ease-in-out;
+                   opacity: 0;
+                }
+                &:nth-child(1) {
+                    img{
+                        
+                        animation-delay: 0.5s;
+                    }
+                } 
+                &:nth-child(2) {
+                    img{
+                        
+                        animation-delay: 1.5s;
+                    }
+                } 
+                &:nth-child(3) {
+                    img{
+                        
+                        animation-delay: 2.5s;
+                        // animation:no
+                    }
+                }
+                &:nth-child(4) {
+                    img{
+                        
+                        animation-delay: 3.5s;
+                        // animation:none;
+                    }
+                }
+                &:nth-child(5) {
+                    img{
+                        
+                        animation-delay: 4.5s;
+                        // animation:none;
+                    }
+                }
+
+                
+                // &:nth-child(3){
+                //     animation: smoke  2.5s infinite ease-in-out;
+                // }
+            }
 
             @include TABLET {
-                @include mobile-value(left, 70px);
-                @include mobile-value(top, 130px);
+                @include mobile-value(left, 80px);
+                @include mobile-value(top, 150px);
+            }
+            @include MOBILE {
+                @include mobile-value(left, 30px);
+                @include mobile-value(top, 150px);
             }
         }
 
@@ -309,11 +358,53 @@
             @include value(height, 200px, 200px);
             @include value(left, 1070px, 200px);
             @include value(top, 20px, 40px);
-            animation: smoke  2s infinite ease-in-out;
+            picture {
+                img{
+                   animation: smoke  5s infinite ease-in-out;
+                   opacity: 0;
+                }
+                &:nth-child(1) {
+                    img{
+                        
+                        animation-delay: 0.5s;
+                    }
+                } 
+                &:nth-child(2) {
+                    img{
+                        
+                        animation-delay: 1.5s;
+                    }
+                } 
+                &:nth-child(3) {
+                    img{
+                        
+                        animation-delay: 2.5s;
+                        // animation:none;
+                    }
+                }
+                &:nth-child(4) {
+                    img{
+                        
+                        animation-delay: 3.5s;
+                        // animation:none;
+                    }
+                }
+                &:nth-child(5) {
+                    img{
+                        
+                        animation-delay: 4.5s;
+                        // animation:none;
+                    }
+                }
+            }
 
             @include TABLET {
                 @include mobile-value(left, 270px);
-                @include mobile-value(top, 50px);
+                @include mobile-value(top, 70px);
+            }
+            @include MOBILE {
+                @include mobile-value(left, 190px);
+                @include mobile-value(top, 90px);
             }
         }
 

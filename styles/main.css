@@ -394,20 +394,10 @@ template {
     -webkit-transform: scale(0) rotate(100deg);
             transform: scale(0) rotate(100deg);
   }
-  25% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(50deg);
-            transform: scale(1) rotate(50deg);
-  }
   50% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0deg);
             transform: scale(1) rotate(0deg);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(50deg);
-            transform: scale(1) rotate(50deg);
   }
   100% {
     opacity: 0;
@@ -421,20 +411,10 @@ template {
     -webkit-transform: scale(0) rotate(100deg);
             transform: scale(0) rotate(100deg);
   }
-  25% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(50deg);
-            transform: scale(1) rotate(50deg);
-  }
   50% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0deg);
             transform: scale(1) rotate(0deg);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(50deg);
-            transform: scale(1) rotate(50deg);
   }
   100% {
     opacity: 0;
@@ -444,56 +424,42 @@ template {
 }
 @-webkit-keyframes smoke {
   0% {
-    opacity: 1;
-    -webkit-transform: scale(1.01) rotate(0deg);
-            transform: scale(1.01) rotate(0deg);
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    bottom: 0px;
   }
-  25% {
-    opacity: 0.6;
-    -webkit-transform: scale(0.98) rotate(1deg);
-            transform: scale(0.98) rotate(1deg);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1) rotate(-1deg);
-            transform: scale(1) rotate(-1deg);
-  }
-  75% {
-    opacity: 0.7;
-    -webkit-transform: scale(0.98) rotate(1deg);
-            transform: scale(0.98) rotate(1deg);
+  30% {
+    opacity: 0.4;
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+    bottom: 40px;
   }
   100% {
-    opacity: 1;
-    -webkit-transform: scale(1.01) rotate(0deg);
-            transform: scale(1.01) rotate(0deg);
+    opacity: 0;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+    bottom: 80px;
   }
 }
 @keyframes smoke {
   0% {
-    opacity: 1;
-    -webkit-transform: scale(1.01) rotate(0deg);
-            transform: scale(1.01) rotate(0deg);
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    bottom: 0px;
   }
-  25% {
-    opacity: 0.6;
-    -webkit-transform: scale(0.98) rotate(1deg);
-            transform: scale(0.98) rotate(1deg);
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1) rotate(-1deg);
-            transform: scale(1) rotate(-1deg);
-  }
-  75% {
-    opacity: 0.7;
-    -webkit-transform: scale(0.98) rotate(1deg);
-            transform: scale(0.98) rotate(1deg);
+  30% {
+    opacity: 0.4;
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+    bottom: 40px;
   }
   100% {
-    opacity: 1;
-    -webkit-transform: scale(1.01) rotate(0deg);
-            transform: scale(1.01) rotate(0deg);
+    opacity: 0;
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+    bottom: 80px;
   }
 }
 .intro {
@@ -1629,10 +1595,7 @@ template {
 .intro__image-smoke img {
   height: 100%;
   width: 100%;
-}
-.intro__image-smoke_1 {
-  -webkit-animation: smoke 2.5s infinite ease-in-out;
-          animation: smoke 2.5s infinite ease-in-out;
+  position: absolute;
 }
 @media screen and (min-width: 1920px) {
   .intro__image-smoke_1 {
@@ -1714,29 +1677,70 @@ template {
     top: 22vw;
   }
 }
+.intro__image-smoke_1 picture img {
+  -webkit-animation: smoke 5s infinite ease-in-out;
+          animation: smoke 5s infinite ease-in-out;
+  opacity: 0;
+}
+.intro__image-smoke_1 picture:nth-child(1) img {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.intro__image-smoke_1 picture:nth-child(2) img {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.intro__image-smoke_1 picture:nth-child(3) img {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.intro__image-smoke_1 picture:nth-child(4) img {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.intro__image-smoke_1 picture:nth-child(5) img {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .intro__image-smoke_1 {
-    left: 18.6666666667vw;
+    left: 21.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
   .intro__image-smoke_1 {
-    left: 14vw;
+    left: 16vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .intro__image-smoke_1 {
-    top: 34.6666666667vw;
+    top: 40vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
   .intro__image-smoke_1 {
-    top: 26vw;
+    top: 30vw;
   }
 }
-.intro__image-smoke_2 {
-  -webkit-animation: smoke 2s infinite ease-in-out;
-          animation: smoke 2s infinite ease-in-out;
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .intro__image-smoke_1 {
+    left: 8vw;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .intro__image-smoke_1 {
+    left: 6vw;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .intro__image-smoke_1 {
+    top: 40vw;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .intro__image-smoke_1 {
+    top: 30vw;
+  }
 }
 @media screen and (min-width: 1920px) {
   .intro__image-smoke_2 {
@@ -1818,6 +1822,31 @@ template {
     top: 8vw;
   }
 }
+.intro__image-smoke_2 picture img {
+  -webkit-animation: smoke 5s infinite ease-in-out;
+          animation: smoke 5s infinite ease-in-out;
+  opacity: 0;
+}
+.intro__image-smoke_2 picture:nth-child(1) img {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.intro__image-smoke_2 picture:nth-child(2) img {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.intro__image-smoke_2 picture:nth-child(3) img {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.intro__image-smoke_2 picture:nth-child(4) img {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.intro__image-smoke_2 picture:nth-child(5) img {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .intro__image-smoke_2 {
     left: 72vw;
@@ -1830,12 +1859,32 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .intro__image-smoke_2 {
-    top: 13.3333333333vw;
+    top: 18.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
   .intro__image-smoke_2 {
-    top: 10vw;
+    top: 14vw;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .intro__image-smoke_2 {
+    left: 50.6666666667vw;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .intro__image-smoke_2 {
+    left: 38vw;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .intro__image-smoke_2 {
+    top: 24vw;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .intro__image-smoke_2 {
+    top: 18vw;
   }
 }
 
@@ -3882,8 +3931,8 @@ template {
   position: relative;
 }
 .results__firework_1 {
-  -webkit-animation: firework 2s infinite linear;
-          animation: firework 2s infinite linear;
+  -webkit-animation: firework 1.5s infinite linear;
+          animation: firework 1.5s infinite linear;
 }
 @media screen and (min-width: 1920px) {
   .results__firework_1 {
@@ -3946,8 +3995,8 @@ template {
   }
 }
 .results__firework_2 {
-  -webkit-animation: firework 1.5s infinite linear;
-          animation: firework 1.5s infinite linear;
+  -webkit-animation: firework 2s infinite linear;
+          animation: firework 2s infinite linear;
 }
 @media screen and (min-width: 1920px) {
   .results__firework_2 {

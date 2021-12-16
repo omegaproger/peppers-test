@@ -168,18 +168,20 @@
 
         &_1 {
                 
+                animation: firework  1.5s infinite linear;
                 @include value(left, 10px, 30px);
                 @include value(top, 100px, -170px);
                 @include value(height, 130px, 60px);
-                animation: firework  2s infinite linear;
+                
         }
 
         &_2 {
-            
+                
+                animation: firework  2s infinite linear;
                 @include value(left, 20px, 50px);
                 @include value(top, -30px, -220px);
                 @include value(height, 100px, 40px);
-                animation: firework  1.5s infinite linear;
+                
         }
     }
 
