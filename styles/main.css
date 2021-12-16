@@ -544,12 +544,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .intro__back {
-    bottom: -98.6666666667vw;
+    bottom: 13.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__back {
-    bottom: -74vw;
+    bottom: 10vw;
   }
 }
 .intro__back img {

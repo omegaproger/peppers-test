@@ -14,7 +14,7 @@
         overflow: hidden;
         // @include desk-value(left, 200px);
         @include mobile-value(left, -140px);
-        @include mobile-value(bottom, -370px);
+        @include mobile-value(bottom, 50px);
 
         img {
             width: 100%;
