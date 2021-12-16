@@ -4637,7 +4637,7 @@ template {
 .stock__item-title {
   display: block;
   margin: 0 0 1em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.3;
 }
 @media screen and (min-width: 1920px) {
