@@ -1,6 +1,7 @@
 mixin network(content,params)
 	a(href="#").social-network__item
-		img.social-network__icon(src="images/social-network/"+ content.img + ".svg")
+		.social-network__icon
+			img(src="images/social-network/"+ content.img + ".svg")
 
 - var socialNetwork = [{img:"vk"},{img:"fb"},{img:"ok"},{img:"tw"},{img:"inst"},{img:"yt"}];
 

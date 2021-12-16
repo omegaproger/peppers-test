@@ -12,12 +12,14 @@
         position: absolute;
         @include value(width, 1440px, 820px);
         overflow: hidden;
+        // @include desk-value(left, 200px);
         @include mobile-value(left, -140px);
         @include mobile-value(bottom, -370px);
 
         img {
             width: 100%;
-            margin: 0 auto;
+            // margin: 0 auto;
+            // float: right;
         }
     }
 
