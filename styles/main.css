@@ -5433,6 +5433,12 @@ template {
   -webkit-transition: background-size 800ms linear;
   transition: background-size 800ms linear;
 }
+.button__text {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
 @media screen and (min-width: 1920px) {
   .button {
     border-radius: 2.6666666667vh;

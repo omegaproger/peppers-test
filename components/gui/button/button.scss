@@ -1,4 +1,10 @@
 .button {
+    &__text{
+        -ms-user-select:none;
+        -moz-user-select:none; 
+        -khtml-user-select:none; 
+        -webkit-user-select:none; 
+    }
 	position: relative;
     display: flex;
     align-items: center;
