@@ -4,7 +4,8 @@
 }
 @keyframes introBounce {
 	0%{margin-top: 0;}
-	100%{margin-top: 10px;}
+	50%{margin-top: 10px;}
+	100%{margin-top: 0px;}
 }
 
 @keyframes infoLite {

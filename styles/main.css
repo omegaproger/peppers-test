@@ -348,16 +348,22 @@ template {
   0% {
     margin-top: 0;
   }
-  100% {
+  50% {
     margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
   }
 }
 @keyframes introBounce {
   0% {
     margin-top: 0;
   }
-  100% {
+  50% {
     margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
   }
 }
 @-webkit-keyframes infoLite {
