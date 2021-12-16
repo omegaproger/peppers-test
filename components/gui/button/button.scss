@@ -18,9 +18,9 @@
     // line-height: 67px;
     background-size: 100%;
     color: #000000;
-    @include transition(800ms linear);
+    @include transition(background-size 800ms linear);
     &:before {
-        @include transition(700ms linear);
+        @include transition( opacity 700ms linear);
         content: '';
         display: block;
         width: 100%;
