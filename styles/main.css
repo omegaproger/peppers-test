@@ -719,12 +719,12 @@ template {
   }
 }
 .intro__menu-item {
+  position: relative;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-decoration: none;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-bottom: 1px solid transparent;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -788,8 +788,20 @@ template {
     line-height: 2.4vw;
   }
 }
-.intro__menu-item:hover {
-  border-color: #FFFFFF;
+.intro__menu-item:before {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 10%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+}
+.intro__menu-item:hover:before {
+  width: 100%;
 }
 .intro__body {
   display: -webkit-box;
