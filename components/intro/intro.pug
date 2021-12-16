@@ -13,6 +13,11 @@ mixin intro__image-table(content,param)
   .intro__image-table
     +picture(content)
 
+mixin intro__image-smoke(content,param)
+  each item in content.smokeImages
+    .intro__image-smoke&attributes(item.attr)&attributes(attributes)
+        +picture(item)    
+
 mixin intro__info(content, param)
   .intro__info
     h3.intro__info-title!= content.title
@@ -32,7 +37,7 @@ mixin intro__logo(content,param)
   a.intro__logo&attributes(attributes)&attributes(content.attr)
     img&attributes(content.img)       
 
-- var introContent = {info:{title:"Джекпот <br>", span:"от&nbsp;500&nbsp;000&nbsp;000&nbsp;₽",subTitle:"50&nbsp;загородных домов", note:"Выигрывает каждый третий билет"}, transition:{text:"Попробуйте <br> новые тиражи <br>&laquo;Русского лото&raquo;!",img:{src:"images/intro/arrow.svg"},attr:{href:"#stock"}},logo:{attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right"},img:{src:"images/intro/logo.svg"}}, menu:[{attr:{href:"#info"},title:"как участвовать"},{attr:{href:"#stock"},title:"о лотерее"},{attr:{href:"#rules"},title:"правила"}], bg:{img:{src:'images/intro/bg.png'}, list:[{srcset:'images/intro/bg-m.webp x1,images/intro/bg-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/bg-m.png 1x, images/intro/bg-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/intro/bg.webp', type:"image/webp"}]}, man:{img:{src:'images/intro/parechenkov.png'}, list:[{srcset:'images/intro/parechenkov-m.webp x1,images/intro/parechenkov-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/parechenkov-m.png 1x, images/intro/parechenkov-m@2x.png 2x',media:"(max-width: 1023px)"}, {srcset:'images/intro/parechenkov.webp', type:"image/webp"}]}, table:{img:{src:'images/intro/table.png'}, list:[{srcset:'images/intro/table-m.webp x1,images/intro/table-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/table-m.png 1x, images/intro/table-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/intro/table.webp', type:"image/webp"}]}}
+- var introContent = {info:{title:"Джекпот <br>", span:"от&nbsp;500&nbsp;000&nbsp;000&nbsp;₽",subTitle:"50&nbsp;загородных домов", note:"Выигрывает каждый третий билет"}, transition:{text:"Попробуйте <br> новые тиражи <br>&laquo;Русского лото&raquo;!",img:{src:"images/intro/arrow.svg"},attr:{href:"#stock"}},logo:{attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right"},img:{src:"images/intro/logo.svg"}}, menu:[{attr:{href:"#info"},title:"как участвовать"},{attr:{href:"#stock"},title:"о лотерее"},{attr:{href:"#rules"},title:"правила"}], bg:{img:{src:'images/intro/bg.png'}, list:[{srcset:'images/intro/bg-m.webp x1,images/intro/bg-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/bg-m.png 1x, images/intro/bg-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/intro/bg.webp', type:"image/webp"}]}, man:{img:{src:'images/intro/parechenkov.png'}, list:[{srcset:'images/intro/parechenkov-m.webp x1,images/intro/parechenkov-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/parechenkov-m.png 1x, images/intro/parechenkov-m@2x.png 2x',media:"(max-width: 1023px)"}, {srcset:'images/intro/parechenkov.webp', type:"image/webp"}]}, table:{img:{src:'images/intro/table.png'}, list:[{srcset:'images/intro/table-m.webp x1,images/intro/table-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/intro/table-m.png 1x, images/intro/table-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/intro/table.webp', type:"image/webp"}]},smokeImages:[{img:{src:"images/intro/smoke.png"},list:[{srcset:'images/intro/smoke.webp', type:"image/webp"}],attr:{class:"intro__image-smoke_1"}},{img:{src:"images/intro/smoke2.png"},list:[{srcset:'images/intro/smoke2.webp', type:"image/webp"}],attr:{class:"intro__image-smoke_2"}}]}
 
  
 
@@ -42,6 +47,9 @@ mixin intro(content, param)
       +intro__back(introContent.bg)
       +intro__image-man(introContent.man)
       +intro__image-table(introContent.table)
+      // img(src="images/intro/smoke.png").intro__image-smoke
+      // img(src="images/intro/smoke2.png").intro__image-smoke_2
+      +intro__image-smoke(introContent)
     .intro__content
       header.intro__header
         +intro__logo(introContent.logo)

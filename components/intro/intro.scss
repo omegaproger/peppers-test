@@ -3,22 +3,24 @@
     display: flex;
     justify-content: center;
     font-family: $BASE-FONT;
-    background-color:#000000;
+    background-color: #000000;
     background-size: cover;
 
-   
+
 
     &__back {
         position: absolute;
-        @include value(width, 1440px,820px);
+        @include value(width, 1440px, 820px);
         overflow: hidden;
         @include mobile-value(left, -140px);
         @include mobile-value(bottom, -370px);
-        img{
+
+        img {
             width: 100%;
             margin: 0 auto;
         }
     }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -65,12 +67,13 @@
         @include value(line-height, 12px, 12px);
         letter-spacing: 0.09em;
         text-decoration: none;
-        color:#FFFFFF;
+        color: #FFFFFF;
         text-transform: uppercase;
         border-bottom: 1px solid transparent;
-        @include transition( 500ms );
+        @include transition(500ms);
+
         &:hover {
-            border-color:#FFFFFF; 
+            border-color: #FFFFFF;
         }
     }
 
@@ -157,6 +160,7 @@
         height: 100%;
         transform: translate(-50%, 0);
         overflow: hidden;
+
         @include MOBILE {
             width: 100vw;
         }
@@ -175,10 +179,10 @@
             display: block;
         }
 
-       
+
         @include MOBILE {
             left: 50%;
-            transform:translate(-50%,0);
+            transform: translate(-50%, 0);
         }
 
     }
@@ -189,14 +193,15 @@
         @include value(bottom, -36.5px, -88px);
         @include desk-value(width, 977px);
         overflow: hidden;
+
         @include MOBILE {
-            @include mobile-value(left,-100px);
+            @include mobile-value(left, -100px);
             @include mobile-value(bottom, -14px);
             width: 160vw;
         }
 
         @include TABLET {
-            @include mobile-value(left,-40px);
+            @include mobile-value(left, -40px);
             width: 120vw;
         }
 
@@ -215,7 +220,7 @@
         background: linear-gradient(263.39deg, #fcfa53 17.06%, #ffcd17 74.32%);
         // color: #000000;
         // background-color: yellow;
-        
+
         @include MOBILE {
             @include mobile-value(letter-spacing, 2px);
         }
@@ -252,12 +257,60 @@
             @include value(width, 26px, 20px);
             @include value(top, 110px, 70px);
             @include value(left, 60px, 45px);
-            animation: introBounce  900ms infinite ease-in-out;
+            animation: introBounce 900ms infinite ease-in-out;
         }
 
         @include MOBILE {
             text-transform: uppercase;
         }
     }
-}
 
+    &__image-smoke {
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        &_1 {
+            @include value(width, 180px, 180px);
+            @include value(height, 260px, 260px);
+            @include value(left, 800px, 20px);
+            @include value(top, 90px, 110px);
+            animation: smoke  2.5s infinite ease-in-out;
+
+            @include TABLET {
+                @include mobile-value(left, 70px);
+                @include mobile-value(top, 130px);
+            }
+        }
+
+        &_2 {
+            @include value(width, 210px, 200px);
+            @include value(height, 200px, 200px);
+            @include value(left, 1070px, 200px);
+            @include value(top, 20px, 40px);
+            animation: smoke  2s infinite ease-in-out;
+
+            @include TABLET {
+                @include mobile-value(left, 270px);
+                @include mobile-value(top, 50px);
+            }
+        }
+
+        // left: 56%;
+        // height: 40%;
+        // top: 17%;
+        // width: 13%;
+        // animation: smoke  2.5s infinite ease-in-out;
+    }
+
+    // &__image-smoke_2 {
+    //     position: absolute;
+    //     @include value(left, 1070px, 45px);
+    //     @include value(height, 200px, 45px);
+    //     @include value(top, 240px, 45px);
+    //     animation: smoke  2s infinite ease-in-out;
+    // }
+}
