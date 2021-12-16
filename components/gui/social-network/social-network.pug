@@ -1,9 +1,9 @@
 mixin social-network__item(content,params)
-	a(href="#").social-network__item
+	a.social-network__item&attributes(content.attr)&attributes(attributes)
 		.social-network__icon
 			img(src="images/social-network/"+ content.img + ".svg")
 
-- var socialNetwork = [{img:"vk"},{img:"fb"},{img:"ok"},{img:"tw"},{img:"inst"},{img:"yt"}];
+- var socialNetwork = [{attr:{href:"#"},img:"vk"},{attr:{href:"#"},img:"fb"},{attr:{href:"#"},img:"ok"},{attr:{href:"#"},img:"tw"},{attr:{href:"#"},img:"inst"},{attr:{href:"#"},img:"yt"}];
 
 mixin social-network(content,params)
 	.social-network&attributes(attributes) 
