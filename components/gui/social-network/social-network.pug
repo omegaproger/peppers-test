@@ -1,4 +1,4 @@
-mixin network(content,params)
+mixin social-network__item(content,params)
 	a(href="#").social-network__item
 		.social-network__icon
 			img(src="images/social-network/"+ content.img + ".svg")
@@ -8,4 +8,4 @@ mixin network(content,params)
 mixin social-network(content,params)
 	.social-network&attributes(attributes) 
 		each icon in socialNetwork
-			+network(icon)
+			+social-network__item(icon)
