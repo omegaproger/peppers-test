@@ -1131,8 +1131,7 @@ template {
   display: block;
   content: "";
   width: 50vw;
-  background: -webkit-gradient(linear, left bottom, left top, from(#B50000), to(#B50000));
-  background: linear-gradient(0deg, #B50000, #B50000);
+  background-color: #B50000;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }

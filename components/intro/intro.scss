@@ -159,8 +159,9 @@
             content: "";
             width: 50vw;
             @include value(height, 55px, 79px);
-            background: linear-gradient(0deg, #B50000, #B50000);
-            ;
+            // background: linear-gradient(0deg, #B50000, #B50000);
+            // background: radial-gradient( #B50000, #B50000);
+            background-color: #B50000;
             transform: translate(0, -50%);
         }
 

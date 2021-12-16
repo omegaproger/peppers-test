@@ -26,7 +26,7 @@ mixin intro__info(content, param)
     .intro__info-note
       span!= content.note
     +button({tag:"a", text:"Участвовать", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).intro__info-button
-
+    
 mixin intro__transition(content,param)
   .intro__transition  
     a.intro__transition&attributes(attributes)&attributes(content.attr)
