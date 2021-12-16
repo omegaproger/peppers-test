@@ -122,6 +122,20 @@
             height: 140%;
             background: radial-gradient(55px 40px, #ffffff -10%, #000000);
 
+        }
+        @include MOBILE {
+             &:before{
+                width: 100%;
+                background: radial-gradient(35px 30px, #ffffff -10%, #000000);
+                right: 0%;
+            }
+        }
+        @include TABLET {
+             &:before{
+                width: 100%;
+                background: radial-gradient(45px 40px, #ffffff -10%, #000000);
+                right: 0%;
+            }
         }   
 
         img{

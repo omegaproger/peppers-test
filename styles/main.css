@@ -2233,6 +2233,20 @@ template {
   height: 140%;
   background: radial-gradient(55px 40px, #ffffff -10%, #000000);
 }
+@media screen and (max-width: 1023px) {
+  .info__item-icon:before {
+    width: 100%;
+    background: radial-gradient(35px 30px, #ffffff -10%, #000000);
+    right: 0%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .info__item-icon:before {
+    width: 100%;
+    background: radial-gradient(45px 40px, #ffffff -10%, #000000);
+    right: 0%;
+  }
+}
 .info__item-icon img {
   display: block;
   height: 100%;
