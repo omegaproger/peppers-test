@@ -21,6 +21,18 @@
 
 @keyframes smoke {
 	0%{opacity: 0;transform:rotate(0deg);bottom: 0px}
-	50%{opacity: 0.3;transform:rotate(15deg);bottom: 20px}
+	20%{opacity: 0.3;transform:rotate(15deg);bottom: 20px}
 	100%{opacity: 0;transform:rotate(45deg);bottom: 80px}
+}
+@keyframes smoke2 {
+  20%, 100% {
+    opacity: 0;
+    transform:rotate(45deg);bottom: 80px
+  }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
 }

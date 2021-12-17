@@ -4,7 +4,7 @@
     justify-content: center;
     font-family: $BASE-FONT;
     background-color: #110300;
-    background-size: cover;
+    background-size: cover; 
 
 
 
@@ -31,6 +31,7 @@
     }
 
     &__content {
+        margin: auto;
         display: flex;
         flex-direction: column;
         padding: 0;
