@@ -5761,6 +5761,97 @@ template {
   height: 100%;
 }
 
+.pagination {
+  position: fixed;
+}
+@media screen and (min-width: 1920px) {
+  .pagination {
+    top: 26.6666666667vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .pagination {
+    top: 13.8888888889vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .pagination {
+    left: 2vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .pagination {
+    left: 1.0416666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .pagination {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .pagination {
+    display: none;
+  }
+}
+.pagination li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF100;
+  border: 1px solid #FFF100;
+  border-radius: 50%;
+  list-style-type: none;
+  cursor: pointer;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+@media screen and (min-width: 1920px) {
+  .pagination li {
+    width: 0.6666666667vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .pagination li {
+    width: 0.3472222222vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .pagination li {
+    height: 0.6666666667vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .pagination li {
+    height: 0.3472222222vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .pagination li {
+    margin-bottom: 1.3333333333vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .pagination li {
+    margin-bottom: 0.6944444444vw;
+  }
+}
+.pagination li:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  background-color: #000000;
+}
+.pagination a {
+  text-decoration: none;
+  opacity: 0;
+}
+
 .custom-page {
   overflow-x: hidden;
 }

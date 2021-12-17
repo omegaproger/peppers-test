@@ -1,0 +1,37 @@
+.pagination {
+	position: fixed;
+	@include desk-value(top, 200px);
+	@include desk-value(left, 15px);
+	@include MOBILE {
+		display: none;
+	}
+	@include TABLET {
+		display: none;
+	}
+	li{
+		display: flex;
+		justify-content: center;
+    align-items: center;
+		// margin-bottom: 10px;
+		@include desk-value(width, 5px);
+		@include desk-value(height, 5px);
+		@include desk-value(margin-bottom, 10px);
+		// width: 5px;
+		// height: 5px;
+		background-color: #FFF100;
+		border:1px solid #FFF100;
+		border-radius: 50%;
+		list-style-type:none;
+		cursor: pointer;
+		@include transition(300ms);
+		&:hover {
+			transform: scale(1.3);
+			background-color: #000000;
+		}
+	}
+	a{
+		text-decoration: none;
+		opacity: 0;
+
+	}
+}
