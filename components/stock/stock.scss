@@ -24,7 +24,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0;
         @include value(width, 943px, 375px);
         padding: 0;
         @include value(padding-top, 38px, 23px);
@@ -81,6 +81,7 @@
     &__info-text {
         @include value(margin-bottom, 10px, 15px);
         font-weight: normal;
+        @include desk-value(width, 800px);
         @include value(font-size, 21px, 16px);
         line-height: 1.3;
 

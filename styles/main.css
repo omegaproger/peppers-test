@@ -2289,6 +2289,16 @@ template {
   line-height: 1.35;
   white-space: pre-line;
 }
+@media screen and (min-width: 1920px) {
+  .info__item-text {
+    width: 33.3333333333vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .info__item-text {
+    width: 17.3611111111vw;
+  }
+}
 @media screen and (max-width: 1023px) {
   .info__item-text {
     width: 62.4vw;
@@ -2327,6 +2337,11 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .info__item-text {
     font-size: 3.2vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .info__item-text {
+    white-space: inherit;
   }
 }
 .info__note {
@@ -4123,7 +4138,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #ffffff;
 }
@@ -4481,6 +4496,16 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .stock__info-text {
     margin-bottom: 3vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .stock__info-text {
+    width: 106.6666666667vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .stock__info-text {
+    width: 55.5555555556vw;
   }
 }
 @media screen and (min-width: 1920px) {
