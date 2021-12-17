@@ -16,7 +16,7 @@
 		@include value(height, 25px, 25px);
 		border: 0.5px solid #A2A7AA;
 		border-radius: 50%;
-		@include transition(300ms linear);
+		@include transition(border-color 300ms linear);
 			&:hover {
 			border-color: #2C2F31;
 			}

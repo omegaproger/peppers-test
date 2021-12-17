@@ -1,7 +1,7 @@
 mixin social-network__item(content,params)
 	a.social-network__item&attributes(content.attr)&attributes(attributes)
-		.social-network__icon
-			img&attributes(content.img)&attributes(attributes)
+		.social-network__icon!=read(content.img)
+			// img&attributes(content.img)&attributes(attributes)
 
 - var socialNetwork = [{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/vk.svg"}},{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/fb.svg"}},{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/ok.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/tw.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/inst.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/yt.svg"}}];
 
