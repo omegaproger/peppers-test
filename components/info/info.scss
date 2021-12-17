@@ -120,20 +120,20 @@
             display: block;
             width: 200%;
             height: 140%;
-            background: radial-gradient(55px 40px, #ffffff -10%, #000000);
+            background: radial-gradient(55px 40px, #ffffff -10%, #050219);
 
         }
         @include MOBILE {
              &:before{
                 width: 100%;
-                background: radial-gradient(35px 30px, #ffffff -10%, #000000);
+                background: radial-gradient(35px 25px, #ffffff -10%, #050219);
                 right: 0%;
             }
         }
         @include TABLET {
              &:before{
                 width: 100%;
-                background: radial-gradient(45px 40px, #ffffff -10%, #000000);
+                background: radial-gradient(45px 40px, #ffffff -10%, #050219);
                 right: 0%;
             }
         }   
