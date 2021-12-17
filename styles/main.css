@@ -478,26 +478,6 @@ template {
   position: absolute;
   overflow: hidden;
 }
-@media screen and (min-width: 1920px) {
-  .intro__back {
-    width: 192vh;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1919px) {
-  .intro__back {
-    width: 100vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .intro__back {
-    width: 218.6666666667vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .intro__back {
-    width: 164vw;
-  }
-}
 @media screen and (max-width: 1023px) {
   .intro__back {
     left: -37.3333333333vw;
@@ -520,6 +500,26 @@ template {
 }
 .intro__back img {
   width: 100%;
+}
+@media screen and (min-width: 1920px) {
+  .intro__back img {
+    width: 192vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .intro__back img {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__back img {
+    width: 218.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__back img {
+    width: 164vw;
+  }
 }
 .intro__content {
   display: -webkit-box;
@@ -2231,19 +2231,19 @@ template {
   display: block;
   width: 200%;
   height: 140%;
-  background: radial-gradient(55px 40px, #ffffff -10%, #050219);
+  background: radial-gradient(30% 42%, #ffffff -10%, #050219);
 }
 @media screen and (max-width: 1023px) {
   .info__item-icon:before {
     width: 100%;
-    background: radial-gradient(35px 25px, #ffffff -10%, #050219);
+    background: radial-gradient(50% 45%, #ffffff -10%, #050219);
     right: 0%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .info__item-icon:before {
     width: 100%;
-    background: radial-gradient(45px 40px, #ffffff -10%, #050219);
+    background: radial-gradient(50% 45%, #ffffff -10%, #050219);
     right: 0%;
   }
 }
