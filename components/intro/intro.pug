@@ -48,8 +48,8 @@ mixin intro__logo(content,param)
 
 mixin intro(content, param)
   section.intro
+    +intro__back(introContent.bg)
     .intro__bg
-      +intro__back(introContent.bg)
       +intro__image-man(introContent.man)
       +intro__image-table(introContent.table)
       // img(src="images/intro/smoke.png").intro__image-smoke

@@ -10,16 +10,23 @@
 
     &__back {
         position: absolute;
-        @include value(width, 1440px, 820px);
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         // @include desk-value(left, 200px);
-        @include mobile-value(left, -140px);
-        @include mobile-value(bottom, 50px);
+        @include mobile-value(left, 0px);
+        @include mobile-value(bottom, 5px);
 
         img {
-            width: 100%;
-            // margin: 0 auto;
-            // float: right;
+            @include value(width, 1440px, 820px);
+            float: right;
+        }
+
+        @include MOBILE {
+           img {
+                position: absolute;
+                @include mobile-value(left, -100px);
+            } 
         }
     }
 

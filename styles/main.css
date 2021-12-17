@@ -476,30 +476,32 @@ template {
 }
 .intro__back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 @media screen and (max-width: 1023px) {
   .intro__back {
-    left: -37.3333333333vw;
+    left: 0vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__back {
-    left: -28vw;
+    left: 0vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .intro__back {
-    bottom: 13.3333333333vw;
+    bottom: 1.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__back {
-    bottom: 10vw;
+    bottom: 1vw;
   }
 }
 .intro__back img {
-  width: 100%;
+  float: right;
 }
 @media screen and (min-width: 1920px) {
   .intro__back img {
@@ -519,6 +521,21 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__back img {
     width: 164vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__back img {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 1023px) and (max-width: 1023px) {
+  .intro__back img {
+    left: -26.6666666667vw;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .intro__back img {
+    left: -20vw;
   }
 }
 .intro__content {
