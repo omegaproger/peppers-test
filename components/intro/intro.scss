@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     font-family: $BASE-FONT;
-    background-color: #000000;
+    background-color: #110300;
     background-size: cover;
 
 
@@ -300,7 +300,7 @@
             
             picture {
                 img{
-                   animation: smoke  5s infinite ease-in-out;
+                   animation: smoke  5s infinite linear;
                    opacity: 0;
                 }
                 &:nth-child(1) {
@@ -343,12 +343,13 @@
                 // }
             }
 
-            @include TABLET {
-                @include mobile-value(left, 80px);
-                @include mobile-value(top, 150px);
-            }
             @include MOBILE {
                 @include mobile-value(left, 30px);
+                @include mobile-value(top, 180px);
+            }
+
+            @include TABLET {
+                @include mobile-value(left, 80px);
                 @include mobile-value(top, 150px);
             }
         }
@@ -360,7 +361,7 @@
             @include value(top, 20px, 40px);
             picture {
                 img{
-                   animation: smoke  5s infinite ease-in-out;
+                   animation: smoke  5s infinite linear;
                    opacity: 0;
                 }
                 &:nth-child(1) {
@@ -398,13 +399,14 @@
                 }
             }
 
+            @include MOBILE {
+                @include mobile-value(left, 190px);
+                @include mobile-value(top, 80px);
+            }
+
             @include TABLET {
                 @include mobile-value(left, 270px);
                 @include mobile-value(top, 70px);
-            }
-            @include MOBILE {
-                @include mobile-value(left, 190px);
-                @include mobile-value(top, 90px);
             }
         }
 
