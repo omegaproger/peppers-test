@@ -91,10 +91,14 @@
     }
 
     &__info-more {
+        @include value(width, 232px, 177px);
         font-weight: normal;
         @include value(font-size, 21px, 16px);
         line-height: 135%;
         color: #FFED4B;
+        text-decoration: none;
+        border-bottom: 1px solid #FFED4B;
+
     }
 
     &__list {

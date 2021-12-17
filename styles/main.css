@@ -4585,6 +4585,28 @@ template {
   font-weight: normal;
   line-height: 135%;
   color: #FFED4B;
+  text-decoration: none;
+  border-bottom: 1px solid #FFED4B;
+}
+@media screen and (min-width: 1440px) {
+  .stock__info-more {
+    width: 30.9333333333vh;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .stock__info-more {
+    width: 16.1111111111vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .stock__info-more {
+    width: 47.2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stock__info-more {
+    width: 35.4vw;
+  }
 }
 @media screen and (min-width: 1440px) {
   .stock__info-more {
