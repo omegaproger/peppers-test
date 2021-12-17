@@ -31,13 +31,15 @@
     }
 
     &__content {
-        margin: auto;
+        
         display: flex;
         flex-direction: column;
         padding: 0;
         @include value(width, 1100px, 375px);
         @include value(padding-top, 15px, 0px);
         @include value(margin-bottom, 127px, 20px);
+        @include desk-value(margin-left , 100px);
+        @include desk-value(margin-right , 100px);
 
     }
 

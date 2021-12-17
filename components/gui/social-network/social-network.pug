@@ -1,9 +1,9 @@
 mixin social-network__item(content,params)
 	a.social-network__item&attributes(content.attr)&attributes(attributes)
 		.social-network__icon
-			img(src="images/social-network/"+ content.img + ".svg")
+			img&attributes(content.img)&attributes(attributes)
 
-- var socialNetwork = [{attr:{href:"#", target:"_blank"},img:"vk"},{attr:{href:"#", target:"_blank"},img:"fb"},{attr:{href:"#", target:"_blank"},img:"ok"},{attr:{href:"#",target:"_blank"},img:"tw"},{attr:{href:"#",target:"_blank"},img:"inst"},{attr:{href:"#",target:"_blank"},img:"yt"}];
+- var socialNetwork = [{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/vk.svg"}},{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/fb.svg"}},{attr:{href:"#", target:"_blank"},img:{src:"images/social-network/ok.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/tw.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/inst.svg"}},{attr:{href:"#",target:"_blank"},img:{src:"images/social-network/yt.svg"}}];
 
 mixin social-network(content,params)
 	.social-network&attributes(attributes) 
