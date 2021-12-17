@@ -8,7 +8,7 @@
 	@include TABLET {
 		display: none;
 	}
-	li{
+	&__item{
 		display: flex;
 		justify-content: center;
     align-items: center;
@@ -28,14 +28,15 @@
 			transform: scale(1.3);
 			background-color: #000000;
 		}
+		&_active {
+			background-color: #000000;
+			transform: scale(1.5);
+		}
 	}
 	a{
 		text-decoration: none;
 		opacity: 0;
 
 	}
-	&__active {
-		transform: scale(1.5);
-
-	}
+	
 }

@@ -1,4 +1,6 @@
-var link = document.querySelectorAll(".pagination__link")
+var intElemScrollTop = document.scrollTop;
+console.log(intElemScrollTop);
+var link = document.querySelectorAll(".pagination__item")
 console.log(link);
 for(var i = 0; i < link.length; i++) {
        link[i].addEventListener("click", bindClick(i));
@@ -6,14 +8,16 @@ for(var i = 0; i < link.length; i++) {
 function bindClick(i) {
   return function() {
     	for(var i = 0; i < link.length; i++) {
-       link[i].style.backgroundColor = "#FFF100";
-       link[i].style.transform = 'scale(1)';
+       link[i].classList.remove("pagination__item_active");
 		}
     	// this.classList.add("pagination__active");
-    	this.style.backgroundColor = '#000000';
-    	this.style.transform = 'scale(1.5)';
+    	this.classList.add("pagination__item_active")
   };
 }
+
+
+
+
 // link.addEventListener("click",function(){
 // 	this.classList.toggle("pagination__active");
 // 	this.style.backgroundColor = '#000000';
