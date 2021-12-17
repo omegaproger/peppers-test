@@ -5851,6 +5851,10 @@ template {
   text-decoration: none;
   opacity: 0;
 }
+.pagination__active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
 
 .custom-page {
   overflow-x: hidden;
