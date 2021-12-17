@@ -429,16 +429,16 @@ template {
             transform: rotate(0deg);
     bottom: 0px;
   }
-  30% {
+  50% {
     opacity: 0.3;
-    -webkit-transform: rotate(12deg);
-            transform: rotate(12deg);
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
     bottom: 20px;
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     bottom: 80px;
   }
 }
@@ -449,16 +449,16 @@ template {
             transform: rotate(0deg);
     bottom: 0px;
   }
-  30% {
+  50% {
     opacity: 0.3;
-    -webkit-transform: rotate(12deg);
-            transform: rotate(12deg);
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
     bottom: 20px;
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     bottom: 80px;
   }
 }
@@ -1656,12 +1656,12 @@ template {
 }
 @media screen and (min-width: 1920px) {
   .intro__image-smoke_1 {
-    left: 106.6666666667vh;
+    left: 109.3333333333vh;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   .intro__image-smoke_1 {
-    left: 55.5555555556vw;
+    left: 56.9444444444vw;
   }
 }
 @media screen and (max-width: 1023px) {

@@ -17,24 +17,10 @@
 	0%{opacity: 0;transform:scale(0) rotate(100deg);}
 	50%{opacity: 1;transform:scale(1) rotate(0deg);}
 	100%{opacity: 0;transform:scale(0) rotate(100deg);}
-	// 75%{opacity: 1;transform:scale(1) rotate(50deg);}
-	// 100%{opacity:0;transform:scale(0) rotate(100deg);}
 }
-// @keyframes smoke {
-// 	0%{opacity: 1;transform:scale(1.01) rotate(0deg);}
-// 	25%{opacity: 0.6;transform:scale(0.98) rotate(1deg);}
-// 	50%{opacity: 0.5;transform:scale(1) rotate(-1deg);}
-// 	75%{opacity: 0.7;transform:scale(0.98) rotate(1deg);}
-// 	100%{opacity: 1;transform:scale(1.01) rotate(0deg);}
-// }
+
 @keyframes smoke {
-	// 0%{opacity: 0.7;transform:rotate(0deg);bottom: 0px}
-	// 50%{opacity: 0;transform:rotate(20deg);bottom: 70px}
-	// 70%{opacity: 0;transform:rotate(0deg);bottom: 0px}
-	// 100%{opacity: 0.7;transform:rotate(0deg);bottom: 0px}
 	0%{opacity: 0;transform:rotate(0deg);bottom: 0px}
-	30%{opacity: 0.3;transform:rotate(12deg);bottom: 20px}
-	100%{opacity: 0;transform:rotate(25deg);bottom: 80px}
-	// 70%{opacity: 0;transform:rotate(0deg);bottom: 70px}
-	// 100%{opacity: 0;transform:rotate(0deg);bottom: 0px}
+	50%{opacity: 0.3;transform:rotate(15deg);bottom: 20px}
+	100%{opacity: 0;transform:rotate(45deg);bottom: 80px}
 }
