@@ -835,7 +835,7 @@ template {
   margin-bottom: 1.3333333333vh;
   font-weight: bold;
   font-size: 4.0666666667vh;
-  line-height: 135%;
+  line-height: 1.35;
   color: #FFE144;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -1800,24 +1800,6 @@ template {
     padding-right: 6vw;
   }
 }
-.info__header {
-  width: 133.3333333333vh;
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .info__header {
-    width: 69.4444444444vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .info__header {
-    width: 100vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .info__header {
-    width: 75vw;
-  }
-}
 .info__title {
   width: 80%;
   margin: 0;
@@ -2364,7 +2346,7 @@ template {
   margin-top: 1.7333333333vh;
   font-weight: normal;
   font-size: 2.4vh;
-  line-height: 130%;
+  line-height: 1.3;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .info__note-text {
@@ -2632,7 +2614,7 @@ template {
   margin-top: 0.6666666667vh;
   margin-bottom: 8.4vh;
   font-size: 5.0666666667vh;
-  line-height: 120%;
+  line-height: 1.2;
   font-weight: 600;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -2908,7 +2890,7 @@ template {
   margin-top: 4vh;
   margin-bottom: 4vh;
   font-size: 2.4vh;
-  line-height: 135%;
+  line-height: 1.35;
   font-weight: bold;
   white-space: pre-line;
 }
@@ -2995,7 +2977,7 @@ template {
 .rules__item-text {
   margin: 0;
   font-size: 2.4vh;
-  line-height: 135%;
+  line-height: 1.35;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .rules__item-text {
@@ -4151,7 +4133,7 @@ template {
   width: 30.9333333333vh;
   font-weight: normal;
   font-size: 2.8vh;
-  line-height: 135%;
+  line-height: 1.35;
   color: #FFED4B;
   text-decoration: none;
   border-bottom: 1px solid #FFED4B;

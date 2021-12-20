@@ -35,7 +35,7 @@
         @include value(margin-top, 5px, 0px);
         @include value(margin-bottom, 63px, 3px);
         @include value(font-size, 38px, 28px);
-        line-height: 120%;
+        line-height: 1.2;
         font-weight: 600;
         @include MOBILE{
             white-space: pre-wrap;
@@ -103,7 +103,7 @@
         @include value(margin-top, 30px, 18px);
         @include value(margin-bottom, 30px, 2px);
         @include value(font-size, 18px, 16px);
-        line-height: 135%;
+        line-height: 1.35;
         font-weight: bold;
         white-space: pre-line;
 
@@ -117,7 +117,7 @@
     &__item-text {
         margin: 0;
         @include value(font-size, 18px, 16px);
-        line-height: 135%;
+        line-height: 1.35;
     }
 
     &__button {

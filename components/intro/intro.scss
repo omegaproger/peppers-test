@@ -129,7 +129,7 @@
         @include value(margin-bottom, 10px, 5px);
         font-weight: bold;
         @include value(font-size, 30.5px, 26px);
-        line-height: 135%;
+        line-height: 1.35;
         color: #FFE144;
 
         span {
