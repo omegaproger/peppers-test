@@ -1,8 +1,8 @@
 @mixin desk-value($name,$value) {
 	// #{$name}:$value;
-	@include DESKTOP {
+	// @include DESKTOP {
 		#{$name}:vh($value);
-	}
+	// }
 	@include DESKTOP-L {
 		#{$name}:vw($value);
 	}
@@ -20,9 +20,9 @@
 
 @mixin value($name,$value, $value-m: $value) {
 	// #{$name}:$value;
-	@include DESKTOP {
+	// @include DESKTOP {
 		#{$name}:vh($value);
-	}
+	// }
 	@include DESKTOP-L {
 		#{$name}:vw($value);
 	}

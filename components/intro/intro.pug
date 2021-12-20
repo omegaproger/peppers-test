@@ -55,12 +55,13 @@ mixin intro(content, param)
       // img(src="images/intro/smoke.png").intro__image-smoke
       // img(src="images/intro/smoke2.png").intro__image-smoke_2
       +intro__image-smoke(introContent)
+    header.intro__header
+      +intro__logo(introContent.logo)
+      nav.menu.intro__menu
+        each item in introContent.menu
+          +item(item)
     .intro__content
-      header.intro__header
-        +intro__logo(introContent.logo)
-        nav.menu.intro__menu
-          each item in introContent.menu
-            +item(item)
+      
       .intro__body
         // ul.pagination
         +intro__info(introContent.info)
