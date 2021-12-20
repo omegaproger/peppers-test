@@ -425,41 +425,35 @@ template {
 @-webkit-keyframes smoke {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    bottom: 0px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
   }
   20% {
     opacity: 0.3;
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-    bottom: 20px;
+    -webkit-transform: rotate(15deg) translate(0, -20px);
+            transform: rotate(15deg) translate(0, -20px);
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    bottom: 80px;
+    -webkit-transform: rotate(45deg) translate(0, -80px);
+            transform: rotate(45deg) translate(0, -80px);
   }
 }
 @keyframes smoke {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    bottom: 0px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
   }
   20% {
     opacity: 0.3;
-    -webkit-transform: rotate(15deg);
-            transform: rotate(15deg);
-    bottom: 20px;
+    -webkit-transform: rotate(15deg) translate(0, -20px);
+            transform: rotate(15deg) translate(0, -20px);
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    bottom: 80px;
+    -webkit-transform: rotate(45deg) translate(0, -80px);
+            transform: rotate(45deg) translate(0, -80px);
   }
 }
 .intro {
@@ -1340,12 +1334,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .intro__btn-transition {
-    bottom: 34.6666666667vw;
+    top: -64vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__btn-transition {
-    bottom: 26vw;
+    top: -48vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -1463,7 +1457,7 @@ template {
   width: 24vh;
   height: 34.6666666667vh;
   left: 109.3333333333vh;
-  top: 12vh;
+  top: 18.6666666667vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro__image-smoke_1 {
@@ -1512,7 +1506,7 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro__image-smoke_1 {
-    top: 6.25vw;
+    top: 9.7222222222vw;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1594,7 +1588,7 @@ template {
   width: 28vh;
   height: 26.6666666667vh;
   left: 142.6666666667vh;
-  top: 2.6666666667vh;
+  top: 8vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro__image-smoke_2 {
@@ -1643,7 +1637,7 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro__image-smoke_2 {
-    top: 1.3888888889vw;
+    top: 4.1666666667vw;
   }
 }
 @media screen and (max-width: 1023px) {

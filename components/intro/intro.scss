@@ -272,7 +272,7 @@
         justify-content: center;
         @include value(left, 125px, 3px);
         @include desk-value(top, -58px);
-        @include mobile-value(bottom, 130px);
+        @include mobile-value(top,-240px);
         @include value(width, 150px, 107px);
         @include value(height, 150px, 107px);
         margin: 0;
@@ -311,7 +311,7 @@
             @include value(width, 180px, 180px);
             @include value(height, 260px, 260px);
             @include value(left, 820px, 20px);
-            @include value(top, 90px, 110px);
+            @include value(top, 140px, 110px);
             
             picture {
                 img{
@@ -373,7 +373,7 @@
             @include value(width, 210px, 200px);
             @include value(height, 200px, 200px);
             @include value(left, 1070px, 200px);
-            @include value(top, 20px, 40px);
+            @include value(top, 60px, 40px);
             picture {
                 img{
                    animation: smoke  5s infinite linear;
