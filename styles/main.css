@@ -462,34 +462,6 @@ template {
     bottom: 80px;
   }
 }
-@-webkit-keyframes smoke2 {
-  20%, 100% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    bottom: 80px;
-  }
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-}
-@keyframes smoke2 {
-  20%, 100% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    bottom: 80px;
-  }
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-}
 .intro {
   position: relative;
   display: -webkit-box;
@@ -4161,8 +4133,8 @@ template {
   position: relative;
 }
 .results__firework_1 {
-  -webkit-animation: firework 1.5s infinite ease;
-          animation: firework 1.5s infinite ease;
+  -webkit-animation: firework 1.5s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
+          animation: firework 1.5s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
 }
 @media screen and (min-width: 1440px) {
   .results__firework_1 {
@@ -4225,8 +4197,8 @@ template {
   }
 }
 .results__firework_2 {
-  -webkit-animation: firework 2s infinite ease;
-          animation: firework 2s infinite ease;
+  -webkit-animation: firework 2s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
+          animation: firework 2s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
 }
 @media screen and (min-width: 1440px) {
   .results__firework_2 {
