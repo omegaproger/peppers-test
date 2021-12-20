@@ -129,20 +129,20 @@
             //
             @include value(width, 190px, 100px); 
             @include value(height, 90px, 90px); 
-            background: radial-gradient(30% 45%, #ffffff -10%, #050219);
+            background: radial-gradient(30% 45%, rgba(255,255,255,0.8) -50%, #050219);
 
         }
         @include MOBILE {
              &:before{
                 // width: 100%;
-                background: radial-gradient(50% 45%, #ffffff -10%, #050219);
+                background: radial-gradient(50% 45%, rgba(255,255,255,0.8) -50%, #050219);
                 right: 0%;
             }
         }
         @include TABLET {
              &:before{
                 // width: 100%;
-                background: radial-gradient(50% 45%, #ffffff -10%, #050219);
+                background: radial-gradient(50% 45%, rgba(255,255,255,0.8) -50%, #050219);
                 right: 0%;
             }
         }   

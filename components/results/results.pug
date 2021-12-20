@@ -9,10 +9,11 @@ mixin results__image-map(content,params)
 		+picture(content.map)
 	.results__firework
 		each item in content.fireworks
-			img&attributes(item.img)&attributes(attributes).results__firework
+			.results__firework&attributes(item.attr)&attributes(attributes)
+				img&attributes(item.img)&attributes(attributes)
 
 
-- var resultsContent = {title:"Итоги 2020 года \n в&nbsp;&laquo;Русском лото&raquo;",infoTitle:"Присоединяйтесь к&nbsp;победителям!",info:[{attr:{class:"results__list-item_1"},title:"9&nbsp;286&nbsp;991&nbsp;717&nbsp;₽",note:"выиграли в&nbsp;лотерее"},{attr:{class:"results__list-item_2"},title:"362",note:"новых миллионера появилось"},{attr:{class:"results__list-item_3"},title:"188 169 688",note:"билетов продали"},{attr:{class:"results__list-item_4"},title:"1&nbsp;000&nbsp;000&nbsp;000&nbsp;₽",note:"крупнейший выигрыш в&nbsp;&quot;Русском лото&quot;​"}],image:{map:{img:{src:'images/results/map.png'}, list:[{srcset:'images/results/map-m.webp x1,images/results/map-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/results/map-m.png 1x, images/results/map-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/results/map.webp', type:"image/webp"}]},fireworks:[{img:{src:"images/results/firework.svg", class:"results__firework_1"}},{img:{src:"images/results/firework-s.svg",class:"results__firework_2"}}]}};
+- var resultsContent = {title:"Итоги 2020 года \n в&nbsp;&laquo;Русском лото&raquo;",infoTitle:"Присоединяйтесь к&nbsp;победителям!",info:[{attr:{class:"results__list-item_1"},title:"9&nbsp;286&nbsp;991&nbsp;717&nbsp;₽",note:"выиграли в&nbsp;лотерее"},{attr:{class:"results__list-item_2"},title:"362",note:"новых миллионера появилось"},{attr:{class:"results__list-item_3"},title:"188 169 688",note:"билетов продали"},{attr:{class:"results__list-item_4"},title:"1&nbsp;000&nbsp;000&nbsp;000&nbsp;₽",note:"крупнейший выигрыш в&nbsp;&quot;Русском лото&quot;​"}],image:{map:{img:{src:'images/results/map.png'}, list:[{srcset:'images/results/map-m.webp x1,images/results/map-m@2x.webp 2x',media:"(max-width: 1023px)",type:"image/webp"},{srcset:'images/results/map-m.png 1x, images/results/map-m@2x.png 2x',media:"(max-width: 1023px)"},{srcset:'images/results/map.webp', type:"image/webp"}]},fireworks:[{attr:{class:"results__firework_1"},img:{src:"images/results/firework.svg"}},{attr:{class:"results__firework_2"},img:{src:"images/results/firework-s.svg"}}]}};
 
 
 mixin results(content, params)

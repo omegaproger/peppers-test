@@ -146,6 +146,8 @@
 
     &__image-map {
         @include mobile-value(height, 240px);
+        display: flex;
+        align-items: center;
 
         img {
             position: absolute;
@@ -165,23 +167,34 @@
         // @include value(height, 130px, 130px);
         // @include value(width, 130px, 130px);
         position: relative;
-        
-        
+        height: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
         &_1 {
                 
                 animation: firework  1.5s infinite cubic-bezier(.4,-0.18,.55,1.08);
-                @include value(left, 10px, 30px);
-                @include value(top, 100px, -170px);
-                @include value(height, 130px, 60px);
+                @include value(left, -20px, -120px);
+                @include value(top, 80px, -205px);
+                @include value(height, 150px, 80px);
+               
+                @include TABLET {
+                    @include mobile-value(left,-140px)
+                }
                 
         }
 
         &_2 {
                 
                 animation: firework  2s infinite cubic-bezier(.4,-0.18,.55,1.08);
-                @include value(left, 20px, 50px);
-                @include value(top, -30px, -220px);
-                @include value(height, 100px, 40px);
+                @include value(left, 130px, -45px);
+                @include value(top, -150px, -310px);
+                @include value(height, 100px, 50px);
+               
+                @include TABLET {
+                    @include mobile-value(left,-65px)
+                }
                 
         }
     }

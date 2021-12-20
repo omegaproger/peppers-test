@@ -2119,7 +2119,7 @@ template {
   display: block;
   width: 25.3333333333vh;
   height: 12vh;
-  background: radial-gradient(30% 45%, #ffffff -10%, #050219);
+  background: radial-gradient(30% 45%, rgba(255, 255, 255, 0.8) -50%, #050219);
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .info__item-icon:before {
@@ -2153,13 +2153,13 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .info__item-icon:before {
-    background: radial-gradient(50% 45%, #ffffff -10%, #050219);
+    background: radial-gradient(50% 45%, rgba(255, 255, 255, 0.8) -50%, #050219);
     right: 0%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .info__item-icon:before {
-    background: radial-gradient(50% 45%, #ffffff -10%, #050219);
+    background: radial-gradient(50% 45%, rgba(255, 255, 255, 0.8) -50%, #050219);
     right: 0%;
   }
 }
@@ -3571,6 +3571,14 @@ template {
     letter-spacing: 1px;
   }
 }
+.results__image-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (max-width: 1023px) {
   .results__image-map {
     height: 64vw;
@@ -3642,94 +3650,109 @@ template {
 }
 .results__firework {
   position: relative;
+  height: 0;
+}
+.results__firework img {
+  width: 100%;
+  height: 100%;
 }
 .results__firework_1 {
   -webkit-animation: firework 1.5s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
           animation: firework 1.5s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
-  left: 1.3333333333vh;
-  top: 13.3333333333vh;
-  height: 17.3333333333vh;
+  left: -2.6666666667vh;
+  top: 10.6666666667vh;
+  height: 20vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .results__firework_1 {
-    left: 0.6944444444vw;
+    left: -1.3888888889vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .results__firework_1 {
-    left: 8vw;
+    left: -32vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_1 {
-    left: 6vw;
+    left: -24vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .results__firework_1 {
-    top: 6.9444444444vw;
+    top: 5.5555555556vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .results__firework_1 {
-    top: -45.3333333333vw;
+    top: -54.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_1 {
-    top: -34vw;
+    top: -41vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .results__firework_1 {
-    height: 9.0277777778vw;
+    height: 10.4166666667vw;
   }
 }
 @media screen and (max-width: 1023px) {
+  .results__firework_1 {
+    height: 21.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_1 {
     height: 16vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
   .results__firework_1 {
-    height: 12vw;
+    left: -37.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .results__firework_1 {
+    left: -28vw;
   }
 }
 .results__firework_2 {
   -webkit-animation: firework 2s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
           animation: firework 2s infinite cubic-bezier(0.4, -0.18, 0.55, 1.08);
-  left: 2.6666666667vh;
-  top: -4vh;
+  left: 17.3333333333vh;
+  top: -20vh;
   height: 13.3333333333vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .results__firework_2 {
-    left: 1.3888888889vw;
+    left: 9.0277777778vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .results__firework_2 {
-    left: 13.3333333333vw;
+    left: -12vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_2 {
-    left: 10vw;
+    left: -9vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .results__firework_2 {
-    top: -2.0833333333vw;
+    top: -10.4166666667vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .results__firework_2 {
-    top: -58.6666666667vw;
+    top: -82.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_2 {
-    top: -44vw;
+    top: -62vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -3739,12 +3762,22 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .results__firework_2 {
-    height: 10.6666666667vw;
+    height: 13.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .results__firework_2 {
-    height: 8vw;
+    height: 10vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
+  .results__firework_2 {
+    left: -17.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .results__firework_2 {
+    left: -13vw;
   }
 }
 
