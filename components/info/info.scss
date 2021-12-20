@@ -96,16 +96,22 @@
         @include item-mod(1) {
             &:before{
                 animation-delay: 0.5s;
+                @include value(left, -55px, -16px);
+                @include value(top,-15px, -17px);   
             }
         }
         @include item-mod(2) {
             &:before{
                 animation-delay: 1s;
+                @include value(left, -65px, -16px);
+                @include value(top,-15px, -20px); 
             }
         }
         @include item-mod(3) {
             &:before{
                 animation-delay: 1.5s;
+                @include value(left, -55px, -16px);
+                @include value(top,-15px, -25px); 
             }
         }
         &:before{
@@ -118,21 +124,24 @@
             right: -50%;
             /* margin: 0 auto; */
             display: block;
-            width: 200%;
-            height: 140%;
-            background: radial-gradient(30% 42%, #ffffff -10%, #050219);
+            // width: 200%;
+            // height: 140%;
+            //
+            @include value(width, 190px, 100px); 
+            @include value(height, 90px, 90px); 
+            background: radial-gradient(30% 45%, #ffffff -10%, #050219);
 
         }
         @include MOBILE {
              &:before{
-                width: 100%;
+                // width: 100%;
                 background: radial-gradient(50% 45%, #ffffff -10%, #050219);
                 right: 0%;
             }
         }
         @include TABLET {
              &:before{
-                width: 100%;
+                // width: 100%;
                 background: radial-gradient(50% 45%, #ffffff -10%, #050219);
                 right: 0%;
             }
