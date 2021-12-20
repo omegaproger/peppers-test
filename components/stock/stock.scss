@@ -37,7 +37,7 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        @include mobile-value(width, 280px);
+        @include value(width, 1000px, 280px);
         @include value(padding-left, 10px, 0px);
         @include mobile-value(margin-bottom, 8px);
 
@@ -47,12 +47,15 @@
     }
 
     &__icon {
+        position: relative;
         @include value(width, 152px, 94px);
         @include value(height, 95px, 59px);
         margin: 0;
         @include value(margin-top, 20px, 0px);
         @include mobile-value(margin-bottom, 5px);
         @include value(margin-right, 46px, 46px);
+
+
         img {
             height: 100%;
         }
