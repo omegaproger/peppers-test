@@ -94,13 +94,23 @@
     }
 
     &__info-more {
-        @include value(width, 232px, 177px);
+        // @include value(width, 232px, 177px);
+        position: relative;
         font-weight: normal;
         @include value(font-size, 21px, 16px);
         line-height: 1.35;
         color: #FFED4B;
         text-decoration: none;
-        border-bottom: 1px solid #FFED4B;
+        // border-bottom: 1px solid #FFED4B;
+        &:before {
+            content: '';
+            display: block;
+            @include value(width, 235px, 180px);
+            @include value(height, 1px, 1px);
+            @include value(top, 30px, 25px);
+            position: absolute;
+            background-color:#FFED4B;
+        }
 
     }
 
