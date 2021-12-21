@@ -68,12 +68,20 @@
         @include value(margin-top, 2px, 10px);
         @include mobile-value(padding-top, 12px);
 
-        img {
+        svg {
             @include value(width, 75px, 75px);
         }
 
         @include MOBILE {
             margin: auto;
+        }
+
+        &:hover {
+            svg path {
+                @include transition (stroke 0.6s);
+                stroke:#000000;
+                
+            }
         }
     }
 

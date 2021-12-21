@@ -14,8 +14,8 @@ mixin footer(content, params)
 	footer.footer&attributes(attributes)
 		.footer__content
 			.footer__info
-				a&attributes(footerContent.attr)&attributes(attributes)
-					img.footer__logo&attributes(footerContent.logo)&attributes(attributes)
+				a&attributes(footerContent.attr)&attributes(attributes).footer__logo
+					include stoloto.svg
 				p.footer__info-text!= footerContent.text
 				+social-network
 			.footer__partners
