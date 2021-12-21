@@ -43,7 +43,7 @@
         @include value(margin-bottom, 15px, 13px);
         padding: 0;
         list-style: none;
-        @include mobile-value(width, 320px);
+        // @include mobile-value(width, 320px);
 
         @include MOBILE {
             flex-direction: column;
@@ -58,6 +58,8 @@
         align-items: baseline;
         flex: 0 1;
         @include value(flex-basis, 260px, 0px);
+        margin:0;
+        padding:0;
 
         // @include mobile-value(margin-bottom, 30px);
 
