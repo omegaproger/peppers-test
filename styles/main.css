@@ -350,8 +350,8 @@ template {
             transform: translate(0, 0);
   }
   50% {
-    -webkit-transform: translate(0, -10px);
-            transform: translate(0, -10px);
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
   }
   100% {
     -webkit-transform: translate(0, 0);
@@ -364,8 +364,8 @@ template {
             transform: translate(0, 0);
   }
   50% {
-    -webkit-transform: translate(0, -10px);
-            transform: translate(0, -10px);
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
   }
   100% {
     -webkit-transform: translate(0, 0);
