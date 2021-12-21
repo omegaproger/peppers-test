@@ -1,0 +1,141 @@
+.rules {
+    
+    @mixin mod($name){
+        .rules_#{$name} &{
+            @content;
+        }
+    }
+    
+    @mixin item-mod($name){
+        .rules__list-item_#{$name} &{
+            @content;
+        }
+    }
+
+    margin: auto;
+    background: linear-gradient(66.56deg, #ffd643 -7.17%, #ff8743 98.95%);
+
+    &__content {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        @include value(max-width, 789px, 375px);
+        padding: 0;
+        @include value(padding-top, 60px, 25px);
+        @include value(padding-bottom, 91px, 40px);
+        @include mobile-value(padding-left, 25px);
+        @include mobile-value(padding-right, 25px);
+        font-family: $BASE-FONT;
+    }
+
+    &__title {
+        width: 100%;
+        margin: 0;
+        @include value(margin-top, 5px, 0px);
+        @include value(margin-bottom, 63px, 3px);
+        @include value(font-size, 38px, 28px);
+        line-height: 1.2;
+        font-weight: 600;
+        @include MOBILE{
+            white-space: pre-wrap;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        @include value(margin-top, 28px, 28px);
+        @include value(margin-bottom, 25px, 27px);
+        padding: 0;
+        list-style-type: none;
+
+        @include MOBILE {
+            flex-direction: column;
+            display: block;
+        }
+
+    }
+
+    &__list-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include value(flex-basis, 261px, 0px);
+        margin: 0;
+        padding: 0;
+        @include value(margin-right, 15px, 15px);
+        @include mobile-value(margin-bottom, 5px);
+
+        &_3 {
+            margin: 0;
+
+             
+        }
+
+        &_2 {
+            margin: 0;
+            @include value(margin-top, 100px, 0px);
+            @include value(margin-right, 20px, 0px);
+            @include mobile-value(margin-bottom, 30px);
+        }
+    }
+
+    &__item-image {
+        img {
+            @include value(width, 168px, 108px);
+
+            @include item-mod("2"){
+                position: absolute;
+                    @include value(width, 220px, 225px);
+                    @include value(bottom, 255px, 0px);
+
+                    @include MOBILE {
+                        flex-direction: column;
+                        position: unset;
+                    }
+            }
+        }
+        
+    }
+
+    &__item-title {
+        margin: 0;
+        @include value(margin-top, 30px, 18px);
+        @include value(margin-bottom, 30px, 2px);
+        @include value(font-size, 18px, 16px);
+        line-height: 1.35;
+        font-weight: bold;
+        white-space: pre-line;
+
+        @include item-mod("3"){
+            margin: 0;
+                @include value(margin-top, 30px, 15px);
+                @include value(margin-bottom, 5px, 5px);
+        }
+    }
+
+    &__item-text {
+        margin: 0;
+        @include value(font-size, 18px, 16px);
+        line-height: 1.35;
+    }
+
+    &__button {
+        @include value(width, 300px, 325px);
+        padding: 0;
+        @include value(padding-top, 25px, 25px);
+        @include value(padding-bottom, 25px, 25px);
+        @include value(border-radius, 20px, 20px);
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(270deg, #d8f431 -0.25%, #71f431 100%);
+        box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+        @include value(font-size, 21px, 21px);
+        @include value(line-height, 17px, 17px);
+        @include mobile-value(letter-spacing, 2px);
+        color: #000000;
+    }
+
+}

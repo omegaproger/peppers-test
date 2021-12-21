@@ -1,0 +1,20 @@
+@function vh($n) {
+  @return ($n * 100vh) / $DEVISE-H;
+}
+
+@function vw($n) {
+  @return ($n * 100vw) / $DEVISE-W;
+}
+
+@function vw-m($n) {
+  @return ($n * 100vw) / $DEVISE-W-M;
+}
+
+@function vw-t($n) {
+  @return ($n * 100vw * .75) / $DEVISE-W-M;
+}
+
+// @function vh-t($n) {
+//   @return ($n * 50vh) / $DEVISE-H;
+// }
+

@@ -1,0 +1,10 @@
+mixin picture(content, params)
+	if content.list
+		picture&attributes(attributes)
+			each item in content.list
+				source&attributes(item)
+			img&attributes(content.img)
+	else
+		img&attributes(content.img)
+
+

@@ -1,0 +1,17 @@
+.custom-page{
+	overflow-x: hidden; 
+}
+html{
+	scroll-behavior: smooth;
+}
+img {
+	user-drag: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -o-user-drag: none;
+  -moz-user-drag: none;
+	-khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}

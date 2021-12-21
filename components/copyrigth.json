@@ -1,0 +1,105 @@
+"intro":
+{
+    "info":
+    {
+        "title": "Джекпот <br>",
+        "span": "от 500 000 000 ₽",
+        "subTitle": "50 загородных домов",
+        "note": "Выигрывает каждый третий билет"
+    },
+    "transition":
+    {
+        "text": "Попробуйте <br> новые тиражи <br>«Русского лото»!",
+        "img":{"src": "images/intro/arrow.svg"},
+        "attr":
+        {
+            "href":
+            "#"
+        }
+    },
+    "menu": [
+    {
+        "attr":
+        {
+            "href": "#info"
+        },
+        "title": "как участвовать"
+    },
+    {
+        "attr":
+        {
+            "href": "#stock"
+        },
+        "title": "о лотерее"
+    },
+    {
+        "attr":
+        {
+            "href": "#rules"
+        },
+        "title": "правила"
+    }],
+    "bg":
+    {
+        "img":
+        {
+            "src": "images/intro/bg.png"
+        },
+        "list": [
+        {
+            "srcset": "images/intro/bg-m.webp x1,images/intro/bg-m@2x.webp 2x",
+            "media": "(max-width: 1023px)",
+            "type": "image/webp"
+        },
+        {
+            "srcset": "images/intro/bg-m.png 1x, images/intro/bg-m@2x.png 2x",
+            "media": "(max-width: 1023px)"
+        },
+        {
+            "srcset": "images/intro/bg.webp",
+            "type": "image/webp"
+        }]
+    },
+    "man":
+    {
+        "img":
+        {
+            "src": "images/intro/parechenkov.png"
+        },
+        "list": [
+        {
+            "srcset": "images/intro/parechenkov-m.webp x1,images/intro/parechenkov-m@2x.webp 2x",
+            "media": "(max-width: 1023px)",
+            "type": "image/webp"
+        },
+        {
+            "srcset": "images/intro/parechenkov-m.png 1x, images/intro/parechenkov-m@2x.png 2x",
+            "media": "(max-width: 1023px)"
+        },
+        {
+            "srcset": "images/intro/parechenkov.webp",
+            "type": "image/webp"
+        }]
+    },
+    "table":
+    {
+        "img":
+        {
+            "src": "images/intro/table.png"
+        },
+        "list": [
+        {
+            "srcset": "images/intro/table-m.webp x1,images/intro/table-m@2x.webp 2x",
+            "media": "(max-width: 1023px)",
+            "type": "image/webp"
+        },
+        {
+            "srcset": "images/intro/table-m.png 1x, images/intro/table-m@2x.png 2x",
+            "media": "(max-width: 1023px)"
+        },
+        {
+            "srcset": "images/intro/table.webp",
+            "type": "image/webp"
+        }]
+    }
+}
