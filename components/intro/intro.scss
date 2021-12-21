@@ -74,7 +74,13 @@
 
         @include MOBILE {
             margin: auto;
+            @include mobile-value(padding-top, 0px);
         }
+        @include TABLET {
+            margin: auto;
+            @include mobile-value(padding-top, 12px); 
+        }
+
 
         &:hover {
             svg path {
