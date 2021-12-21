@@ -36,7 +36,7 @@
     }
 
     &__list {
-        display: block;
+        display: flex;
         justify-content: space-between;
         margin: 0;
         @include value(margin-top, 85px, 50px);
@@ -47,6 +47,7 @@
 
         @include MOBILE {
             flex-direction: column;
+            display: block;
         }
 
 

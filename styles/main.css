@@ -1933,7 +1933,9 @@ template {
   }
 }
 .info__list {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1979,6 +1981,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: block;
   }
 }
 .info__item {
@@ -2768,7 +2771,9 @@ template {
   }
 }
 .rules__list {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2814,6 +2819,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: block;
   }
 }
 .rules__list-item {

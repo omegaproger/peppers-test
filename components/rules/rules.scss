@@ -43,7 +43,7 @@
     }
 
     &__list {
-        display: block;
+        display: flex;
         justify-content: center;
         margin: 0;
         @include value(margin-top, 28px, 28px);
@@ -53,6 +53,7 @@
 
         @include MOBILE {
             flex-direction: column;
+            display: block;
         }
 
     }
