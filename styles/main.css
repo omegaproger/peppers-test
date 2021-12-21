@@ -610,12 +610,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .intro__header {
-    padding-top: 1.3333333333vw;
+    padding-top: 2.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__header {
-    padding-top: 1vw;
+    padding-top: 2vw;
   }
 }
 .intro__menu {
@@ -652,12 +652,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .intro__logo {
-    height: 20vw;
+    height: 18.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__logo {
-    height: 15vw;
+    height: 14vw;
   }
 }
 .intro__logo svg {
