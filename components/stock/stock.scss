@@ -85,6 +85,7 @@
         @include value(margin-bottom, 10px, 15px);
         font-weight: normal;
         @include desk-value(width, 800px);
+        @include mobile-value(width, 280px);
         @include value(font-size, 21px, 16px);
         line-height: 1.3;
 
