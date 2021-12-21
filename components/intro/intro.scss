@@ -62,8 +62,8 @@
 
     &__menu {
         color: #FFFFFF;
-        @include desk-value(width, 450px);
-
+        // @include desk-value(width, 450px);
+        display: flex;
         @include MOBILE {
             display: none;
 
@@ -139,9 +139,9 @@
             content: '';
             display: block;
             width: 0%;
-            height:10%;
+            height:3%;
             position: absolute;
-            top:100%;
+            top:25%;
             left:0;
             background-color:#ffffff;
 
