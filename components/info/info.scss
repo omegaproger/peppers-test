@@ -36,7 +36,7 @@
     }
 
     &__list {
-        display: flex;
+        display: block;
         justify-content: space-between;
         margin: 0;
         @include value(margin-top, 85px, 50px);

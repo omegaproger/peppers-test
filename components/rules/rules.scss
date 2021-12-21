@@ -43,7 +43,7 @@
     }
 
     &__list {
-        display: flex;
+        display: block;
         justify-content: center;
         margin: 0;
         @include value(margin-top, 28px, 28px);
