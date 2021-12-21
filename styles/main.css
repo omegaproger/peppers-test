@@ -610,12 +610,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .intro__header {
-    padding-top: 0vw;
+    padding-top: 1.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__header {
-    padding-top: 0vw;
+    padding-top: 1vw;
   }
 }
 .intro__menu {
@@ -628,6 +628,7 @@ template {
 }
 .intro__logo {
   margin-top: 0.2666666667vh;
+  height: 10vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro__logo {
@@ -644,62 +645,27 @@ template {
     margin-top: 2vw;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .intro__logo {
+    height: 5.2083333333vw;
+  }
+}
 @media screen and (max-width: 1023px) {
   .intro__logo {
-    padding-top: 3.2vw;
+    height: 20vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .intro__logo {
-    padding-top: 2.4vw;
+    height: 15vw;
   }
 }
 .intro__logo svg {
-  width: 10vh;
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .intro__logo svg {
-    width: 5.2083333333vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .intro__logo svg {
-    width: 20vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .intro__logo svg {
-    width: 15vw;
-  }
+  height: 100%;
 }
 @media screen and (max-width: 1023px) {
   .intro__logo {
     margin: auto;
-  }
-}
-@media screen and (max-width: 1023px) and (max-width: 1023px) {
-  .intro__logo {
-    padding-top: 0vw;
-  }
-}
-@media screen and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .intro__logo {
-    padding-top: 0vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .intro__logo {
-    margin: auto;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
-  .intro__logo {
-    padding-top: 3.2vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .intro__logo {
-    padding-top: 2.4vw;
   }
 }
 .intro__logo:hover svg path {
@@ -4164,6 +4130,16 @@ template {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .stock__info-text {
     width: 55.5555555556vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .stock__info-text {
+    width: 74.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .stock__info-text {
+    width: 56vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
