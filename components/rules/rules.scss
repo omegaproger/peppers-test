@@ -87,7 +87,7 @@
             @include item-mod("2"){
                 position: absolute;
                     @include value(width, 220px, 225px);
-                    @include value(bottom, 230px, 0px);
+                    @include value(bottom, 255px, 0px);
 
                     @include MOBILE {
                         flex-direction: column;
