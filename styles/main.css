@@ -661,17 +661,102 @@ template {
   }
 }
 .intro__logo svg {
+  width: 100%;
   height: 100%;
+  position: relative;
 }
 @media screen and (max-width: 1023px) {
   .intro__logo {
     margin: auto;
   }
 }
-.intro__logo:hover svg path {
-  -webkit-transition: stroke 0.6s;
-  transition: stroke 0.6s;
-  stroke: #000000;
+.intro__logo:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  content: "";
+  clear: both;
+  margin: 0 auto;
+  top: 0.6666666667vh;
+  right: 124.6666666667vh;
+  width: 33.3333333333vh;
+  height: 20vh;
+  background: radial-gradient(30% 45%, #FFE144 0%, #050219) -100%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .intro__logo:before {
+    top: 0.3472222222vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__logo:before {
+    top: 26.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__logo:before {
+    top: 20vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .intro__logo:before {
+    right: 64.9305555556vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__logo:before {
+    right: 24vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__logo:before {
+    right: 18vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .intro__logo:before {
+    width: 17.3611111111vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__logo:before {
+    width: 26.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__logo:before {
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .intro__logo:before {
+    height: 10.4166666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .intro__logo:before {
+    height: 24vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__logo:before {
+    height: 18vw;
+  }
+}
+.intro__logo:hover:before {
+  opacity: 1;
+}
+@media screen and (max-width: 1023px) {
+  .intro__logo:before {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__logo:before {
+    display: none;
+  }
 }
 .intro__menu-item {
   position: relative;
@@ -5020,9 +5105,11 @@ template {
     width: 28vw;
   }
 }
+.footer__logo svg path {
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
 .footer__logo:hover svg path {
-  -webkit-transition: fill 0.6s;
-  transition: fill 0.6s;
   fill: #000000;
 }
 .footer__item-logo {

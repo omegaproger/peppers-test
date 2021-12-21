@@ -52,7 +52,11 @@
         @include value(padding-top, 40px, 10px);
         margin: 0 auto;
         max-width: 95vw;
-       
+
+        
+
+        
+
         // @include value(width, 1250px, 375px);
     }
 
@@ -66,11 +70,14 @@
     }
 
     &__logo {
+        
         @include value(margin-top, 2px, 10px);
         @include value(height, 75px, 70px);
-
+        
         svg {
+            width: 100%;
             height: 100%;
+            position: relative;
         }
 
         @include MOBILE {
@@ -78,16 +85,40 @@
            
             
         }
-       
-
-
+        &:before {
+            @include transition ( 0.5s ease-in-out);
+            opacity: 0;
+            display: block;
+            position: absolute;
+            content: "";
+            clear: both;
+            margin: 0 auto;
+            // top: 3%;
+            // right: 83%;
+            @include value(top, 5px, 100px); 
+            @include value(right, 935px, 90px); 
+            @include value(width, 250px, 100px); 
+            @include value(height, 150px, 90px); 
+            background: radial-gradient(30% 45%, #FFE144 0%, #050219) -100%;
+        }
         &:hover {
-            svg path {
-                @include transition (stroke 0.6s);
-                stroke:#000000;
-                
+            
+            &:before {
+                opacity: 1;
             }
         }
+        @include MOBILE {
+             &:before {
+                display: none;
+            }
+        }
+
+        @include TABLET {
+             &:before {
+                display: none;
+            }
+        } 
+       
     }
 
     &__menu-item {
