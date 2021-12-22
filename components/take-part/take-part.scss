@@ -1,15 +1,15 @@
 .take-part {
     display: flex;
     justify-content: center;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
 
     &__content {
         display: flex;
         justify-content: space-bitwine;
         @include value(width, 925px, 325px);
         font-family: $BASE-FONT;
-        @include value(padding-top, 15px,15px);
-        @include value(padding-bottom, 25px,40px);
+        @include value(padding-top, 15px, 15px);
+        @include value(padding-bottom, 25px, 40px);
 
         // @include value(padding-left, 105px,20px);
         // @include value(padding-right, 105px,20px);
@@ -46,29 +46,34 @@
         list-style: none;
         counter-reset: my-awesome-counter;
 
-
         li {
             counter-increment: counter;
             position: relative;
             border-bottom: 0.2px solid #000000;
             @include value(padding-bottom, 8px, 8px);
             @include value(margin-bottom, 51px, 51px);
+
             &:last-child {
-            	margin: 0;
+                margin: 0;
             }
-             @include MOBILE {
-        				border:none;
-        		}
+
+            @include MOBILE {
+                border: none;
+            }
+
             // margin: 1rem;
-            svg{
-            	position: absolute;
-            	@include desk-value(right, 5px);
-            	@include desk-value(bottom, 10px);
-            	@include desk-value(height, 6px);
-            	@include MOBILE {
-        					display:none;
-        			}
+            svg {
+                position: absolute;
+                @include desk-value(right, 5px);
+                @include desk-value(bottom, 10px);
+                @include desk-value(height, 6px);
+
+                @include MOBILE {
+                    display: none;
+                }
             }
+
+
         }
 
         li::before {
@@ -76,7 +81,7 @@
             position: absolute;
             @include value(left, -38px, -38px);
             background: #D61407;
-            @include value(width, 20px,20px);
+            @include value(width, 20px, 20px);
             @include value(height, 20px, 20px);
             // width: 1rem;
             // height: 1rem;
@@ -89,6 +94,7 @@
             // font-size: 0.5rem;
 
         }
+
     }
 
     &__item-title {
@@ -99,20 +105,20 @@
         margin: 0;
 
         @include MOBILE {
-        	font-weight: bold;
+            font-weight: bold;
         }
-        
+
     }
 
     &__item-text {
-    	// display: none;
-    	font-style: normal;
-			font-weight: normal;
-			@include value(font-size, 18px, 16px);
-			@include value(margin-top, 22px, 22px);
-			margin: 0;
-			line-height: 1.35;
-			white-space: pre-wrap;
+        display: none;
+        font-style: normal;
+        font-weight: normal;
+        @include value(font-size, 18px, 16px);
+        @include value(margin-top, 22px, 22px);
+        margin: 0;
+        line-height: 1.35;
+        white-space: pre-wrap;
     }
 
     &__title {
@@ -129,4 +135,18 @@
         background: #6FF331;
 
     }
+
+    &__input {
+        display: none;
+    }
+
+    &__input:checked {
+        +label {
+            p {
+                display: block;
+            }
+
+        }
+    }
+
 }

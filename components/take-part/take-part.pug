@@ -13,25 +13,29 @@ mixin take-part(content, params)
 				ol.take-part__list
 					li.take-part__list-item.take-part__list-item_1
 						include arrow.svg
-						label
+						input(type="radio" name="textShow" id="textShow-1" checked).take-part__input
+						label(for="textShow-1")
 							h3.take-part__item-title!='Выберите билет'
 							p.take-part__item-text!='Комбинации в&nbsp;билетах проставлены заранее. Вам просто нужно выбрать один или несколько билетов со&nbsp;своими любимыми числами.'
 						//- input(type="checkbox")
 					li.take-part__list-item.take-part__list-item_2
 						include arrow.svg
-						label
+						input(type="radio" name="textShow" id="textShow-2").take-part__input
+						label(for="textShow-2")
 							h3.take-part__item-title!='Оплатите'
 							p.take-part__item-text!='Оплатить билет вы&nbsp;можете любым удобным для вас способом:\n- Банковская карта\n- Кошелёк &laquo;Столото&raquo;\n- QIWI Кошелек\n- Яндекс. Деньги\n- Со&nbsp;счёта мобильного телефона'
 						//- input(type="checkbox")
 					li.take-part__list-item.take-part__list-item_3
 						include arrow.svg
-						label
+						input(type="radio" name="textShow" id="textShow-3").take-part__input
+						label(for="textShow-3")
 							h3.take-part__item-title!='Следите за&nbsp;розыгрышем'
 							p.take-part__item-text!='Розыгрыши проходят каждый день в&nbsp;прямом эфире на&nbsp;сайте &quot;Столото&quot;и в&nbsp;мобильном приложении. Если вы&nbsp;пропустили розыгрыш, узнать выиграл&nbsp;ли ваш билет, можно в&nbsp;личном кабинете.'
 						//- input(type="checkbox")
 					li.take-part__list-item.take-part__list-item_4
 						include arrow.svg
-						label
+						input(type="radio" name="textShow" id="textShow-4").take-part__input
+						label(for="textShow-4")
 							h3.take-part__item-title!='Получите выигрыш'
 							p.take-part__item-text!='Выигрыши до&nbsp;500&nbsp;000 рублей можно получить онлайн. Если вы&nbsp;выиграли крупный приз, то&nbsp;оформить его можно в&nbsp;лотерейном центре &laquo;Столото&raquo;.'
 						//- input(type="checkbox")

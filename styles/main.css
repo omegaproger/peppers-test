@@ -5033,6 +5033,7 @@ template {
   }
 }
 .take-part__item-text {
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-size: 2.4vh;
@@ -5112,6 +5113,12 @@ template {
   .take-part__button {
     width: 65vw;
   }
+}
+.take-part__input {
+  display: none;
+}
+.take-part__input:checked + label p {
+  display: block;
 }
 
 .footer {
