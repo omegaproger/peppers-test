@@ -1,0 +1,132 @@
+.take-part {
+    display: flex;
+    justify-content: center;
+    background-color:#FFFFFF;
+
+    &__content {
+        display: flex;
+        justify-content: space-bitwine;
+        @include value(width, 925px, 325px);
+        font-family: $BASE-FONT;
+        @include value(padding-top, 15px,15px);
+        @include value(padding-bottom, 25px,40px);
+
+        // @include value(padding-left, 105px,20px);
+        // @include value(padding-right, 105px,20px);
+        @include MOBILE {
+            display: block;
+
+        }
+    }
+
+    &__phone {
+        display: block;
+        @include value(height, 571px, 390px);
+        @include value(margin-right, 130px, 0px);
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            margin: 0 auto
+        }
+    }
+
+    &__info {
+        display: block;
+        @include value(padding-top, 77px, 20px);
+    }
+
+    &__list {
+        @include value(margin-top, 37px, 37px);
+        @include value(margin-bottom, 39px, 39px);
+        @include value(margin-left, 10px, 10px);
+        @include value(padding-left, 27px, 27px);
+        border-left: 2px solid #D61407;
+        list-style: none;
+        counter-reset: my-awesome-counter;
+
+
+        li {
+            counter-increment: counter;
+            position: relative;
+            border-bottom: 0.2px solid #000000;
+            @include value(padding-bottom, 8px, 8px);
+            @include value(margin-bottom, 51px, 51px);
+            &:last-child {
+            	margin: 0;
+            }
+             @include MOBILE {
+        				border:none;
+        		}
+            // margin: 1rem;
+            svg{
+            	position: absolute;
+            	@include desk-value(right, 5px);
+            	@include desk-value(bottom, 10px);
+            	@include desk-value(height, 6px);
+            	@include MOBILE {
+        					display:none;
+        			}
+            }
+        }
+
+        li::before {
+            content: counter(counter);
+            position: absolute;
+            @include value(left, -38px, -38px);
+            background: #D61407;
+            @include value(width, 20px,20px);
+            @include value(height, 20px, 20px);
+            // width: 1rem;
+            // height: 1rem;
+            border-radius: 50%;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            @include value(font-size, 12px, 12px);
+            @include value(line-height, 20px, 20px);
+            // font-size: 0.5rem;
+
+        }
+    }
+
+    &__item-title {
+        font-style: normal;
+        font-weight: normal;
+        @include value(font-size, 18px, 16px);
+        @include value(line-height, 18px, 18px);
+        margin: 0;
+
+        @include MOBILE {
+        	font-weight: bold;
+        }
+        
+    }
+
+    &__item-text {
+    	// display: none;
+    	font-style: normal;
+			font-weight: normal;
+			@include value(font-size, 18px, 16px);
+			@include value(margin-top, 22px, 22px);
+			margin: 0;
+			line-height: 1.35;
+			white-space: pre-wrap;
+    }
+
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 600;
+        @include value(font-size, 38px, 28px);
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    &__button {
+        @include value(width, 280px, 325px);
+        background: #6FF331;
+
+    }
+}

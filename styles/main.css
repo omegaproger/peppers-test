@@ -4626,6 +4626,494 @@ template {
   }
 }
 
+.take-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+}
+.take-part__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-bitwine;
+      -ms-flex-pack: space-bitwine;
+          justify-content: space-bitwine;
+  width: 123.3333333333vh;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  padding-top: 2vh;
+  padding-bottom: 3.3333333333vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__content {
+    width: 64.2361111111vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__content {
+    width: 86.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__content {
+    width: 65vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__content {
+    padding-top: 1.0416666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__content {
+    padding-top: 4vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__content {
+    padding-top: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__content {
+    padding-bottom: 1.7361111111vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__content {
+    padding-bottom: 10.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__content {
+    padding-bottom: 8vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__content {
+    display: block;
+  }
+}
+.take-part__phone {
+  display: block;
+  height: 76.1333333333vh;
+  margin-right: 17.3333333333vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__phone {
+    height: 39.6527777778vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__phone {
+    height: 104vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__phone {
+    height: 78vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__phone {
+    margin-right: 9.0277777778vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__phone {
+    margin-right: 0vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__phone {
+    margin-right: 0vw;
+  }
+}
+.take-part__phone img {
+  height: 100%;
+  margin: 0 auto;
+}
+.take-part__info {
+  display: block;
+  padding-top: 10.2666666667vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__info {
+    padding-top: 5.3472222222vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__info {
+    padding-top: 5.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__info {
+    padding-top: 4vw;
+  }
+}
+.take-part__list {
+  margin-top: 4.9333333333vh;
+  margin-bottom: 5.2vh;
+  margin-left: 1.3333333333vh;
+  padding-left: 3.6vh;
+  border-left: 2px solid #D61407;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list {
+    margin-top: 2.5694444444vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list {
+    margin-top: 9.8666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list {
+    margin-top: 7.4vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list {
+    margin-bottom: 2.7083333333vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list {
+    margin-bottom: 10.4vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list {
+    margin-bottom: 7.8vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list {
+    margin-left: 0.6944444444vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list {
+    margin-left: 2.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list {
+    margin-left: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list {
+    padding-left: 1.875vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list {
+    padding-left: 7.2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list {
+    padding-left: 5.4vw;
+  }
+}
+.take-part__list li {
+  counter-increment: counter;
+  position: relative;
+  border-bottom: 0.2px solid #000000;
+  padding-bottom: 1.0666666667vh;
+  margin-bottom: 6.8vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li {
+    padding-bottom: 0.5555555556vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li {
+    padding-bottom: 2.1333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li {
+    padding-bottom: 1.6vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li {
+    margin-bottom: 3.5416666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li {
+    margin-bottom: 13.6vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li {
+    margin-bottom: 10.2vw;
+  }
+}
+.take-part__list li:last-child {
+  margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li {
+    border: none;
+  }
+}
+.take-part__list li svg {
+  position: absolute;
+  right: 0.6666666667vh;
+  bottom: 1.3333333333vh;
+  height: 0.8vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li svg {
+    right: 0.3472222222vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li svg {
+    bottom: 0.6944444444vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li svg {
+    height: 0.4166666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li svg {
+    display: none;
+  }
+}
+.take-part__list li::before {
+  content: counter(counter);
+  position: absolute;
+  left: -5.0666666667vh;
+  background: #D61407;
+  width: 2.6666666667vh;
+  height: 2.6666666667vh;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 1.6vh;
+  line-height: 2.6666666667vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li::before {
+    left: -2.6388888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li::before {
+    left: -10.1333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li::before {
+    left: -7.6vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li::before {
+    width: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li::before {
+    width: 5.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li::before {
+    width: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li::before {
+    height: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li::before {
+    height: 5.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li::before {
+    height: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li::before {
+    font-size: 0.8333333333vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li::before {
+    font-size: 3.2vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li::before {
+    font-size: 2.4vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__list li::before {
+    line-height: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__list li::before {
+    line-height: 5.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__list li::before {
+    line-height: 4vw;
+  }
+}
+.take-part__item-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4vh;
+  line-height: 2.4vh;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__item-title {
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__item-title {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__item-title {
+    font-size: 3.2vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__item-title {
+    line-height: 1.25vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__item-title {
+    line-height: 4.8vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__item-title {
+    line-height: 3.6vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__item-title {
+    font-weight: bold;
+  }
+}
+.take-part__item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4vh;
+  margin-top: 2.9333333333vh;
+  margin: 0;
+  line-height: 1.35;
+  white-space: pre-wrap;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__item-text {
+    font-size: 1.25vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__item-text {
+    font-size: 4.2666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__item-text {
+    font-size: 3.2vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__item-text {
+    margin-top: 1.5277777778vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__item-text {
+    margin-top: 5.8666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__item-text {
+    margin-top: 4.4vw;
+  }
+}
+.take-part__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5.0666666667vh;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__title {
+    font-size: 2.6388888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__title {
+    font-size: 7.4666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__title {
+    font-size: 5.6vw;
+  }
+}
+.take-part__button {
+  width: 37.3333333333vh;
+  background: #6FF331;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .take-part__button {
+    width: 19.4444444444vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .take-part__button {
+    width: 86.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .take-part__button {
+    width: 65vw;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

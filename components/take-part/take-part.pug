@@ -1,9 +1,38 @@
+- var takePartContent = {image:{src:"images/take-part/phone.png"}};
+
+mixin take-part__phone(content, params)
+	.take-part__phone
+		img&attributes(content.image)&attributes(attributes)
+
 mixin take-part(content, params)
 	section.take-part
 		.take-part__content
-			img.take-part__phone
+			+take-part__phone(takePartContent)
 			.take-part__info
 				h2.take-part__title Как участвовать?
-				ul.take-part__choices
-					li.take-part__choices
-			+button({tag:"a", attr:{}})	
+				ol.take-part__list
+					li.take-part__list-item.take-part__list-item_1
+						include arrow.svg
+						label
+							h3.take-part__item-title!='Выберите билет'
+							p.take-part__item-text!='Комбинации в&nbsp;билетах проставлены заранее. Вам просто нужно выбрать один или несколько билетов со&nbsp;своими любимыми числами.'
+						//- input(type="checkbox")
+					li.take-part__list-item.take-part__list-item_2
+						include arrow.svg
+						label
+							h3.take-part__item-title!='Оплатите'
+							p.take-part__item-text!='Оплатить билет вы&nbsp;можете любым удобным для вас способом:\n- Банковская карта\n- Кошелёк &laquo;Столото&raquo;\n- QIWI Кошелек\n- Яндекс. Деньги\n- Со&nbsp;счёта мобильного телефона'
+						//- input(type="checkbox")
+					li.take-part__list-item.take-part__list-item_3
+						include arrow.svg
+						label
+							h3.take-part__item-title!='Следите за&nbsp;розыгрышем'
+							p.take-part__item-text!='Розыгрыши проходят каждый день в&nbsp;прямом эфире на&nbsp;сайте &quot;Столото&quot;и в&nbsp;мобильном приложении. Если вы&nbsp;пропустили розыгрыш, узнать выиграл&nbsp;ли ваш билет, можно в&nbsp;личном кабинете.'
+						//- input(type="checkbox")
+					li.take-part__list-item.take-part__list-item_4
+						include arrow.svg
+						label
+							h3.take-part__item-title!='Получите выигрыш'
+							p.take-part__item-text!='Выигрыши до&nbsp;500&nbsp;000 рублей можно получить онлайн. Если вы&nbsp;выиграли крупный приз, то&nbsp;оформить его можно в&nbsp;лотерейном центре &laquo;Столото&raquo;.'
+						//- input(type="checkbox")
+				+button({tag:"a", text:"Участвовать", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).take-part__button 
