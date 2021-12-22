@@ -5,7 +5,7 @@
 
     &__content {
         display: flex;
-        justify-content: space-bitwine;
+        justify-content: center;
         @include value(width, 925px, 325px);
         font-family: $BASE-FONT;
         @include value(padding-top, 15px, 15px);
@@ -22,7 +22,8 @@
     &__phone {
         display: block;
         @include value(height, 571px, 390px);
-        @include value(margin-right, 130px, 0px);
+        @include value(width, 279px, 320px);
+        @include value(margin-right, 131px, 0px);
         display: flex;
         justify-content: center;
 
@@ -35,6 +36,7 @@
     &__info {
         display: block;
         @include value(padding-top, 77px, 20px);
+        @include value(width, 400px, 325px);
     }
 
     &__list {
@@ -103,7 +105,7 @@
     	position: absolute;
     	@include value(width, 2px, 2px);
     	height: 95%;
-    	top:0;
+    	top:3%;
     	@include value(left, -2px, -2px);
     	background-color: #D61407;
 
@@ -123,6 +125,7 @@
     }
 
     &__item-text {
+        color: #7D7D7D;
         display: none;
         font-style: normal;
         font-weight: normal;
