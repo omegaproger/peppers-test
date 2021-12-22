@@ -38,11 +38,12 @@
     }
 
     &__list {
+        position: relative;
         @include value(margin-top, 37px, 37px);
         @include value(margin-bottom, 39px, 39px);
         @include value(margin-left, 10px, 10px);
         @include value(padding-left, 27px, 27px);
-        border-left: 2px solid #D61407;
+        // border-left: 2px solid #D61407;
         list-style: none;
         counter-reset: my-awesome-counter;
 
@@ -97,6 +98,17 @@
 
     }
 
+    &__list:before {
+    	content: '';
+    	position: absolute;
+    	@include value(width, 2px, 2px);
+    	height: 95%;
+    	top:0;
+    	@include value(left, -2px, -2px);
+    	background-color: #D61407;
+
+    }
+
     &__item-title {
         font-style: normal;
         font-weight: normal;
@@ -116,7 +128,7 @@
         font-weight: normal;
         @include value(font-size, 18px, 16px);
         @include value(margin-top, 22px, 22px);
-        margin: 0;
+        margin-bottom: 0;
         line-height: 1.35;
         white-space: pre-wrap;
     }
@@ -136,13 +148,19 @@
 
     }
 
-    &__input {
+    input {
         display: none;
     }
 
-    &__input:checked {
+    input:checked {
         +label {
+            svg {
+                @include transition(0.5s);
+                transform: rotate(180deg);
+            }
+
             p {
+                
                 display: block;
             }
 
