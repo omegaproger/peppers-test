@@ -54,7 +54,7 @@
             position: relative;
             border-bottom: 0.2px solid #000000;
             @include value(padding-bottom, 8px, 8px);
-            @include value(margin-bottom, 51px, 51px);
+            @include value(margin-bottom, 51px, 43px);
 
             &:last-child {
                 margin: 0;
