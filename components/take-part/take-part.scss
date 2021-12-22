@@ -104,7 +104,7 @@
     	content: '';
     	position: absolute;
     	@include value(width, 2px, 2px);
-    	height: 95%;
+    	height: 94%;
     	top:3%;
     	@include value(left, -2px, -2px);
     	background-color: #D61407;
