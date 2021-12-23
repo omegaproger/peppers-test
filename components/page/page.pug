@@ -7,6 +7,7 @@ include ../rules/rules
 include ../buy/buy
 include ../footer/footer
 include ../take-part/take-part
+include ../test/test
 
 doctype html
 html
@@ -19,12 +20,15 @@ html
 		meta(content='yes' name='apple-mobile-web-app-capable')
 		link(rel="stylesheet" href="styles/main.css" type="text/css")
 		link(rel="stylesheet" href="fonts/fonts.css" type="text/css")
+		link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
 		title!="test"
 	body
 		.custom-page
 			block content
 		+pagination
+		script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
 		script(src="js/main.js")
+		
 		// script(src="accordion.min.js")
 		// script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 

@@ -1,14 +1,27 @@
 mixin buy__list-item(content, params)
 	li.buy__list-item
-		img.buy__item-icon
-		h3.buy__item-title=content	
+		.buy__item-icon
+			img&attributes(content.img)&attributes(attributes)
+		h3.buy__item-title!=content.title
+mixin carusel(content, params)
+	.swiper
+		.swiper-wrapper
+			each item in content.item 
+				.swiper-slide
+					.cart
+						.buy__item-icon
+							img&attributes(item.img)&attributes(attributes)
+						h3.buy__item-title!=item.title
 
-- var title = ["безопасная регистрация","безопасность данных","Государственные лотереи","Ваш билет никогда  не потеряется"];
+- var buyContent = {item:[{title:"безопасная регистрация",img:{src:"images/buy/icon-1.svg"}},{title:"безопасность данных",img:{src:"images/buy/icon-2.svg"}},{title:"Государственные лотереи",img:{src:"images/buy/icon-3.svg"}},{title:"Ваш билет\n никогда не&nbsp;потеряется",img:{src:"images/buy/icon-4.svg"}}]};
 
 mixin buy(content, params)
 	section.buy
 		.buy__content
+			h2.buy__title!="Покупайте лотереи онлайн &mdash;\nэто безопасно"
+			+carusel(buyContent)
 			ul.buy__list
-				each text in title
-					+buy__list-item(text)
-			//button	
+				each item in buyContent.item
+					+buy__list-item(item)
+			+button({tag:"a", text:"Купить билет", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).buy__button 		
+				
