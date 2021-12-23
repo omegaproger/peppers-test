@@ -24,6 +24,11 @@
 	20%{opacity: 0.3;transform:rotate(15deg)translate(0,-20px)}
 	100%{opacity: 0;transform:rotate(45deg)translate(0,-80px)}
 }
+
+@keyframes checked {
+	0%{transform:translate(0,-30px);opacity: 0;}
+	100%{transform:translate(0,0);opacity: 1;}
+}
 // @keyframes smoke2 {
 //   20%, 100% {
 //     opacity: 0;
