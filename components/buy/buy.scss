@@ -37,44 +37,7 @@
 
     }
 
-    &__list {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        @include value(margin-top, 150px, 100px);
-        @include value(margin-bottom, 150px, 100px);
-        display: none;
-
-
-        li {
-            box-sizing: border-box;
-            background-color: #DDDDDD;
-            border-radius: 10px;
-            @include value(width, 158px, 158px);
-            @include value(height, 200px, 180px);
-            @include value(padding-top, 30px, 10px);
-            @include value(padding-left, 16px, 16px);
-            @include value(padding-right, 16px, 16px);
-            @include value(margin-right, 20px, 20px);
-            @include transition(0.5s ease-in-out);
-            cursor: pointer;
-        }
-
-        li:last-child {
-            margin: 0;
-
-            h3 {
-                white-space: pre-line;
-            }
-        }
-
-        li:hover {
-            transform: scale(1.2);
-            background-color: #FFCD17;
-
-        }
-    }
+    
 
     &__item-title {
         position: relative;
