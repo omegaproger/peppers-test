@@ -5832,6 +5832,22 @@ template {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .buy__content {
+    overflow: visible;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
+  .buy__content {
+    width: 101.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
+  .buy__content {
+    width: 76vw;
+  }
+}
 .buy__title {
   margin: 0;
   font-style: normal;
@@ -6261,6 +6277,12 @@ template {
   }
 }
 @media screen and (max-width: 1023px) {
+  .buy__swiper {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .buy__swiper {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);

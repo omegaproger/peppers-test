@@ -31,7 +31,7 @@ breakpoints: {
       slidesPerView: 1,
       spaceBetween: -260,
       coverflowEffect: {
-			  modifier: 3,
+			  modifier: 4,
 			},
     },
     // when window width is >= 640px
