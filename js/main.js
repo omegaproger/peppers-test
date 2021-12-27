@@ -2,26 +2,28 @@
 const swiper = new Swiper('.buy__swiper', {
 effect: "coverflow",
 speed: 400,
+autoHeight: true,
 centerSlides:true,
 loop:false,
 resistance:false,
-slidesPerView:4,
-spaceBetween:10,
+slidesPerView:1,
+spaceBetween:50,
 centerInsufficientSlides:true,
 coverflowEffect: {
   rotate: 0,
   stretch: 0,
   depth: 180,
-  modifier: 3,
+  modifier: 0,
   slideShadows: false,
 },
 resizeObserver:false,
 setWrapperSize:true,
+
 breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: -260,
+      spaceBetween: -220,
       coverflowEffect: {
 			  modifier: 4,
 			},
@@ -29,7 +31,7 @@ breakpoints: {
     // when window width is >= 480px
     768: {
       slidesPerView: 1,
-      spaceBetween: -260,
+      spaceBetween: -200,
       coverflowEffect: {
 			  modifier: 4,
 			},
@@ -38,7 +40,7 @@ breakpoints: {
     1024: {
 
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 0,
       coverflowEffect: {
 			  modifier: 0,
 			},
@@ -63,6 +65,7 @@ function bindClick(i) {
     	this.classList.add("pagination__item_active")
   };
 }
+
 
 // var item = document.querySelectorAll(".cart")
 // console.log(item);

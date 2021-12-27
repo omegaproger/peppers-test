@@ -7,24 +7,27 @@ mixin carusel(content, params)
 	.buy__swiper
 		.swiper-wrapper
 			each item in content.item 
-				.swiper-slide
+				label&attributes(item.label)&attributes(attributes).swiper-slide
 					input&attributes(item.input)&attributes(attributes)
-					label&attributes(item.label)&attributes(attributes)
-						.cart
-							.bg
+					.buy__cart
+						// .buy__cart
+						.buy__front
+							.buy__bg
 								include back.svg
-							.vector
+							.buy__vector
 								include vector.svg
 							.buy__item-icon
 								img&attributes(item.img)&attributes(attributes)
 							h3.buy__item-title!=item.title
+						.buy__back
+							p!="Текст"
 							
 
 
 - var buyContent = {item:[{title:"безопасная регистрация",img:{src:"images/buy/icon-1.svg"},input:{type:"radio",name:"cart", id:"cart-1"},label:{for:"cart-1"}},{title:"безопасность данных",img:{src:"images/buy/icon-2.svg"},input:{type:"radio",name:"cart", id:"cart-2"},label:{for:"cart-2"}},{title:"Государственные лотереи",img:{src:"images/buy/icon-3.svg"},input:{type:"radio",name:"cart", id:"cart-3"},label:{for:"cart-3"}},{title:"Ваш билет\n никогда не&nbsp;потеряется",img:{src:"images/buy/icon-4.svg"},input:{type:"radio",name:"cart", id:"cart-4"},label:{for:"cart-4"}}]};
 
 mixin buy(content, params)
-	section.buy(id="")
+	section.buy(id="buy")
 		.buy__content
 			h2.buy__title!="Покупайте лотереи онлайн &mdash;\nэто безопасно"
 			+carusel(buyContent)
