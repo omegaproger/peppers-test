@@ -1,0 +1,183 @@
+.winners {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
+
+    &__bg {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, 0);
+        overflow: hidden;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        position: relative;
+        @include value(width, 1200px, 38px);
+        display: flex;
+        font-family: $BASE-FONT;
+        overflow: hidden;
+        @include value(padding-top, 53px, 38px);
+        @include value(padding-bottom, 85px, 38px);
+        @include value(padding-left, 350px, 38px);
+
+    }
+
+    &__carusel {
+        position: relative;
+        display: block;
+        @include value(height, 600px, 38px);
+        @include value(width, 350px, 38px);
+        @include value(right, -320px, 38px);
+        @include value(top, 100px, 38px);
+
+        background: gray;
+
+    }
+
+    &__body {
+
+    }
+
+    &__button {
+        @include value(height, 52px, 38px);
+        @include value(width, 328px, 38px);
+        @include important-all-value(font-size, 16px, 16px);
+        border: 1px solid #000000;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background: #FFFFFF;
+    }
+
+    &__pers {
+        position: relative;
+        @include value(padding-top, 85px, 38px);
+
+    }
+
+		input {
+        display: none;
+		}
+
+		input:checked {
+       
+        +label {
+            svg {
+                @include transition(0.5s);
+                transform: rotate(180deg);
+            }
+
+            p {
+               	animation: checked 0.5s; 
+                display: block;
+            }
+            
+        }
+    }
+
+		&__note-text {
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		}
+
+		&__note-history {
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		    margin: 0;
+		}
+
+		&__history {
+		    display: none;
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		    margin: 0;
+		    
+		}
+
+		&__label {
+		    position: relative;
+		    border-bottom: 0.2px solid #000000;
+		    @include value(width, 328px, 16px);
+		    @include value(padding-bottom, 16px, 16px);
+		    svg {
+              position: absolute;
+              @include desk-value(right, 5px);
+              @include desk-value(bottom, 10px);
+              @include desk-value(height, 6px);
+          }
+
+		}
+
+		&__pers-info {
+		    position: relative;
+		    @include value(padding-top, 287px, 287px);
+		    color: #FFFFFF;
+
+		    span {
+		        @include value(font-size, 16px, 16px);
+		        @include value(line-height, 20px, 20px);
+		    }
+		}
+
+		&__pers-win {
+		    position: absolute;
+		    @include value(height, 178px, 178px);
+		    @include value(left, -100px, -20px);
+
+		    svg {
+		        height: 100%;
+		    }
+		}
+
+		&__pers-title {
+		    margin: 0;
+		    font-style: normal;
+		    font-weight: 900;
+		    @include value(font-size, 55px, 55px);
+		    @include value(line-height, 62px, 62px);
+		    @include value(letter-spacing, 2px, 2px);
+		    text-transform: uppercase;
+		    white-space: pre-wrap;
+		}
+
+		&__pers-prize {
+		    margin: 0;
+		    font-style: normal;
+		    font-weight: bold;
+		    @include value(font-size, 40px, 40px);
+		    @include value(line-height, 45px, 45px);
+		    @include value(letter-spacing, -0.2px, -0.2px);
+		    text-transform: uppercase;
+		}
+
+		&__pers-button {
+		    background: linear-gradient(90deg, #72F431 0%, #D7F431 100%);
+		    @include value(width, 316px, 316px);
+		    @include value(margin-top, 29px, 29px);
+		}
+		&__pers-image {
+			position: absolute;
+			@include value(width, 450px, 316px);
+			@include value(height, 880px, 316px);
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			@include value(top, 10px, 29px);
+			@include value(right, -330px, 29px);
+		}
+
+}
