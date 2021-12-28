@@ -40,7 +40,7 @@ breakpoints: {
     1024: {
 
       slidesPerView: 4,
-      spaceBetween: 0,
+      spaceBetween: -30,
       // slidesOffsetAfter:0,
       // slidesOffsetBefore:0,
       coverflowEffect: {

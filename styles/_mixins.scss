@@ -34,6 +34,16 @@
 	}
 }
 
+@mixin important-value($name,$value) {
+	// #{$name}:$value;
+	// @include DESKTOP {
+		#{$name}:vh($value) !important;
+	// }
+	@include DESKTOP-L {
+		#{$name}:vw($value) !important;
+	}
+}
+
 @mixin transition($transition...) {
     // -moz-transition:    $transition;
     // -o-transition:      $transition;

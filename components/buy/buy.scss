@@ -125,11 +125,20 @@
     }
 
     label {
-        // @include transition(transform 0.5s ease-in-out);
+        @include transition(0.5s ease-in-out);
         perspective: 1000px;
-        // &:hover {
-        //   // transform: scaleX(1.5) !important;
-        // }
+        @include DESKTOP {
+           &:hover {
+            @include transition(0.5s ease-in-out);
+            @include important-value(width, 290px);
+          }
+        }
+       @include DESKTOP-L {
+          &:hover {
+            @include transition(0.5s ease-in-out);
+            @include important-value(width, 290px);
+          }
+       } 
     }
 
     &__cart {
