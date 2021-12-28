@@ -87,10 +87,11 @@
 
     input {
         display: none;
-      &:checked + .buy__cart {
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-  }
+
+        &:checked+.buy__cart {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
     }
 
     &__swiper {
@@ -98,15 +99,15 @@
         // @include value(margin-bottom, 150px, 70px);
         @include value(width, 820px, 380px);
         @include value(height, 200px, 200px);
-        @include value(padding-top, 100px, 50px);
+        @include value(padding-top, 150px, 50px);
         @include value(padding-bottom, 150px, 70px);
         transform-style: preserve-3d;
-        margin: 0 auto ;
+        margin: 0 auto;
 
         @include MOBILE {
-        @include value(margin-top, 100px, 60px);
-        @include value(margin-bottom, 150px, 70px);
-        padding:0;
+            @include value(margin-top, 100px, 60px);
+            @include value(margin-bottom, 150px, 70px);
+            padding: 0;
         }
 
         @include TABLET {
@@ -118,25 +119,23 @@
         }
 
         .swiper-wrapper {
-            margin: 0 auto; 
+            margin: 0 auto;
         }
 
     }
 
     label {
-      @include transition(transform 0.5s ease-in-out);
-      perspective: 1000px;
-      &:hover {
-        transform:scale(1.5) !important;
-      }
+        // @include transition(transform 0.5s ease-in-out);
+        perspective: 1000px;
+        // &:hover {
+        //   transform:scale(1.5) !important;
+        // }
     }
 
     &__cart {
         position: relative;
         // overflow: hidden;
         box-sizing: border-box;
-        background-color: #DDDDDD;
-        @include value(border-radius, 5px, 20px);
         @include value(width, 158px, 158px);
         @include value(height, 200px, 200px);
         transform-style: preserve-3d;
@@ -146,49 +145,63 @@
         // @include value(margin-right,20px, 20px);
         @include transition(0.5s ease-in-out);
         margin: 0 auto;
-        
+
         cursor: pointer;
+
+    }
+
+    &__body {
+        position: relative;
+        transform-style: preserve-3d;
+        background-color: #DDDDDD;
+        @include value(border-radius, 5px, 20px);
+        width: 100%;
+        height: 100%;
+        @include transition(0.5s ease-in-out);
+
         &:hover {
-          // transform:scale(1.5);
-          background-color:#FFCD17;
-          .buy__bg{
-            svg path {
-              @include transition(fill 0.3s ease-in-out);
-              fill:#FFE10F;
+            transform: scale(1.5);
+            background-color: #FFCD17;
+
+            .buy__bg {
+                svg path {
+                    @include transition(fill 0.3s ease-in-out);
+                    fill: #FFE10F;
+                }
             }
-          }
-          .buy__vector{
-            opacity: 1;
-          } 
+
+            .buy__vector {
+                opacity: 1;
+            }
         }
     }
 
-
     &__front {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      backface-visibility: hidden;
-      overflow: hidden;
-      box-sizing: border-box;
-      @include value(padding-left, 20px, 20px);
-      @include value(padding-right, 20px, 20px);
-      @include value(padding-top, 15px, 10px);
-      @include value(padding-bottom, 20px, 10px);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        box-sizing: border-box;
+        @include value(padding-left, 20px, 20px);
+        @include value(padding-right, 20px, 20px);
+        @include value(padding-top, 15px, 10px);
+        @include value(padding-bottom, 20px, 10px);
 
     }
+
     &__back {
-      position: absolute;
-      background: #222;
-      box-sizing: border-box;
-      padding-left:20px; 
-      color: #FFF;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-      backface-visibility: hidden;
-      @include value(border-radius, 5px, 20px);
+        position: absolute;
+        background: #222;
+        box-sizing: border-box;
+        padding-left: 20px;
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        @include value(border-radius, 5px, 20px);
 
     }
 
@@ -218,22 +231,30 @@
         }
     }
 }
+
 @include MOBILE {
-  .swiper-slide-active {
-    .buy__cart{
-      background-color: #FFCD17;
-      &:hover{
-        transform: scale(1);
-      } 
+    .swiper-slide-active {
+        .buy__body {
+            background-color: #FFCD17;
+        }
+
+        .buy__bg {
+            svg path {
+                @include transition(fill 0.3s ease-in-out);
+                fill: #FFE10F;
+            }
+        }
+
+        .buy__vector {
+            opacity: 1;
+        }
     }
-    .buy__bg{
-      svg path {
-        @include transition(fill 0.3s ease-in-out);
-        fill:#FFE10F;
-      }
+
+    .swiper-slide {
+        .buy__body {
+            &:hover {
+                transform: scale(1);
+            }
+          }
+        }
     }
-    .buy__vector {
-        opacity: 1;
-      }
-    }
-}

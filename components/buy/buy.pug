@@ -11,16 +11,17 @@ mixin carusel(content, params)
 					input&attributes(item.input)&attributes(attributes)
 					.buy__cart
 						// .buy__cart
-						.buy__front
-							.buy__bg
-								include back.svg
-							.buy__vector
-								include vector.svg
-							.buy__item-icon
-								img&attributes(item.img)&attributes(attributes)
-							h3.buy__item-title!=item.title
-						.buy__back
-							p!="Текст"
+						.buy__body
+							.buy__front
+								.buy__bg
+									include back.svg
+								.buy__vector
+									include vector.svg
+								.buy__item-icon
+									img&attributes(item.img)&attributes(attributes)
+								h3.buy__item-title!=item.title
+							.buy__back
+								p!="Текст"
 							
 
 
