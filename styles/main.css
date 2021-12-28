@@ -6750,11 +6750,11 @@ template {
 }
 .winners__pers {
   position: relative;
-  padding-top: 11.3333333333vh;
+  padding-top: 58.2666666667vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers {
-    padding-top: 5.9027777778vw;
+    padding-top: 30.3472222222vw;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -6949,25 +6949,28 @@ template {
     height: 0.4166666667vw;
   }
 }
-.winners__pers-info {
-  position: relative;
-  padding-top: 38.2666666667vh;
-  color: #FFFFFF;
+.winners__pers-note {
+  position: absolute;
+  top: 11.3333333333vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__pers-info {
-    padding-top: 19.9305555556vw;
+  .winners__pers-note {
+    top: 5.9027777778vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__pers-info {
-    padding-top: 76.5333333333vw;
+  .winners__pers-note {
+    top: 22.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__pers-info {
-    padding-top: 57.4vw;
+  .winners__pers-note {
+    top: 17vw;
   }
+}
+.winners__pers-info {
+  position: relative;
+  color: #FFFFFF;
 }
 .winners__pers-info span {
   font-size: 2.1333333333vh;
@@ -7190,7 +7193,7 @@ template {
   position: absolute;
   width: 60vh;
   height: 117.3333333333vh;
-  top: 1.3333333333vh;
+  top: -2.6666666667vh;
   right: -44vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -7229,7 +7232,7 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-image {
-    top: 0.6944444444vw;
+    top: -1.3888888889vw;
   }
 }
 @media screen and (max-width: 1023px) {

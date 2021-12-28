@@ -58,7 +58,7 @@
 
     &__pers {
         position: relative;
-        @include value(padding-top, 85px, 38px);
+        @include value(padding-top, 437px, 38px);
 
     }
 
@@ -120,10 +120,14 @@
           }
 
 		}
+		&__pers-note {
+			position: absolute;
+			@include value(top, 85px, 85px);
+		}
 
 		&__pers-info {
 		    position: relative;
-		    @include value(padding-top, 287px, 287px);
+		    // @include value(padding-top, 287px, 287px);
 		    color: #FFFFFF;
 
 		    span {
@@ -176,7 +180,7 @@
 				width: 100%;
 				height: 100%;
 			}
-			@include value(top, 10px, 29px);
+			@include value(top, -20px, 29px);
 			@include value(right, -330px, 29px);
 		}
 
