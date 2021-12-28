@@ -2,18 +2,19 @@ mixin winners(content,params)
 	section.winners(id="winners")
 		.winners__content
 			.winners__body
-				+button({tag:"a", text:"Купить билет", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
+				+button({tag:"a", text:"Больше историй&nbsp;в соцсетях", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
 				.winners__pers
 					.winners__pers-note
-						p.winners__note-text
+						p.winners__note-text!="&laquo;Забыли про билеты на&nbsp;два месяца&raquo;"
 						label
 							input
-							h3.winner__note-history	
+							h3.winner__note-history!="История победителя"
 					.winners__pers-info
 						span.winners__pers-win
-						h2.winners__pers-title
-							span
-						h3.winners__pers-prize
+							include winner.svg
+						h2.winners__pers-title!="Марина Синцова"
+							span!="Выигрыш"
+						h3.winners__pers-prize!="загородный дом"
 					+button({tag:"a", text:"Купить билет", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__pers-button
 					.winners__pers-image
 			.winners__carusel
