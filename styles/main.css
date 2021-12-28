@@ -6200,8 +6200,16 @@ template {
   margin: 0 auto;
 }
 .buy label {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+.buy label:hover {
+  -webkit-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
 }
 .buy__cart {
   position: relative;
@@ -6264,8 +6272,6 @@ template {
   }
 }
 .buy__cart:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
   background-color: #FFCD17;
 }
 .buy__cart:hover .buy__bg svg path {

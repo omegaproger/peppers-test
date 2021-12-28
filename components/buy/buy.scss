@@ -124,11 +124,11 @@
     }
 
     label {
-      // @include transition(transform 0.5s ease-in-out);
+      @include transition(transform 0.5s ease-in-out);
       perspective: 1000px;
-      // &:hover {
-      //   transform:scale(1.5) !important;
-      // }
+      &:hover {
+        transform:scale(1.5) !important;
+      }
     }
 
     &__cart {
@@ -149,7 +149,7 @@
         
         cursor: pointer;
         &:hover {
-          transform:scale(1.5);
+          // transform:scale(1.5);
           background-color:#FFCD17;
           .buy__bg{
             svg path {
@@ -223,7 +223,7 @@
     .buy__cart{
       background-color: #FFCD17;
       &:hover{
-        transform:scale(1);
+        transform: scale(1);
       } 
     }
     .buy__bg{

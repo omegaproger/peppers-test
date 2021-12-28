@@ -7,7 +7,7 @@ mixin carusel(content, params)
 	.buy__swiper
 		.swiper-wrapper
 			each item in content.item 
-				label&attributes(item.label)&attributes(attributes).swiper-slide
+				label&attributes(item.label)&attributes(attributes).swiper-slide.buy__item
 					input&attributes(item.input)&attributes(attributes)
 					.buy__cart
 						// .buy__cart
