@@ -1,0 +1,19 @@
+mixin winners(content,params)
+	section.winners(id="winners")
+		.winners__content
+			.winners__body
+				+button({tag:"a", text:"Купить билет", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
+				.winners__pers
+					.winners__pers-note
+						p.winners__note-text
+						label
+							input
+							h3.winner__note-history	
+					.winners__pers-info
+						span.winners__pers-win
+						h2.winners__pers-title
+							span
+						h3.winners__pers-prize
+					+button({tag:"a", text:"Купить билет", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__pers-button
+					.winners__pers-image
+			.winners__carusel
