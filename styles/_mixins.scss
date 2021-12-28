@@ -44,6 +44,22 @@
 	}
 }
 
+@mixin important-all-value($name,$value, $value-m: $value) {
+	// #{$name}:$value;
+	// @include DESKTOP {
+		#{$name}:vh($value) !important;
+	// }
+	@include DESKTOP-L {
+		#{$name}:vw($value) !important;
+	}
+	@include MOBILE {
+		#{$name}:vw-m($value-m) !important;
+	}
+	@include TABLET {
+		#{$name}:vw-t($value-m) !important;
+	}
+}	
+
 @mixin transition($transition...) {
     // -moz-transition:    $transition;
     // -o-transition:      $transition;
