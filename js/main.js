@@ -7,10 +7,10 @@ centerSlides:true,
 loop:false,
 resistance:false,
 slidesPerView:1,
-spaceBetween:50,
+spaceBetween:10,
 centerInsufficientSlides:true,
 coverflowEffect: {
-  rotate: 0,
+  rotate: 1,
   stretch: 0,
   depth: 180,
   modifier: 0,
@@ -41,8 +41,11 @@ breakpoints: {
 
       slidesPerView: 4,
       spaceBetween: 0,
+      // slidesOffsetAfter:0,
+      // slidesOffsetBefore:0,
       coverflowEffect: {
 			  modifier: 0,
+
 			},
     }
 }

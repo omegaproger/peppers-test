@@ -128,14 +128,15 @@
         // @include transition(transform 0.5s ease-in-out);
         perspective: 1000px;
         // &:hover {
-        //   transform:scale(1.5) !important;
+        //   // transform: scaleX(1.5) !important;
         // }
     }
 
     &__cart {
         position: relative;
+       
         // overflow: hidden;
-        box-sizing: border-box;
+        
         @include value(width, 158px, 158px);
         @include value(height, 200px, 200px);
         transform-style: preserve-3d;
@@ -148,18 +149,28 @@
 
         cursor: pointer;
 
+        &:hover {
+          // @include value(width, 358px, 158px);
+        }
+
     }
 
     &__body {
         position: relative;
+
         transform-style: preserve-3d;
         background-color: #DDDDDD;
+        box-sizing: border-box;
         @include value(border-radius, 5px, 20px);
+        // @include value(width, 158px, 158px);
+        // @include value(height, 200px, 200px);
         width: 100%;
         height: 100%;
         @include transition(0.5s ease-in-out);
+        margin: 0 auto;
 
         &:hover {
+            
             transform: scale(1.5);
             background-color: #FFCD17;
 
@@ -173,6 +184,7 @@
             .buy__vector {
                 opacity: 1;
             }
+
         }
     }
 
@@ -234,6 +246,7 @@
 
 @include MOBILE {
     .swiper-slide-active {
+
         .buy__body {
             background-color: #FFCD17;
         }
@@ -251,6 +264,7 @@
     }
 
     .swiper-slide {
+      
         .buy__body {
             &:hover {
                 transform: scale(1);
