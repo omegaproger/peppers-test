@@ -6204,12 +6204,16 @@ template {
   transition: 0.5s ease-in-out;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 @media screen and (min-width: 1280px) {
   .buy label:hover {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     width: 38.6666666667vh !important;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
   }
 }
 @media screen and (min-width: 1280px) and (min-width: 1024px) and (max-width: 1279px) {
@@ -6534,9 +6538,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
 }
 .winners__bg {
@@ -6554,19 +6558,17 @@ template {
 }
 .winners__content {
   position: relative;
-  width: 160vh;
+  width: 146.6666666667vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Montserrat", Helvetica, sans-serif;
-  overflow: hidden;
   padding-top: 7.0666666667vh;
   padding-bottom: 11.3333333333vh;
-  padding-left: 46.6666666667vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__content {
-    width: 83.3333333333vw;
+    width: 76.3888888889vw;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -6607,21 +6609,6 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__content {
     padding-bottom: 7.6vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__content {
-    padding-left: 24.3055555556vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .winners__content {
-    padding-left: 10.1333333333vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__content {
-    padding-left: 7.6vw;
   }
 }
 .winners__carusel {

@@ -1,7 +1,7 @@
 .winners {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
 
     &__bg {
@@ -20,13 +20,14 @@
 
     &__content {
         position: relative;
-        @include value(width, 1200px, 38px);
+        @include value(width, 1100px, 38px);
         display: flex;
         font-family: $BASE-FONT;
-        overflow: hidden;
+        // overflow: hidden;
         @include value(padding-top, 53px, 38px);
         @include value(padding-bottom, 85px, 38px);
-        @include value(padding-left, 350px, 38px);
+        // @include value(padding-left, 350px, 38px);
+
 
     }
 
@@ -176,6 +177,7 @@
 			position: absolute;
 			@include value(width, 450px, 316px);
 			@include value(height, 880px, 316px);
+			// overflow: hidden;
 			img {
 				width: 100%;
 				height: 100%;

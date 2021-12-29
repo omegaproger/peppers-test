@@ -127,10 +127,12 @@
     label {
         @include transition(0.5s ease-in-out);
         perspective: 1000px;
+        transition-duration: 500ms;
         @include DESKTOP {
            &:hover {
             @include transition(0.5s ease-in-out);
             @include important-value(width, 290px);
+            transition-duration: 500ms;
           }
         }
        @include DESKTOP-L {
