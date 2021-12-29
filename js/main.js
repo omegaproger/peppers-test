@@ -52,6 +52,22 @@ breakpoints: {
 
 });
 
+const winSwiper = new Swiper('.winners__swiper', {
+  speed: 400,
+  spaceBetween: 150,
+  effect: 'coverflow',
+  slidesPerView: 1,
+  loop:true,
+  coverflowEffect: {
+    rotate: 1,
+    stretch: 0,
+    depth: 180,
+    modifier: 0,
+    slideShadows: false,
+  },
+
+});
+
 var intElemScrollTop = document.scrollTop;
 console.log(intElemScrollTop);
 var link = document.querySelectorAll(".pagination__item")

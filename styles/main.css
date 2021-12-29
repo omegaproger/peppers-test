@@ -6542,6 +6542,14 @@ template {
       -ms-flex-pack: end;
           justify-content: end;
   background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
+  overflow: hidden;
+}
+@media screen and (max-width: 1023px) {
+  .winners {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .winners__bg {
   position: absolute;
@@ -6556,30 +6564,70 @@ template {
 .winners__bg svg {
   width: 100%;
 }
+@media screen and (max-width: 1023px) {
+  .winners__bg {
+    display: none;
+  }
+}
+.winners__swiper {
+  width: 146.6666666667vh;
+  height: 120vh;
+  padding-left: 13.3333333333vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__swiper {
+    width: 76.3888888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__swiper {
+    width: 93.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__swiper {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__swiper {
+    height: 62.5vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__swiper {
+    height: 240vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__swiper {
+    height: 180vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__swiper {
+    padding-left: 6.9444444444vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__swiper {
+    padding-left: 0vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__swiper {
+    padding-left: 0vw;
+  }
+}
 .winners__content {
   position: relative;
-  width: 146.6666666667vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "Montserrat", Helvetica, sans-serif;
   padding-top: 7.0666666667vh;
   padding-bottom: 11.3333333333vh;
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__content {
-    width: 76.3888888889vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .winners__content {
-    width: 10.1333333333vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__content {
-    width: 7.6vw;
-  }
+  padding-left: 0vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__content {
@@ -6588,12 +6636,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__content {
-    padding-top: 10.1333333333vw;
+    padding-top: 90.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__content {
-    padding-top: 7.6vw;
+    padding-top: 68vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6611,73 +6659,30 @@ template {
     padding-bottom: 7.6vw;
   }
 }
-.winners__carusel {
-  position: relative;
-  display: block;
-  height: 80vh;
-  width: 46.6666666667vh;
-  right: -42.6666666667vh;
-  top: 13.3333333333vh;
-  background: gray;
-}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__carusel {
-    height: 41.6666666667vw;
+  .winners__content {
+    padding-left: 0vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__carusel {
-    height: 10.1333333333vw;
+  .winners__content {
+    padding-left: 4vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__carusel {
-    height: 7.6vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__carusel {
-    width: 24.3055555556vw;
+  .winners__content {
+    padding-left: 3vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__carusel {
-    width: 10.1333333333vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__carusel {
-    width: 7.6vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__carusel {
-    right: -22.2222222222vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .winners__carusel {
-    right: 10.1333333333vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__carusel {
-    right: 7.6vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__carusel {
-    top: 6.9444444444vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .winners__carusel {
-    top: 10.1333333333vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__carusel {
-    top: 7.6vw;
+  .winners__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .winners__button {
@@ -6689,6 +6694,9 @@ template {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   background: #FFFFFF;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__button {
@@ -6697,12 +6705,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__button {
-    height: 10.1333333333vw;
+    height: 13.8666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__button {
-    height: 7.6vw;
+    height: 10.4vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6712,12 +6720,22 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__button {
-    width: 10.1333333333vw;
+    width: 87.4666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__button {
-    width: 7.6vw;
+    width: 65.6vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__button {
+    margin-top: 9.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__button {
+    margin-top: 7vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6752,6 +6770,17 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers {
     padding-top: 7.6vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .winners input {
@@ -6892,12 +6921,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__label {
-    width: 4.2666666667vw;
+    width: 87.4666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__label {
-    width: 3.2vw;
+    width: 65.6vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6939,6 +6968,9 @@ template {
 .winners__pers-note {
   position: absolute;
   top: 11.3333333333vh;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-note {
@@ -6955,9 +6987,19 @@ template {
     top: 17vw;
   }
 }
+@media screen and (max-width: 1023px) {
+  .winners__pers-note {
+    position: unset;
+  }
+}
 .winners__pers-info {
   position: relative;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers-info {
+    color: #000000;
+  }
 }
 .winners__pers-info span {
   font-size: 2.1333333333vh;
@@ -7013,6 +7055,16 @@ template {
     height: 35.6vw;
   }
 }
+@media screen and (max-width: 1023px) {
+  .winners__pers-win {
+    bottom: 94.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__pers-win {
+    bottom: 71vw;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-win {
     left: -6.9444444444vw;
@@ -7020,16 +7072,17 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-win {
-    left: -5.3333333333vw;
+    left: 5.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-win {
-    left: -4vw;
+    left: 4vw;
   }
 }
 .winners__pers-win svg {
   height: 100%;
+  width: 100%;
 }
 .winners__pers-title {
   margin: 0;
@@ -7048,12 +7101,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-title {
-    font-size: 14.6666666667vw;
+    font-size: 7.4666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-title {
-    font-size: 11vw;
+    font-size: 5.6vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -7063,12 +7116,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-title {
-    line-height: 16.5333333333vw;
+    line-height: 9.6vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-title {
-    line-height: 12.4vw;
+    line-height: 7.2vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -7145,6 +7198,9 @@ template {
   background: linear-gradient(90deg, #72F431 0%, #D7F431 100%);
   width: 42.1333333333vh;
   margin-top: 3.8666666667vh;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-button {
@@ -7176,12 +7232,78 @@ template {
     margin-top: 5.8vw;
   }
 }
+.winners__images {
+  position: absolute;
+  width: 60vh;
+  height: 108.6666666667vh;
+  top: -2.6666666667vh;
+  right: -44vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images {
+    width: 31.25vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__images {
+    width: 93.3333333333vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__images {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images {
+    height: 56.5972222222vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__images {
+    height: 94.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__images {
+    height: 71vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images {
+    top: -1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__images {
+    top: -78.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__images {
+    top: -59vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images {
+    right: -22.9166666667vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__images {
+    right: 0vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__images {
+    right: 0vw;
+  }
+}
 .winners__pers-image {
   position: absolute;
   width: 60vh;
   height: 117.3333333333vh;
-  top: -2.6666666667vh;
-  right: -44vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-image {
@@ -7190,12 +7312,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-image {
-    width: 84.2666666667vw;
+    width: 60vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-image {
-    width: 63.2vw;
+    width: 45vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -7205,46 +7327,78 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-image {
-    height: 84.2666666667vw;
+    height: 117.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-image {
-    height: 63.2vw;
+    height: 88vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers-image {
+    top: 2.6666666667vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__pers-image {
+    top: 2vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers-image {
+    right: 8vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__pers-image {
+    right: 6vw;
   }
 }
 .winners__pers-image img {
-  width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__pers-image {
-    top: -1.3888888889vw;
-  }
+.winners__pers-bg {
+  position: absolute;
+  background: #FFD953;
+  display: none;
 }
 @media screen and (max-width: 1023px) {
-  .winners__pers-image {
-    top: 7.7333333333vw;
+  .winners__pers-bg {
+    width: 92.2666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__pers-image {
-    top: 5.8vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__pers-image {
-    right: -22.9166666667vw;
+  .winners__pers-bg {
+    width: 69.2vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__pers-image {
-    right: 7.7333333333vw;
+  .winners__pers-bg {
+    height: 63.7333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__pers-image {
-    right: 5.8vw;
+  .winners__pers-bg {
+    height: 47.8vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers-bg {
+    bottom: 0vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .winners__pers-bg {
+    bottom: 0vw;
+  }
+}
+.winners__pers-bg svg {
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .winners__pers-bg {
+    display: block;
   }
 }
 

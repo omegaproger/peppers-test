@@ -3,7 +3,10 @@
     display: flex;
     justify-content: end;
     background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
-
+    overflow: hidden;
+    @include MOBILE {
+    	justify-content: center;
+    }
     &__bg {
         position: absolute;
         top: 0px;
@@ -16,50 +19,67 @@
         svg {
             width: 100%;
         }
+        @include MOBILE {
+        	display: none;
+        }
     }
-
+    &__swiper {
+    	@include value(width, 1100px, 350px);
+			@include value(height, 900px, 900px);
+			@include value(padding-left, 100px, 0px);
+			// overflow: hidden;
+    }
     &__content {
         position: relative;
-        @include value(width, 1100px, 38px);
+        // @include value(width, 1100px, 38px);
         display: flex;
         font-family: $BASE-FONT;
         // overflow: hidden;
-        @include value(padding-top, 53px, 38px);
+        @include value(padding-top, 53px, 340px);
         @include value(padding-bottom, 85px, 38px);
-        // @include value(padding-left, 350px, 38px);
+        @include value(padding-left, 0px, 15px);
 
 
     }
 
-    &__carusel {
-        position: relative;
-        display: block;
-        @include value(height, 600px, 38px);
-        @include value(width, 350px, 38px);
-        @include value(right, -320px, 38px);
-        @include value(top, 100px, 38px);
+    // &__carusel {
+    //     position: relative;
+    //     display: block;
+    //     @include value(height, 600px, 38px);
+    //     @include value(width, 350px, 38px);
+    //     @include value(right, -320px, 38px);
+    //     @include value(top, 100px, 38px);
 
-        background: gray;
+    //     background: gray;
 
-    }
+    // }
 
     &__body {
-
+    	@include MOBILE {
+    		display: flex;
+    		flex-direction: column;
+    	}
     }
 
     &__button {
-        @include value(height, 52px, 38px);
-        @include value(width, 328px, 38px);
+        @include value(height, 52px, 52px);
+        @include value(width, 328px, 328px);
+        @include mobile-value(margin-top, 35px);
         @include important-all-value(font-size, 16px, 16px);
         border: 1px solid #000000;
         border-radius: 0 !important;
         box-shadow: none !important;
         background: #FFFFFF;
+        order:1;
     }
 
     &__pers {
         position: relative;
         @include value(padding-top, 437px, 38px);
+        @include MOBILE {
+        	display: flex;
+    			flex-direction: column;
+        }
 
     }
 
@@ -111,7 +131,7 @@
 		&__label {
 		    position: relative;
 		    border-bottom: 0.2px solid #000000;
-		    @include value(width, 328px, 16px);
+		    @include value(width, 328px, 328px);
 		    @include value(padding-bottom, 16px, 16px);
 		    svg {
               position: absolute;
@@ -124,13 +144,19 @@
 		&__pers-note {
 			position: absolute;
 			@include value(top, 85px, 85px);
+			order:1;
+			@include MOBILE {
+				position: unset;
+			}
 		}
 
 		&__pers-info {
 		    position: relative;
 		    // @include value(padding-top, 287px, 287px);
 		    color: #FFFFFF;
-
+		    @include MOBILE {
+					color: #000000;
+				}
 		    span {
 		        @include value(font-size, 16px, 16px);
 		        @include value(line-height, 20px, 20px);
@@ -140,10 +166,12 @@
 		&__pers-win {
 		    position: absolute;
 		    @include value(height, 178px, 178px);
-		    @include value(left, -100px, -20px);
+		    @include mobile-value(bottom, 355px);
+		    @include value(left, -100px, 20px);
 
 		    svg {
 		        height: 100%;
+		        width: 100%;
 		    }
 		}
 
@@ -151,8 +179,8 @@
 		    margin: 0;
 		    font-style: normal;
 		    font-weight: 900;
-		    @include value(font-size, 55px, 55px);
-		    @include value(line-height, 62px, 62px);
+		    @include value(font-size, 55px, 28px);
+		    @include value(line-height, 62px, 36px);
 		    @include value(letter-spacing, 2px, 2px);
 		    text-transform: uppercase;
 		    white-space: pre-wrap;
@@ -172,18 +200,44 @@
 		    background: linear-gradient(90deg, #72F431 0%, #D7F431 100%);
 		    @include value(width, 316px, 316px);
 		    @include value(margin-top, 29px, 29px);
+		    order:2;
+		}
+		&__images {
+			position: absolute;
+			@include value(width, 450px, 350px);
+			@include value(height, 815px, 355px);
+			@include value(top, -20px, -295px);
+			@include value(right, -330px, 0px);
+			// @include mobile-value(bottom, 200px);
+			overflow: hidden;
 		}
 		&__pers-image {
 			position: absolute;
-			@include value(width, 450px, 316px);
-			@include value(height, 880px, 316px);
+			@include value(width, 450px, 225px);
+			@include value(height, 880px, 440px);
+			@include mobile-value(top, 10px);
+			@include mobile-value(right, 30px);
 			// overflow: hidden;
 			img {
-				width: 100%;
+				// width: 100%;
 				height: 100%;
+			}	
+		}
+
+		&__pers-bg {
+			position: absolute;
+			@include mobile-value(width, 346px);
+			@include mobile-value(height, 239px);
+			@include mobile-value(bottom, 0px);
+			
+			background: #FFD953;
+			display: none;
+			svg{
+				width: 100%;
 			}
-			@include value(top, -20px, 29px);
-			@include value(right, -330px, 29px);
+			@include MOBILE {
+				display: block;
+			}
 		}
 
 }
