@@ -1,43 +1,44 @@
 mixin winners__carusel(content, params)
 	.winners__swiper
 		.swiper-wrapper
-			.swiper-slide
-				.winners__content
-					.winners__body
-						+button({tag:"a", text:"Больше историй&nbsp;в соцсетях", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
-						.winners__pers
-							.winners__pers-note
-								p.winners__note-text!="&laquo;Забыли про билеты на&nbsp;два месяца&raquo;"
-								.winners__label
-									input(type="checkbox" id="noteChek")
-									label(for="noteChek")
-										include arrow.svg
-										h3.winners__note-history!="История победителя"
-										p.winners__history!="Тут будет исторя победителя"
-							.winners__images
-								.winners__pers-bg
-									include smallBg.svg
-								.winners__pers-image
-									img(src="images/winners/winner-1.png")
-							.winners__pers-info
-								span.winners__pers-win
-									include winner.svg
-								h2.winners__pers-title!="Марина \nСинцова<br>"
-								span!="Выигрыш"
-								h3.winners__pers-prize!="загородный дом"
-							+button({tag:"a", text:"Стать следующим", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__pers-button
+			each item in content.persona
+				.swiper-slide
+					.winners__content
+						.winners__body
+							+button({tag:"a", text:"Больше историй&nbsp;в соцсетях", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
+							.winners__pers
+								.winners__pers-note
+									p.winners__note-text!=item.note
+									.winners__label
+										input(type="checkbox" id="noteChek")
+										label(for="noteChek")
+											include arrow.svg
+											h3.winners__note-history!="История победителя"
+											p.winners__history!=item.history
+								.winners__images
+									.winners__pers-bg
+										include smallBg.svg
+									.winners__pers-image
+										img&attributes(item.img)&attributes(attributes)
+								.winners__pers-info
+									span.winners__pers-win
+										include winner.svg
+									h2.winners__pers-title!=item.name
+									span!="Выигрыш"
+									h3.winners__pers-prize!=item.prize
+								+button({tag:"a", text:"Стать следующим", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__pers-button
 
 			//- each item in content.item 
 				// .swiper-slide
 
 
-- var winnersContent = [{}];
+- var winnersContent = {persona:[{note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},{note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},]};
 
 mixin winners(content,params)
 	section.winners(id="winners")
 		.winners__bg
 				include bg.svg
-		+winners__carusel
+		+winners__carusel(winnersContent)
 		//- .winners__carusel
 				h1!="Carusel"
 			

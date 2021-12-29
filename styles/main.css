@@ -6571,7 +6571,7 @@ template {
 }
 .winners__swiper {
   width: 146.6666666667vh;
-  height: 120vh;
+  height: 100%;
   padding-left: 13.3333333333vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6587,21 +6587,6 @@ template {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__swiper {
     width: 70vw;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__swiper {
-    height: 62.5vw;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .winners__swiper {
-    height: 240vw;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__swiper {
-    height: 180vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -7235,7 +7220,7 @@ template {
 .winners__images {
   position: absolute;
   width: 60vh;
-  height: 108.6666666667vh;
+  height: 122vh;
   top: -2.6666666667vh;
   right: -44vh;
   overflow: hidden;
@@ -7257,7 +7242,7 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__images {
-    height: 56.5972222222vw;
+    height: 63.5416666667vw;
   }
 }
 @media screen and (max-width: 1023px) {

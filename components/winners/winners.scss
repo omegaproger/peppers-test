@@ -25,7 +25,8 @@
     }
     &__swiper {
     	@include value(width, 1100px, 350px);
-			@include value(height, 900px, 900px);
+			// @include value(height, 900px, 900px);
+			height: 100%;
 			@include value(padding-left, 100px, 0px);
 			// overflow: hidden;
     }
@@ -205,7 +206,7 @@
 		&__images {
 			position: absolute;
 			@include value(width, 450px, 350px);
-			@include value(height, 815px, 355px);
+			@include value(height, 915px, 355px);
 			@include value(top, -20px, -295px);
 			@include value(right, -330px, 0px);
 			// @include mobile-value(bottom, 200px);
