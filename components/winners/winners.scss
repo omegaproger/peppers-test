@@ -178,6 +178,7 @@
 
 		&__pers-title {
 		    margin: 0;
+		    @include value(min-height, 55px, 28px);
 		    font-style: normal;
 		    font-weight: 900;
 		    @include value(font-size, 55px, 28px);
@@ -191,6 +192,7 @@
 		    margin: 0;
 		    font-style: normal;
 		    font-weight: bold;
+		    @include value(min-height, 55px, 90px);
 		    @include value(font-size, 40px, 40px);
 		    @include value(line-height, 45px, 45px);
 		    @include value(letter-spacing, -0.2px, -0.2px);
@@ -209,6 +211,7 @@
 			@include value(height, 915px, 355px);
 			@include value(top, -20px, -295px);
 			@include value(right, -510px, 0px);
+
 			// @include mobile-value(bottom, 200px);
 			overflow: hidden;
 		}
@@ -234,6 +237,21 @@
 			@include mobile-value(bottom, 0px);
 			
 			background: #FFD953;
+			display: none;
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+			@include MOBILE {
+				display: block;
+			}
+		}
+		&__pers-smoke {
+			position: absolute;
+			// @include mobile-value(width, 346px);
+			width: 100%;
+			@include mobile-value(height, 239px);
+			@include mobile-value(bottom,-90px);
 			display: none;
 			svg{
 				width: 100%;
