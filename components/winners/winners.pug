@@ -10,8 +10,8 @@ mixin winners__carusel(content, params)
 								.winners__pers-note
 									p.winners__note-text!=item.note
 									.winners__label
-										input(type="checkbox" id="noteChek")
-										label(for="noteChek")
+										input(type="checkbox" id=item.id)
+										label(for=item.id)
 											include arrow.svg
 											h3.winners__note-history!="История победителя"
 											p.winners__history!=item.history
@@ -32,7 +32,7 @@ mixin winners__carusel(content, params)
 				// .swiper-slide
 
 
-- var winnersContent = {persona:[{note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},{note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},]};
+- var winnersContent = {persona:[{id:"noteChek-1",note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},{id:"noteChek-2", note:"&laquo;Я&nbsp;&mdash; оптимист&raquo;",history:"Виктор не&nbsp;стал&nbsp;бы лотерейным победителем, если&nbsp;бы не&nbsp;съездил в&nbsp;гости к&nbsp;другу в&nbsp;город Шахты Ростовской области. Он&nbsp;купил счастливый билет за&nbsp;компанию. Друзья решили посоревноваться, кому больше повезёт.",name:"Виктор \nЧернов",prize:"загородный дом",img:{src:"images/winners/winner-2.png"}},]};
 
 mixin winners(content,params)
 	section.winners(id="winners")

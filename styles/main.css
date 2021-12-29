@@ -7288,7 +7288,7 @@ template {
 .winners__pers-image {
   position: absolute;
   width: 60vh;
-  height: 117.3333333333vh;
+  height: 162.6666666667vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-image {
@@ -7307,17 +7307,17 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .winners__pers-image {
-    height: 61.1111111111vw;
+    height: 84.7222222222vw;
   }
 }
 @media screen and (max-width: 1023px) {
   .winners__pers-image {
-    height: 117.3333333333vw;
+    height: 165.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .winners__pers-image {
-    height: 88vw;
+    height: 124vw;
   }
 }
 @media screen and (max-width: 1023px) {

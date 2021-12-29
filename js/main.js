@@ -57,7 +57,7 @@ const winSwiper = new Swiper('.winners__swiper', {
   spaceBetween: 150,
   effect: 'coverflow',
   slidesPerView: 1,
-  loop:true,
+  // loop:true,
   coverflowEffect: {
     rotate: 1,
     stretch: 0,

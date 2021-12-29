@@ -215,7 +215,7 @@
 		&__pers-image {
 			position: absolute;
 			@include value(width, 450px, 225px);
-			@include value(height, 880px, 440px);
+			@include value(height, 1220px, 620px);
 			@include mobile-value(top, 10px);
 			@include mobile-value(right, 30px);
 			// overflow: hidden;
