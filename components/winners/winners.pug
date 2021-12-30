@@ -47,8 +47,10 @@ mixin winners__smallCarusel(content, params)
 							h2.winners__title-small!=item.name
 							h3.winners__prize-small!=item.prize
 							span!="Читать историю"
-		.swiper-button-next
-		.swiper-button-prev
+	button.winners__btn.winners__btn_prev
+		include bigArrow.svg
+	button.winners__btn.winners__btn_next
+		include bigArrow.svg
 
 
 

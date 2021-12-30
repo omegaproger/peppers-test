@@ -58,7 +58,9 @@ const smallSwiper = new Swiper('.winners__small-swiper', {
   slidesPerView: 4,
   direction:'vertical',
   centerSlides:true,
-  // loop:true,
+  slideToClickedSlide:true,
+  
+  loop:true,
   coverflowEffect: {
     rotate: 1,
     stretch: 0,
@@ -67,8 +69,8 @@ const smallSwiper = new Swiper('.winners__small-swiper', {
     slideShadows: false,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".winners__btn_next",
+    prevEl: ".winners__btn_prev",
   },
 
 });
