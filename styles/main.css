@@ -6057,12 +6057,12 @@ template {
 }
 @media screen and (max-width: 1023px) {
   .buy__swiper {
-    width: 101.3333333333vw;
+    width: 85.3333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .buy__swiper {
-    width: 76vw;
+    width: 64vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -6186,52 +6186,24 @@ template {
     margin-bottom: 14vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) and (max-width: 1023px) {
-  .buy__swiper {
-    width: 101.3333333333vw;
-  }
+.buy__item {
+  width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .buy__swiper {
-    width: 76vw;
+@media screen and (max-width: 1023px) {
+  .buy__item {
+    width: auto;
   }
-}
-.buy__swiper .swiper-wrapper {
-  margin: 0 auto;
 }
 .buy label {
+  position: relative;
+  width: auto;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-}
-@media screen and (min-width: 1280px) {
-  .buy label:hover {
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    width: 38.6666666667vh !important;
-    -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
-  }
-}
-@media screen and (min-width: 1280px) and (min-width: 1024px) and (max-width: 1279px) {
-  .buy label:hover {
-    width: 20.1388888889vw !important;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .buy label:hover {
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    width: 38.6666666667vh !important;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) and (min-width: 1024px) and (max-width: 1279px) {
-  .buy label:hover {
-    width: 20.1388888889vw !important;
-  }
 }
 .buy__cart {
   position: relative;
@@ -6610,52 +6582,59 @@ template {
   display: -ms-flexbox;
   display: flex;
   font-family: "Montserrat", Helvetica, sans-serif;
+}
+.winners__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", Helvetica, sans-serif;
   padding-top: 7.0666666667vh;
   padding-bottom: 11.3333333333vh;
   padding-left: 0vh;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__content {
+  .winners__item {
     padding-top: 3.6805555556vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-top: 90.6666666667vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-top: 68vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__content {
+  .winners__item {
     padding-bottom: 5.9027777778vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-bottom: 10.1333333333vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-bottom: 7.6vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .winners__content {
+  .winners__item {
     padding-left: 0vw;
   }
 }
 @media screen and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-left: 4vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .winners__content {
+  .winners__item {
     padding-left: 3vw;
   }
 }
@@ -7423,6 +7402,223 @@ template {
 @media screen and (max-width: 1023px) {
   .winners__pers-smoke {
     display: block;
+  }
+}
+.winners__small-swiper {
+  position: absolute;
+  right: 0vh;
+  top: 13.3333333333vh;
+  width: 48.2666666667vh;
+  height: 80vh;
+  padding-top: 4vh;
+  padding-bottom: 5.3333333333vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    right: 0vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    top: 6.9444444444vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    width: 25.1388888889vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    height: 41.6666666667vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    padding-top: 2.0833333333vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__small-swiper {
+    padding-bottom: 2.7777777778vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winners__small-swiper {
+    display: none;
+  }
+}
+.winners__item-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  width: 53.3333333333vh;
+  height: 15.7333333333vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__item-small {
+    width: 27.7777777778vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__item-small {
+    height: 8.1944444444vw;
+  }
+}
+.winners__images-small {
+  position: relative;
+  width: 20.5333333333vh;
+  height: 19.7333333333vh;
+  bottom: 4vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images-small {
+    width: 10.6944444444vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images-small {
+    height: 10.2777777778vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__images-small {
+    bottom: 2.0833333333vw;
+  }
+}
+.winners__bg-small {
+  position: absolute;
+  bottom: 0px;
+  width: 20.5333333333vh;
+  height: 15.7333333333vh;
+  background: #FFD953;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__bg-small {
+    width: 10.6944444444vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__bg-small {
+    height: 8.1944444444vw;
+  }
+}
+.winners__bg-small svg {
+  width: 100%;
+  height: 100%;
+}
+.winners__pers-small {
+  position: absolute;
+  width: 20.5333333333vh;
+  height: 48vh;
+  top: 0vh;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__pers-small {
+    width: 10.6944444444vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__pers-small {
+    height: 25vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__pers-small {
+    top: 0vw;
+  }
+}
+.winners__pers-small img {
+  height: 100%;
+}
+.winners__info-small {
+  width: 28vh;
+  height: 14.9333333333vh;
+  padding-left: 2.6666666667vh;
+  padding-top: 0.6666666667vh;
+  background: #FFFFFF;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small {
+    width: 14.5833333333vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small {
+    height: 7.7777777778vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small {
+    padding-left: 1.3888888889vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small {
+    padding-top: 0.3472222222vw;
+  }
+}
+.winners__info-small h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.1333333333vh;
+  line-height: 2.4vh;
+  white-space: pre-wrap;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small h2 {
+    font-size: 1.1111111111vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small h2 {
+    line-height: 1.25vw;
+  }
+}
+.winners__info-small h3 {
+  font-style: normal;
+  font-weight: 600;
+  padding-top: 0.2666666667vh;
+  font-size: 2.6666666667vh;
+  line-height: 3.2vh;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small h3 {
+    padding-top: 0.1388888889vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small h3 {
+    font-size: 1.3888888889vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small h3 {
+    line-height: 1.6666666667vw;
+  }
+}
+.winners__info-small span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6vh;
+  line-height: 2.1333333333vh;
+  color: #533818;
+  border-bottom: 0.5px solid #533818;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small span {
+    font-size: 0.8333333333vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .winners__info-small span {
+    line-height: 1.1111111111vw;
   }
 }
 

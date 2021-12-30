@@ -36,11 +36,19 @@
         display: flex;
         font-family: $BASE-FONT;
         // overflow: hidden;
+        // @include value(padding-top, 53px, 340px);
+        // @include value(padding-bottom, 85px, 38px);
+        // @include value(padding-left, 0px, 15px);
+    }
+     &__item {
+        position: relative;
+        // @include value(width, 1100px, 38px);
+        display: flex;
+        font-family: $BASE-FONT;
+        // overflow: hidden;
         @include value(padding-top, 53px, 340px);
         @include value(padding-bottom, 85px, 38px);
         @include value(padding-left, 0px, 15px);
-
-
     }
 
     // &__carusel {
@@ -262,4 +270,91 @@
 			}
 		}
 
+		&__small-swiper{
+			position: absolute;
+			@include desk-value(right, 0px);
+			@include desk-value(top, 100px);
+			@include desk-value(width, 362px);
+			@include desk-value(height, 600px);
+			@include desk-value(padding-top, 30px);
+			@include desk-value(padding-bottom, 40px);
+    	overflow: hidden;
+			// overflow: hidden;
+
+			@include MOBILE {
+				display: none;
+			}
+		}
+		&__item-small{
+			display: flex;
+			border-radius: 10px;
+			// overflow: hidden;
+			@include desk-value(width, 400px);
+			@include desk-value(height, 118px);
+		}
+		&__images-small{
+			position: relative;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 148px);
+			@include desk-value(bottom, 30px);
+			
+
+			overflow: hidden;
+		}
+		&__bg-small {
+    	position: absolute;
+			bottom: 0px;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 118px);
+			background: #FFD953;
+			
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__pers-small {
+			position: absolute;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 360px);
+			@include desk-value(top, 0px);
+			img {
+				// width: 100%;
+				height: 100%;
+			}
+		}
+		&__info-small{
+			@include desk-value(width, 210px);
+			@include desk-value(height, 112px);
+			@include desk-value(padding-left, 20px);
+			@include desk-value(padding-top, 5px);
+			background: #FFFFFF;
+			h2{
+				font-style: normal;
+				font-weight: normal;
+				@include desk-value(font-size,16px);
+				@include desk-value(line-height,18px);
+				white-space: pre-wrap;
+				margin: 0;
+				
+			}
+			h3{
+				font-style: normal;
+				font-weight: 600;
+				@include desk-value(padding-top, 2px);
+				@include desk-value(font-size,20px);
+				@include desk-value(line-height,24px);
+				text-transform: uppercase;
+				margin: 0;
+
+			}
+			span{
+				font-style: normal;
+				font-weight: normal;
+				@include desk-value(font-size,12px);
+				@include desk-value(line-height,16px);
+				color: #533818;
+				border-bottom: 0.5px solid #533818
+			}
+		}
 }
