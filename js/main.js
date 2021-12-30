@@ -1,52 +1,26 @@
 
 const swiper = new Swiper('.buy__swiper', {
 effect: "coverflow",
-speed: 400,
-autoHeight: true,
+
 centerSlides:true,
-loop:false,
-resistance:false,
-slidesPerView:1,
-spaceBetween:10,
-centerInsufficientSlides:true,
-coverflowEffect: {
-  rotate: 1,
-  stretch: 0,
-  depth: 180,
-  modifier: 0,
+loop:false,coverflowEffect: {
+  rotate: 0,
+  stretch: 180,
+  depth: 150,
+  modifier: 1,
   slideShadows: false,
 },
-resizeObserver:false,
-setWrapperSize:true,
 
 breakpoints: {
-    // when window width is >= 320px
+
     320: {
-      slidesPerView: 1,
-      spaceBetween: -220,
-      coverflowEffect: {
-			  modifier: 4,
-			},
+      slidesPerView: 'auto',
     },
-    // when window width is >= 480px
-    768: {
-      slidesPerView: 1,
-      spaceBetween: -200,
-      coverflowEffect: {
-			  modifier: 4,
-			},
-    },
-    // when window width is >= 640px
+
     1024: {
-
       slidesPerView: 4,
-      spaceBetween: -30,
-      // slidesOffsetAfter:0,
-      // slidesOffsetBefore:0,
-      coverflowEffect: {
-			  modifier: 0,
-
-			},
+      // slidesPerGroup: 4,
+      effect: 'none',
     }
 }
 
@@ -65,8 +39,47 @@ const winSwiper = new Swiper('.winners__swiper', {
     modifier: 0,
     slideShadows: false,
   },
+  breakpoints: {
+
+    1024: {
+      effect:'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+    }
+}
 
 });
+
+const smallSwiper = new Swiper('.winners__small-swiper', {
+  // speed: 400,
+  spaceBetween: 0,
+  effect: 'coverflow',
+  slidesPerView: 4,
+  direction:'vertical',
+  centerSlides:true,
+  // loop:true,
+  coverflowEffect: {
+    rotate: 1,
+    stretch: 0,
+    depth: 180,
+    modifier: 0,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+});
+
+const swipeAllSliders = (index) => {
+  winSwiper.slideToLoop(index);
+  smallSwiper.slideToLoop(index);
+};
+
+// winSwiper.on('slideChange', () => swipeAllSliders(winSwiper.realIndex));
+smallSwiper.on('slideChange', () => swipeAllSliders(smallSwiper.realIndex));
 
 var intElemScrollTop = document.scrollTop;
 console.log(intElemScrollTop);

@@ -97,7 +97,7 @@
     &__swiper {
         // @include value(margin-top, 100px, 60px);
         // @include value(margin-bottom, 150px, 70px);
-        @include value(width, 820px, 380px);
+        @include value(width, 820px, 320px);
         @include value(height, 200px, 200px);
         @include value(padding-top, 150px, 50px);
         @include value(padding-bottom, 150px, 70px);
@@ -114,40 +114,37 @@
             @include value(margin-top, 100px, 60px);
             @include value(margin-bottom, 150px, 70px);
             padding: 0;
-            @include mobile-value(width, 380px);
+            // @include mobile-value(width, 380px);
             transform: scale(1.2);
         }
 
         .swiper-wrapper {
-            margin: 0 auto;
+            // margin: 0 auto;
         }
 
     }
 
+
+    &__item{
+      width: 25%;
+      flex: 0 0 auto;
+      
+      @include MOBILE{
+        width: auto;
+
+      }
+    }    
+
     label {
+      position: relative;
+      width: auto;
         @include transition(0.5s ease-in-out);
         perspective: 1000px;
-        transition-duration: 500ms;
-        @include DESKTOP {
-           &:hover {
-            @include transition(0.5s ease-in-out);
-            @include important-value(width, 290px);
-            transition-duration: 500ms;
-          }
-        }
-       @include DESKTOP-L {
-          &:hover {
-            @include transition(0.5s ease-in-out);
-            @include important-value(width, 290px);
-          }
-       } 
     }
 
     &__cart {
         position: relative;
-       
         // overflow: hidden;
-        
         @include value(width, 158px, 158px);
         @include value(height, 200px, 200px);
         transform-style: preserve-3d;
