@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('hinted-Montserrat-ExtraBold.woff2') format('woff2'),
+        url('hinted-Montserrat-ExtraBold.woff') format('woff'),
+        url('hinted-Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('hinted-Montserrat-Regular.woff2') format('woff2'),
+        url('hinted-Montserrat-Regular.woff') format('woff'),
+        url('hinted-Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('hinted-Montserrat-Bold.woff2') format('woff2'),
+        url('hinted-Montserrat-Bold.woff') format('woff'),
+        url('hinted-Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('hinted-Montserrat-Medium.woff2') format('woff2'),
+        url('hinted-Montserrat-Medium.woff') format('woff'),
+        url('hinted-Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('hinted-Roboto-Regular.woff2') format('woff2'),
+        url('hinted-Roboto-Regular.woff') format('woff'),
+        url('hinted-Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,182 @@
+.stock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: $BASE-FONT;
+    background: linear-gradient(268.14deg, #E2091B 0%, #E24522 21.08%, #F4B436 98.07%), #e24522;
+    
+
+    &__bg {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, 0);
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        @include value(width, 943px, 375px);
+        padding: 0;
+        @include value(padding-top, 38px, 23px);
+        @include value(padding-bottom, 50px, 15px);
+        @include value(padding-left, 25px, 25px);
+        @include value(margin-bottom, 5px, 5px);
+        color: #ffffff;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        @include value(width, 1000px, 280px);
+        @include value(padding-left, 10px, 0px);
+        @include mobile-value(margin-bottom, 8px);
+
+        @include MOBILE {
+            flex-direction: column;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        @include value(width, 152px, 94px);
+        @include value(height, 95px, 59px);
+        margin: 0;
+        @include value(margin-top, 20px, 0px);
+        @include mobile-value(margin-bottom, 5px);
+        @include value(margin-right, 46px, 46px);
+
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        @include value(margin-bottom, 20px, 15px);
+    }
+
+    &__info-title {
+        @include mobile-value(width, 350px);
+        @include mobile-value(margin-bottom, 8px);
+        @include value(font-size, 38px, 38px);
+        font-weight: bold;
+        line-height: 1.25;
+        margin: 0;
+        @include MOBILE {
+            white-space: pre-wrap;
+            
+        }
+    }
+
+    &__info-text {
+        @include value(margin-bottom, 10px, 15px);
+        font-weight: normal;
+        @include desk-value(width, 800px);
+        @include mobile-value(width, 280px);
+        @include value(font-size, 21px, 16px);
+        line-height: 1.3;
+
+        @include MOBILE {
+            white-space: pre-wrap;
+        }
+    }
+
+    &__info-more {
+        // @include value(width, 232px, 177px);
+        position: relative;
+        font-weight: normal;
+        @include value(font-size, 21px, 16px);
+        line-height: 1.35;
+        color: #FFED4B;
+        text-decoration: none;
+        // border-bottom: 1px solid #FFED4B;
+        &:before {
+            content: '';
+            display: block;
+            @include value(width, 235px, 180px);
+            @include value(height, 1px, 1px);
+            @include value(top, 30px, 25px);
+            position: absolute;
+            background-color:#FFED4B;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        @include value(padding-left, 10px, 0px);
+
+        @include MOBILE {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        @include mobile-value(margin-bottom, 20px);
+
+        
+    }
+
+    &__item-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include value(width, 74px, 60px);
+        @include value(height, 74px, 60px);
+        border-radius: 50%;
+        background-color: rgba(#FFBF42, 0.5);
+
+        img {
+            @include value(width, 52px, 46px);
+            @include value(height, 44px, 39px);
+
+            &:last-child {
+                @include value(width, 50px, 41px);
+                @include value(height, 42px, 35px);
+            }
+        }
+    }
+
+    &__item-title {
+        display: block;
+        margin: 0 0 1em;
+        font-weight: 500;
+        @include value(font-size, 21px, 16px);
+        line-height: 1.3;
+        @include value(letter-spacing, 2px, 0px);
+        @include value(margin-bottom, 18px, 10px);
+
+    }
+
+    &__item-info {
+        display: flex;
+    }
+
+    &__item-text {
+        margin: 0;
+        @include value(margin-left, 30px, 25px);
+        @include value(margin-top, 3px, 0px);
+        font-weight: normal;
+        @include value(font-size, 21px, 16px);
+        line-height: 1.35;
+        white-space: pre-line;
+    }
+
+}

@@ -1,0 +1,403 @@
+.winners {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(66.68deg, #F4762F 0%, #FFAF4A 67.68%, #FFCF53 95.54%), #D4D9DE;
+    overflow: hidden;
+    @include MOBILE {
+    	justify-content: center;
+    }
+    &__bg {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, 0);
+        overflow: hidden;
+
+        svg {
+            width: 100%;
+        }
+        @include MOBILE {
+        	display: none;
+        }
+    }
+    &__swiper {
+    	pointer-events: none;
+    	@include value(width, 1100px, 350px);
+			// @include value(height, 900px, 900px);
+			height: 100%;
+			@include value(padding-left, 100px, 0px);
+			// overflow: hidden;
+    }
+    &__content {
+        position: relative;
+        // @include value(width, 1100px, 38px);
+        display: flex;
+        font-family: $BASE-FONT;
+        // overflow: hidden;
+        // @include value(padding-top, 53px, 340px);
+        // @include value(padding-bottom, 85px, 38px);
+        // @include value(padding-left, 0px, 15px);
+    }
+     &__item {
+        position: relative;
+        // @include value(width, 1100px, 38px);
+        display: flex;
+        font-family: $BASE-FONT;
+        // overflow: hidden;
+        @include value(padding-top, 53px, 340px);
+        @include value(padding-bottom, 85px, 38px);
+        @include value(padding-left, 0px, 15px);
+    }
+
+    // &__carusel {
+    //     position: relative;
+    //     display: block;
+    //     @include value(height, 600px, 38px);
+    //     @include value(width, 350px, 38px);
+    //     @include value(right, -320px, 38px);
+    //     @include value(top, 100px, 38px);
+
+    //     background: gray;
+
+    // }
+
+    &__body {
+    	width: 100%;
+    	@include MOBILE {
+    		display: flex;
+    		flex-direction: column;
+    	}
+    }
+
+    &__button {
+        @include value(height, 52px, 52px);
+        @include value(width, 328px, 328px);
+        @include mobile-value(margin-top, 35px);
+        @include important-all-value(font-size, 16px, 16px);
+        border: 1px solid #000000;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background: #FFFFFF;
+        order:1;
+    }
+
+    &__pers {
+        position: relative;
+        @include value(padding-top, 437px, 38px);
+        @include MOBILE {
+        	display: flex;
+    			flex-direction: column;
+        }
+
+    }
+
+		input {
+        display: none;
+		}
+
+		input:checked {
+       
+        +label {
+            svg {
+                @include transition(0.5s);
+                transform: rotate(180deg);
+            }
+
+            p {
+               	animation: checked 0.5s; 
+                display: block;
+            }
+            
+        }
+    }
+
+		&__note-text {
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		}
+
+		&__note-history {
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		    margin: 0;
+		}
+
+		&__history {
+		    display: none;
+		    font-style: normal;
+		    font-weight: normal;
+		    @include value(font-size, 16px, 16px);
+		    @include value(line-height, 24px, 24px);
+		    margin: 0;
+		    
+		}
+
+		&__label {
+		    position: relative;
+		    border-bottom: 0.2px solid #000000;
+		    @include value(width, 328px, 328px);
+		    @include value(padding-bottom, 16px, 16px);
+		    svg {
+              position: absolute;
+              @include desk-value(right, 5px);
+              @include desk-value(bottom, 10px);
+              @include desk-value(height, 6px);
+          }
+
+		}
+		&__pers-note {
+			position: absolute;
+			@include value(top, 85px, 85px);
+			order:1;
+			@include MOBILE {
+				position: unset;
+			}
+		}
+
+		&__pers-info {
+		    position: relative;
+		    // @include value(padding-top, 287px, 287px);
+		    color: #FFFFFF;
+		    @include MOBILE {
+					color: #000000;
+				}
+		    span {
+		        @include value(font-size, 16px, 16px);
+		        @include value(line-height, 20px, 20px);
+		    }
+		}
+
+		&__pers-win {
+		    position: absolute;
+		    @include value(height, 178px, 178px);
+		    @include mobile-value(bottom, 355px);
+		    @include value(left, -100px, 20px);
+
+		    svg {
+		        height: 100%;
+		        width: 100%;
+		    }
+		}
+
+		&__pers-title {
+		    margin: 0;
+		    @include value(min-height, 55px, 28px);
+		    @include desk-value(min-width, 215px);
+		    font-style: normal;
+		    font-weight: 900;
+		    @include value(font-size, 55px, 28px);
+		    @include value(line-height, 62px, 36px);
+		    @include value(letter-spacing, 2px, 2px);
+		    text-transform: uppercase;
+		    white-space: pre-wrap;
+		}
+
+		&__pers-prize {
+		    margin: 0;
+		    font-style: normal;
+		    font-weight: bold;
+		    @include value(min-height, 55px, 90px);
+		    @include value(font-size, 40px, 40px);
+		    @include value(line-height, 45px, 45px);
+		    @include value(letter-spacing, -0.2px, -0.2px);
+		    text-transform: uppercase;
+		}
+
+		&__pers-button {
+		    background: linear-gradient(90deg, #72F431 0%, #D7F431 100%);
+		    @include value(width, 316px, 316px);
+		    @include value(margin-top, 29px, 29px);
+		    order:2;
+		}
+		&__images {
+			position: absolute;
+			// @include value(width, 850px, 350px);
+			@include mobile-value(width,  350px);
+			@include value(height, 915px, 355px);
+			@include value(top, -20px, -295px);
+			// right: 0;
+
+			// @include mobile-value(bottom, 200px);
+			overflow: hidden;
+			left: 50%;
+			transform: translate(-50%,0);
+		}
+		&__pers-image {
+			position: relative;
+			// @include value(width, 450px, 225px);
+			@include value(height, 1220px, 620px);
+			// @include mobile-value(top, 10px);
+			// @include mobile-value(right, 30px);
+			// overflow: hidden;
+			float:right;
+
+			img {
+				// width: 100%;
+				height: 100%;
+			}
+
+			@include MOBILE {
+				float:none;
+				margin: 0 auto;
+				@include mobile-value(width,225px);
+			}	
+		}
+
+		&__pers-bg {
+			position: absolute;
+			// @include mobile-value(width, 346px);
+			width: 100%;
+			@include mobile-value(height, 239px);
+			@include mobile-value(bottom, 0px);
+			
+			background: #FFD953;
+			display: none;
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+			@include MOBILE {
+				display: block;
+			}
+		}
+		&__pers-smoke {
+			position: absolute;
+			// @include mobile-value(width, 346px);
+			width: 100%;
+			@include mobile-value(height, 239px);
+			@include mobile-value(bottom,-90px);
+			display: none;
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+			@include MOBILE {
+				display: block;
+			}
+		}
+
+		&__small-swiper{
+			position: absolute;
+			@include desk-value(right, 0px);
+			@include desk-value(top, 100px);
+			@include desk-value(width, 362px);
+			@include desk-value(height, 600px);
+			@include desk-value(padding-top, 30px);
+			@include desk-value(padding-bottom, 40px);
+    	overflow: hidden;
+			// overflow: hidden;
+			// &:before{
+			// 	content: '';
+   //  		position: absolute;
+   //  		margin: 0 auto;
+   //  		width: 100%;
+   //  		box-shadow: inset #fff 0 30px 30px 10px;
+   //  		z-index: 100;
+			// }
+
+			@include MOBILE {
+				display: none;
+			}
+		}
+		&__item-small{
+			display: flex;
+			border-radius: 10px;
+			// overflow: hidden;
+			@include desk-value(width, 400px);
+			@include desk-value(height, 118px);
+		}
+		&__images-small{
+			position: relative;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 148px);
+			@include desk-value(bottom, 30px);
+			
+
+			overflow: hidden;
+		}
+		&__bg-small {
+    	position: absolute;
+			bottom: 0px;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 118px);
+			background: #FFD953;
+			border-radius:10px; 
+			svg{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__pers-small {
+			position: absolute;
+			@include desk-value(width, 154px);
+			@include desk-value(height, 360px);
+			@include desk-value(top, 0px);
+			img {
+				// width: 100%;
+				height: 100%;
+			}
+		}
+		&__info-small{
+			position: absolute;
+			@include desk-value(right, -12px);
+			@include desk-value(width, 210px);
+			@include desk-value(height, 112px);
+			@include desk-value(padding-left, 20px);
+			@include desk-value(padding-top, 5px);
+			background: #FFFFFF;
+			h2{
+				font-style: normal;
+				font-weight: normal;
+				@include desk-value(font-size,16px);
+				@include desk-value(line-height,18px);
+				white-space: pre-wrap;
+				margin: 0;
+				
+			}
+			h3{
+				font-style: normal;
+				font-weight: 600;
+				@include desk-value(padding-top, 2px);
+				@include desk-value(font-size,20px);
+				@include desk-value(line-height,24px);
+				text-transform: uppercase;
+				margin: 0;
+
+			}
+			span{
+				font-style: normal;
+				font-weight: normal;
+				@include desk-value(font-size,12px);
+				@include desk-value(line-height,16px);
+				color: #533818;
+				border-bottom: 0.5px solid #533818
+			}
+		}
+
+		&__btn{
+			position: absolute;
+			@include desk-value(right,160px);
+			cursor: pointer;
+			background:none;
+			border:none;
+			@include MOBILE {
+				display: none;
+			} 
+
+			&_prev{
+				@include desk-value(top,50px);
+			}
+			&_next{
+				transform: rotateZ(180deg);
+				@include desk-value(bottom,70px);
+			}
+		}
+
+}

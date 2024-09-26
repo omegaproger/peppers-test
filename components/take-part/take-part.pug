@@ -1,0 +1,25 @@
+- var takePartContent = {image:{src:"images/take-part/phone.png"},title:"Как участвовать?",list:[{attr:{class:"take-part__list-item_1"},input:{type:"radio",name:"textShow",id:"textShow-1"},label:{for:"textShow-1"},title:"Выберите билет",text:"Комбинации в&nbsp;билетах проставлены заранее. Вам просто нужно выбрать один или несколько билетов со&nbsp;своими любимыми числами."},{attr:{class:"take-part__list-item_2"},input:{type:"radio",name:"textShow",id:"textShow-2"},label:{for:"textShow-2"},title:"Оплатите",text:"Оплатить билет вы&nbsp;можете любым удобным для вас способом:\n- Банковская карта\n- Кошелёк &laquo;Столото&raquo;\n- QIWI Кошелек\n- Яндекс. Деньги\n- Со&nbsp;счёта мобильного телефона"},{attr:{class:"take-part__list-item_3"},input:{type:"radio",name:"textShow",id:"textShow-3"},label:{for:"textShow-3"},title:"Следите за&nbsp;розыгрышем",text:"Розыгрыши проходят каждый день в&nbsp;прямом эфире на&nbsp;сайте &quot;Столото&quot;и в&nbsp;мобильном приложении. Если вы&nbsp;пропустили розыгрыш, узнать выиграл&nbsp;ли ваш билет, можно в&nbsp;личном кабинете."},{attr:{class:"take-part__list-item_4"},input:{type:"radio",name:"textShow",id:"textShow-4"},label:{for:"textShow-4"},title:"Получите выигрыш",text:"Выигрыши до&nbsp;500&nbsp;000 рублей можно получить онлайн. Если вы&nbsp;выиграли крупный приз, то&nbsp;оформить его можно в&nbsp;лотерейном центре &laquo;Столото&raquo;."}]};
+
+mixin take-part__info(content, params)
+	.take-part__info
+		h2.take-part__title!=content.title
+		ol.take-part__list
+			each item in content.list
+				li.take-part__list-item&attributes(item.attr)&attributes(attributes)
+					input&attributes(item.input)&attributes(attributes)
+					label&attributes(item.label)&attributes(attributes)
+						include arrow.svg
+						h3.take-part__item-title!=item.title
+						p.take-part__item-text!=item.text
+		+button({tag:"a", text:"Участвовать", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).take-part__button 
+						
+mixin take-part__phone(content, params)
+	.take-part__phone
+		img&attributes(content.image)&attributes(attributes)
+
+mixin take-part(content, params)
+	section.take-part(id="take-part")
+		.take-part__content
+			+take-part__phone(takePartContent)
+			+take-part__info(takePartContent)
+			

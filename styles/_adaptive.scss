@@ -1,0 +1,32 @@
+$MOBILE:320px;
+$TABLET:768px;
+$DESKTOP-L:1024px;
+$DESKTOP:1280px;
+
+ 
+@mixin MOBILE() {
+  @media screen and (max-width: $DESKTOP-L - 1) { @content; }
+}
+
+@mixin TABLET() {
+  @media screen and (min-width: $TABLET) and (max-width: $DESKTOP-L - 1) { @content; }
+}
+
+@mixin DESKTOP-L() {
+  @media screen and (min-width: $DESKTOP-L) and (max-width: $DESKTOP - 1) { @content; }
+}
+
+@mixin DESKTOP() {
+  @media screen and (min-width: $DESKTOP) { @content; }
+}
+
+// @mixin NOT-MOB() {
+//   @media screen and ($min-width: $DESKTOP-L) { @content; }
+// }
+
+@mixin HOVER (){
+  @media (hover) , (min-width:0\0) , (min--moz-device-pixel-ratio:0) { @content; }
+}
+// @include MOBILE{
+// 	color: red;
+// }

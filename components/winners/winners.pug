@@ -1,0 +1,71 @@
+mixin winners__carusel(content, params)
+	.winners__swiper
+		.swiper-wrapper
+			each item in content.persona
+				.swiper-slide
+					.winners__item
+						.winners__body
+							+button({tag:"a", text:"Больше историй&nbsp;в соцсетях", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__button
+							.winners__pers
+								.winners__pers-note
+									p.winners__note-text!=item.note
+									.winners__label
+										input(type="checkbox" id=item.id)
+										label(for=item.id)
+											include arrow.svg
+											h3.winners__note-history!="История победителя"
+											p.winners__history!=item.history
+								.winners__images
+									.winners__pers-bg
+										include smallBg.svg
+									.winners__pers-image
+										img&attributes(item.img)&attributes(attributes)
+									.winners__pers-smoke
+										include smoke.svg
+								.winners__pers-info
+									span.winners__pers-win
+										include winner.svg
+									h2.winners__pers-title!=item.name
+									span!="Выигрыш"
+									h3.winners__pers-prize!=item.prize
+								+button({tag:"a", text:"Стать следующим", attr:{href:"https://www.stoloto.ru/ruslotto/game/?int=right", target:"_blank"}}).winners__pers-button
+
+			//- each item in content.item 
+				// .swiper-slide
+mixin winners__smallCarusel(content, params)
+	.winners__small-swiper
+		.swiper-wrapper
+			each item in content.persona
+				.swiper-slide
+					.winners__item-small
+						.winners__images-small
+							.winners__bg-small
+								include smallBg.svg
+							.winners__pers-small
+								img&attributes(item.img)&attributes(attributes)
+						.winners__info-small
+							h2.winners__title-small!=item.name
+							h3.winners__prize-small!=item.prize
+							span!="Читать историю"
+	button.winners__btn.winners__btn_prev
+		include bigArrow.svg
+	button.winners__btn.winners__btn_next
+		include bigArrow.svg
+
+
+
+
+
+
+- var winnersContent = {persona:[{id:"noteChek-1",note:"&laquo;Забыли про билеты на&nbsp;два месяца&raquo;",history:"Марина участвует в&nbsp;лотереях вместе с&nbsp;супругом. Они приобретают билеты на&nbsp;праздничные тиражи и&nbsp;даты, имеющие особое значение для их&nbsp;семьи. Она купила билеты, забыла про них, а&nbsp;потом проверила через два месяца в&nbsp;лотерейном киоске и&nbsp;узнала о&nbsp;своей победе.",name:"Марина \nСинцова",prize:"загородный дом",img:{src:"images/winners/winner-1.png"}},{id:"noteChek-2", note:"&laquo;Я&nbsp;&mdash; оптимист&raquo;",history:"Виктор не&nbsp;стал&nbsp;бы лотерейным победителем, если&nbsp;бы не&nbsp;съездил в&nbsp;гости к&nbsp;другу в&nbsp;город Шахты Ростовской области. Он&nbsp;купил счастливый билет за&nbsp;компанию. Друзья решили посоревноваться, кому больше повезёт.",name:"Виктор \nЧернов",prize:"загородный дом",img:{src:"images/winners/winner-2.png"}},{id:"noteChek-3", note:"&laquo;Моё желание исполнилось&raquo;",history:"Год назад Владимир зарегистрировался на&nbsp;сайте &laquo;Столото&raquo;. С&nbsp;тех пор он&nbsp;старается не&nbsp;пропускать еженедельные розыгрыши. Мужчина был с&nbsp;сыном и&nbsp;другом в&nbsp;магазине, когда ему пришло СМС-уведомление о&nbsp;выигрыше. Владимир обрадовался победе как ребёнок!",name:"Владимир \nСажин",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-3.png"}},{id:"noteChek-4", note:"&laquo;Я&nbsp;&mdash; богатый дедушка&raquo;",history:"Владимир приобретает лотерейные билеты по&nbsp;праздникам и&nbsp;в&nbsp;значимые для него даты, чаще всего на&nbsp;почте. Мужчина не&nbsp;забудет о&nbsp;сотруднике почтового отделения, продавшем ему счастливый билет&nbsp;&mdash; порадует сладким презентом. Кстати, это лето стало особенным для Владимира: в&nbsp;июле он&nbsp;выиграл в&nbsp;лотерею, а&nbsp;в&nbsp;августе стал дедушкой уже в&nbsp;седьмой раз!",name:"Владимир \nПетров",prize:"автомобиль",img:{src:"images/winners/winner-4.png"}},{id:"noteChek-5",note:"&laquo;Удачно я&nbsp;на&nbsp;почту зашёл&raquo;",history:"Андрей участвует в&nbsp;лотереях три года, приобретает билеты в&nbsp;разных местах. Счастливый билет он&nbsp;купил в&nbsp;почтовом отделении, взял первый попавшийся. Мужчина узнал о&nbsp;выигрыше в&nbsp;понедельник, проверив результаты розыгрыша на&nbsp;сайте &laquo;Столото&raquo;.",name:"Андрей \nПавлик",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-5.png"}},{id:"noteChek-6",note:"&laquo;Неужели это произошло наяву?&raquo;",history:"Елена участвует в&nbsp;лотереях давно, но&nbsp;не&nbsp;регулярно. Она купила счастливый билет в&nbsp;почтовом отделении, когда отправляла письмо. Женщина смотрела трансляцию розыгрыша тиража по&nbsp;телевизору и&nbsp;испытала яркие эмоции, когда услышала, что победитель из&nbsp;Орловской области!",name:"Елена \nМогилевцева",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-6.png"}},{id:"noteChek-7",note:"&laquo;Некоторое время хлопал глазами&raquo;",history:"Денис предпочитает участвовать в&nbsp;числовых лотереях и&nbsp;анализирует архивы тиражей. Но&nbsp;в&nbsp;этот раз он&nbsp;поступил иначе: перед сном купил билет в&nbsp;мобильном приложении &laquo;Столото&raquo;. Через несколько дней ярославец получил СМС-уведомление о&nbsp;выигрыше!",name:"Денис \nМильто",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-7.png"}},{id:"noteChek-8",note:"&laquo;Чуть со&nbsp;стула не&nbsp;упал&raquo;",history:"Денис считает, что секрет успеха в&nbsp;том, что он&nbsp;покупает лотерейные билеты в&nbsp;хорошем настроении. Также мужчина всегда ищет в&nbsp;игровых полях числа, связанные с&nbsp;значимыми для него датами. В&nbsp;выигрышном билете, например, было число 21&nbsp;&mdash; его день рождения.",name:"Денис \nКондратов",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-8.png"}},{id:"noteChek-9",note:"&laquo;Почти затёрли билет до&nbsp;дыр!&raquo;",history:"Татьяна покупает билеты для супруга&nbsp;&mdash; ему нравится следить за&nbsp;трансляциями тиражей по&nbsp;телевизору и&nbsp;зачёркивать числа в&nbsp;игровых полях. &laquo;В&nbsp;этот раз продавец в&nbsp;лотерейном киоске сказала, что я&nbsp;должна выиграть крупную сумму. И&nbsp;оказалась права&raquo;!",name:"Татьяна \nКайбелева",prize:"1&nbsp;000&nbsp;150&nbsp;₽",img:{src:"images/winners/winner-9.png"}},{id:"noteChek-10",note:"&laquo;Потерял дар речи&raquo;",history:"Сначала Анатолий купил девять билетов. В&nbsp;каждом искал в&nbsp;свои любимые числа и&nbsp;дату рождения. Через несколько дней ярославец выбрал случайным образом ещё один билет на&nbsp;сайте &laquo;Столото&raquo;. Все десять билетов оказались выигрышными, но&nbsp;именно последний принёс большую удачу!",name:"Анатолий \nЕрмилов",prize:"10&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-10.png"}},{id:"noteChek-11",note:"&laquo;Билет оказался с&nbsp;сюрпризом&raquo;",history:"Богдан решил последовать примеру отца, который участвует в&nbsp;лотереях уже пятнадцать лет. Счастливый билет был куплен в&nbsp;киоске &laquo;Столото&raquo;. Богдан взял сразу 10&nbsp;билетов, и&nbsp;один из&nbsp;них принёс большую победу!",name:"Богдан \nДубина",prize:"10&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-11.png"}},{id:"noteChek-12",note:"&laquo;Конечно, я&nbsp;рад такому повороту событий&raquo;",history:"Мужчина три года участвует в&nbsp;лотереях, покупает билеты на&nbsp;сайте &laquo;Столото&raquo;. В&nbsp;одном из&nbsp;тиражей &laquo;Русского лото&raquo; он&nbsp;выиграл двести рублей и&nbsp;купил на&nbsp;них два билета на&nbsp;следующий тираж. Один из&nbsp;этих билетов принёс ему потрясающий выигрыш!",name:"Махмудапанди \nДжамалодинов",prize:"10&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-12.png"}},{id:"noteChek-13",note:"&laquo;Приятно осознавать, что выиграл в&nbsp;лотерею&raquo;",history:"Иван делал покупки в&nbsp;продуктовом магазине у&nbsp;дома и&nbsp;приобрёл один лотерейный билет. Через несколько дней мужчина узнал, как ему повезло. С&nbsp;помощью выигрыша он&nbsp;закрыл кредит, а&nbsp;оставшуюся часть вложил в&nbsp;свой бизнес.",name:"Иван \nГромик",prize:"1&nbsp;000&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-13.png"}},{id:"noteChek-14",note:"&laquo;Всегда думал, что готов к&nbsp;новым победам&raquo;",history:"Для участника это уже второй крупный выигрыш в&nbsp;лотерею. Счастливый билет Артем купил в&nbsp;мобильном приложении &laquo;Столото&raquo;. Когда на&nbsp;телефон пришло СМС, победитель зашел личный кабинет и&nbsp;очень обрадовался.",name:"Артём \nАринич",prize:"1&nbsp;200&nbsp;000&nbsp;₽",img:{src:"images/winners/winner-14.png"}},{id:"noteChek-15",note:"&laquo;Победа перевернула мой мир&raquo;",history:"Наталья всегда считала себя невезучей и&nbsp;участвовала в&nbsp;лотерее только раз&nbsp;&mdash; на&nbsp;Новый год. Счастливый билет выбрала и&nbsp;подарила ей&nbsp;подруга. Наталья забыла о&nbsp;розыгрыше и&nbsp;проверила результаты только через пару недель на&nbsp;сайте &laquo;Столото&raquo;.",name:"Наталья \nАрабаджи",prize:"автомобиль",img:{src:"images/winners/winner-15.png"}}]};
+
+mixin winners(content,params)
+	section.winners(id="winners")
+		.winners__bg
+				include bg.svg
+		.winners__content
+			+winners__carusel(winnersContent)
+			+winners__smallCarusel(winnersContent)
+		//- .winners__carusel
+				h1!="Carusel"
+			

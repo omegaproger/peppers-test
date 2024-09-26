@@ -1,0 +1,282 @@
+.buy {
+    @mixin mod($name) {
+        .buy_#{$name} & {
+            @content;
+        }
+    }
+
+    @mixin checked {
+        .buy__item input:checked~* & {
+            @content;
+        }
+    }
+
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+    &__content {
+        display: block;
+        justify-content: center;
+        font-family: $BASE-FONT;
+        @include value(padding-top, 60px, 38px);
+        @include value(padding-bottom, 65px, 38px);
+
+        @include MOBILE {
+            overflow: hidden;
+        }
+
+        @include TABLET {
+            overflow: visible;
+            @include mobile-value(width, 380px);
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-style: normal;
+        font-weight: 600;
+        @include value(font-size, 38px, 28px);
+        line-height: 1.2;
+        white-space: pre-wrap;
+
+        @include MOBILE {
+            overflow: hiden;
+            @include mobile-value(padding-left, 30px);
+            @include mobile-value(width, 400px);
+            // margin: 0 auto;
+        }
+
+    }
+
+
+
+    &__item-title {
+        position: relative;
+        margin: 0;
+        @include value(margin-top, 40px, 28px);
+        // @include value(margin-left, 15px, 28px);
+        font-style: normal;
+        font-weight: 600;
+        @include value(font-size, 10px, 10px);
+        line-height: 1.2;
+        @include value(letter-spacing, 1px, 1px);
+        text-transform: uppercase;
+    }
+
+    &__item-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @include value(width, 107px, 107px);
+        @include value(height, 80px, 80px);
+        @include value(margin-top, 20px, 20px);
+        margin: 0 auto;
+
+
+
+    }
+
+    &__button {
+        justify-content: center;
+        margin: 0 auto;
+        @include value(width, 300px, 325px);
+        background: linear-gradient(270deg, #FDFA52 -0.25%, #FFCF19 99.36%);
+    }
+
+    input {
+        display: none;
+
+        &:checked+.buy__cart {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
+    }
+
+    &__swiper {
+        // @include value(margin-top, 100px, 60px);
+        // @include value(margin-bottom, 150px, 70px);
+        @include value(width, 820px, 320px);
+        @include value(height, 200px, 200px);
+        @include value(padding-top, 150px, 50px);
+        @include value(padding-bottom, 150px, 70px);
+        transform-style: preserve-3d;
+        margin: 0 auto;
+
+        @include MOBILE {
+            @include value(margin-top, 100px, 60px);
+            @include value(margin-bottom, 150px, 70px);
+            padding: 0;
+        }
+
+        @include TABLET {
+            @include value(margin-top, 100px, 60px);
+            @include value(margin-bottom, 150px, 70px);
+            padding: 0;
+            // @include mobile-value(width, 380px);
+            transform: scale(1.2);
+        }
+
+        .swiper-wrapper {
+            // margin: 0 auto;
+        }
+
+    }
+
+
+    &__item{
+      width: 25%;
+      flex: 0 0 auto;
+      
+      @include MOBILE{
+        width: auto;
+
+      }
+    }    
+
+    label {
+      position: relative;
+      width: auto;
+        @include transition(0.5s ease-in-out);
+        perspective: 1000px;
+    }
+
+    &__cart {
+        position: relative;
+        // overflow: hidden;
+        @include value(width, 158px, 158px);
+        @include value(height, 200px, 200px);
+        transform-style: preserve-3d;
+        // @include value(padding-top, 10px, 10px);
+        // @include value(padding-left, 16px, 16px);
+        // @include value(padding-right, 16px, 16px);
+        // @include value(margin-right,20px, 20px);
+        @include transition(0.5s ease-in-out);
+        margin: 0 auto;
+
+        cursor: pointer;
+
+        &:hover {
+          // @include value(width, 358px, 158px);
+        }
+
+    }
+
+    &__body {
+        position: relative;
+
+        transform-style: preserve-3d;
+        background-color: #DDDDDD;
+        box-sizing: border-box;
+        @include value(border-radius, 5px, 20px);
+        // @include value(width, 158px, 158px);
+        // @include value(height, 200px, 200px);
+        width: 100%;
+        height: 100%;
+        @include transition(0.5s ease-in-out);
+        margin: 0 auto;
+
+        &:hover {
+            
+            transform: scale(1.5);
+            background-color: #FFCD17;
+
+            .buy__bg {
+                svg path {
+                    @include transition(fill 0.3s ease-in-out);
+                    fill: #FFE10F;
+                }
+            }
+
+            .buy__vector {
+                opacity: 1;
+            }
+
+        }
+    }
+
+    &__front {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        box-sizing: border-box;
+        @include value(padding-left, 20px, 20px);
+        @include value(padding-right, 20px, 20px);
+        @include value(padding-top, 15px, 10px);
+        @include value(padding-bottom, 20px, 10px);
+
+    }
+
+    &__back {
+        position: absolute;
+        background: #222;
+        box-sizing: border-box;
+        padding-left: 20px;
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        @include value(border-radius, 5px, 20px);
+
+    }
+
+    &__bg {
+        @include value(top, 0px, 0px);
+
+        svg {
+            @include transition(fill 0.5s ease-in-out);
+            @include value(height, 210px, 220px);
+        }
+
+        left: 0;
+        position: absolute;
+
+
+    }
+
+    &__vector {
+        position: absolute;
+        @include value(right, 10px, 20px);
+        @include value(bottom, 15px, 15px);
+        opacity: 0;
+
+        svg {
+            @include value(width, 30px, 30px);
+
+        }
+    }
+}
+
+@include MOBILE {
+    .swiper-slide-active {
+
+        .buy__body {
+            background-color: #FFCD17;
+        }
+
+        .buy__bg {
+            svg path {
+                @include transition(fill 0.3s ease-in-out);
+                fill: #FFE10F;
+            }
+        }
+
+        .buy__vector {
+            opacity: 1;
+        }
+    }
+
+    .swiper-slide {
+      
+        .buy__body {
+            &:hover {
+                transform: scale(1);
+            }
+          }
+        }
+    }

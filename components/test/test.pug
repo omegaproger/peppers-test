@@ -1,0 +1,67 @@
+//- mixin carusel(content, params)
+//- 	.buy__swiper
+//- 		.swiper-wrapper
+//- 			each item in content.item 
+//- 				label&attributes(attributes).swiper-slide
+//- 					input&attributes(item.input)&attributes(attributes)
+//- 					.swiper-slide-cart
+//- 						.front
+//- 							.bg
+//- 								include back.svg
+//- 							.vector
+//- 								include vector.svg
+//- 							.content
+//- 								.item-icon
+//- 									img&attributes(item.img)&attributes(attributes)
+//- 								h3.title!=item.title
+//- 						.back
+//- 							p!="Текст"
+
+//- - var testContent = {item:[{title:"безопасная регистрация",img:{src:"images/buy/icon-1.svg"},input:{type:"radio",name:"cart", id:"cart-1"},label:{for:"cart-1"}},{title:"безопасность данных",img:{src:"images/buy/icon-2.svg"},input:{type:"radio",name:"cart", id:"cart-2"},label:{for:"cart-2"}},{title:"Государственные лотереи",img:{src:"images/buy/icon-3.svg"},input:{type:"radio",name:"cart", id:"cart-3"},label:{for:"cart-3"}},{title:"Ваш билет\n никогда не&nbsp;потеряется",img:{src:"images/buy/icon-4.svg"},input:{type:"radio",name:"cart", id:"cart-4"},label:{for:"cart-4"}}]};
+
+//- mixin test(content,params)
+//- 	section.test
+//- 		+carusel(testContent)
+		//- .buy__swiper
+			.swiper-wrapper
+				label.swiper-slide
+					input(type="checkbox")
+					.swiper-slide-cart
+						.front
+							.img
+								img(src="images/buy/icon-1.svg")
+							h1!="front"
+						.back
+							p!="Тут какой-то текст"
+				label.swiper-slide
+					input(type="checkbox")
+					.swiper-slide-cart
+						.front
+							.img
+								img(src="images/buy/icon-2.svg")
+							h1!="front"
+						.back
+							p!="Тут какой-то текст"
+				label.swiper-slide
+					input(type="checkbox")
+					.swiper-slide-cart
+						.front
+							.img
+								img(src="images/buy/icon-3.svg")
+							h1!="front"
+						.back
+							p!="Тут какой-то текст"
+				label.swiper-slide
+					input(type="checkbox")
+					.swiper-slide-cart
+						.front
+							.img
+								img(src="images/buy/icon-4.svg")
+							h1!="front"
+						.back
+							p!="Тут какой-то текст"
+					
+			//- .swiper-pagination
+			//- .swiper-button-prev
+			//- .swiper-button-next
+			//- .swiper-scrollbar
